@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Shopping scenario",
+  "description": "One task for a shopping agent. The agent sees only `request` (and the shopper's reply to a clarifying question); everything else is for grading. See docs/SCENARIO_AUTHORING_GUIDE.md.",
+  "type": "object",
+  "required": ["id", "type", "difficulty", "persona", "intent", "request", "constraints", "expected_action", "acceptable_answers", "grading", "data_tags"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^S\\d{3}$"},
+    "type": {"enum": ["simple_search", "multi_constraint", "comparison", "substitution", "basket", "ambiguous", "no_answer"]},
+    "difficulty": {"type": "integer", "minimum": 1, "maximum": 5},
+    "persona": {"type": "object", "required": ["id", "label"], "properties": {"id": {"type": "string"}, "label": {"type": "string"}}},
+    "month": {"type": "integer", "minimum": 1, "maximum": 12},
+    "intent": {"type": "string", "minLength": 5},
+    "request": {"type": "string", "minLength": 10},
+    "constraints": {"type": "object"},
+    "expected_action": {"enum": ["purchase", "ask", "no_match"]},
+    "acceptable_answers": {
+      "type": "object",
+      "required": ["roles", "total_budget"],
+      "properties": {
+        "roles": {"type": "array", "items": {"type": "object", "required": ["role", "skus", "quantity"],
+                  "properties": {"role": {"type": "string"}, "skus": {"type": "array", "items": {"type": "string"}},
+                                 "quantity": {"type": "integer", "minimum": 1}}}},
+        "total_budget": {"type": ["number", "null"]}
+      }
+    },
+    "clarification": {"type": ["object", "null"], "required": ["slot", "answer_text"]},
+    "grading": {"type": "object", "required": ["criteria", "max_steps", "optimal_steps"],
+                "properties": {"criteria": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+                               "max_steps": {"type": "integer"}, "optimal_steps": {"type": "integer", "minimum": 1}}},
+    "trap": {"type": ["string", "null"]},
+    "data_tags": {"type": "array", "items": {"type": "string"}}
+  },
+  "allOf": [
+    {"if": {"properties": {"expected_action": {"const": "ask"}}}, "then": {"required": ["clarification"], "properties": {"clarification": {"type": "object"}}}},
+    {"if": {"properties": {"expected_action": {"const": "no_match"}}}, "then": {"properties": {"acceptable_answers": {"properties": {"roles": {"maxItems": 0}}}}}}
+  ]
+}

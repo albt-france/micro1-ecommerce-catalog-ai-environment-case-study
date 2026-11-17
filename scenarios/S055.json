@@ -1,0 +1,55 @@
+{
+ "id": "S055",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 12,
+ "intent": "buy an armchair matching several constraints",
+ "request": "Looking for an armchair in beige by Stone & Beam. Budget $137 max.",
+ "constraints": {
+  "category_id": "C010102",
+  "colour": "beige",
+  "brand": "Stone & Beam",
+  "max_price": 137
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "armchair",
+    "skus": [
+     "ABO-B07B4MJKMK",
+     "ABO-B07B4N11TX",
+     "ABO-B07HZ48ZV7",
+     "ABO-B07HZ6GJC2"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Grey Linen' in a source listing",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

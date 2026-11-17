@@ -1,0 +1,10 @@
+error_type,injected,caught,fixed,caught_rate,fixed_rate,label,data
+colour_nonstandard,100,100,71,1.0,0.71,Colour word outside the list,SIMULATED errors on PUBLIC DATA products
+duplicate_reworded,100,95,95,0.95,0.95,"Duplicate, reworded title",SIMULATED errors on PUBLIC DATA products
+cross_source_duplicate,1600,1381,1381,0.863,0.863,Same product on 2 platforms,SIMULATED errors on PUBLIC DATA products
+brand_misspelled,100,86,67,0.86,0.67,Misspelled brand,SIMULATED errors on PUBLIC DATA products
+split_variant,100,81,80,0.81,0.8,Variant listed as separate product,SIMULATED errors on PUBLIC DATA products
+price_outlier,100,74,83,0.74,0.83,"Price error (x10, x100, /10, 0)",SIMULATED errors on PUBLIC DATA products
+wrong_category,100,65,47,0.65,0.47,Product in the wrong category,SIMULATED errors on PUBLIC DATA products
+missing_required,100,61,32,0.61,0.32,Required attribute missing,SIMULATED errors on PUBLIC DATA products
+unit_mislabel,100,35,0,0.35,0.0,"Wrong unit (cm/in, kg/lb/oz)",SIMULATED errors on PUBLIC DATA products

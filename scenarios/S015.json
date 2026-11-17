@@ -1,0 +1,49 @@
+{
+ "id": "S015",
+ "type": "simple_search",
+ "difficulty": 1,
+ "persona": {
+  "id": "P3",
+  "label": "Parent organising family meals and outings",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Household Supplies"
+  ]
+ },
+ "month": 7,
+ "intent": "buy some pasta of a known brand",
+ "request": "I'm looking for some pasta by Nutri+.",
+ "constraints": {
+  "category_id": "C060701",
+  "brand": "Nutri+"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "pasta",
+    "skus": [
+     "OFF-00149"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "brand and category respected"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": null,
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

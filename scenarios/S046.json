@@ -1,0 +1,63 @@
+{
+ "id": "S046",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P6",
+  "label": "Gift shopper in the end-of-year season",
+  "price_focus": "low",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Home & Furniture"
+  ]
+ },
+ "month": 8,
+ "intent": "buy an area rug matching several constraints",
+ "request": "I need an area rug by Rivet in white, under $123.",
+ "constraints": {
+  "category_id": "C010601",
+  "colour": "white",
+  "brand": "Rivet",
+  "max_price": 123
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "area rug",
+    "skus": [
+     "ABO-B071LQJ4XF",
+     "ABO-B0732KDJ48",
+     "ABO-B0735V7FK6",
+     "ABO-B075L5LFPZ",
+     "ABO-B075Z9MQRC",
+     "ABO-B075Z9Z1C5",
+     "ABO-B07B4SF23K",
+     "ABO-B07B4WGZJF",
+     "ABO-B07B4Z7WB3",
+     "ABO-B07B4ZQXKT",
+     "ABO-B07HSF5DRS",
+     "ABO-B07QB8JXWY",
+     "ABO-B07QB8KHWL"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Blue, Ivory' in a source listing; brand also spelled 'Rivet Inc.'",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

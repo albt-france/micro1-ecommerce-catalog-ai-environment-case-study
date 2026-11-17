@@ -1,0 +1,50 @@
+{
+ "id": "S056",
+ "type": "comparison",
+ "difficulty": 3,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 10,
+ "intent": "compare bed frame options and buy the best one",
+ "request": "What's the cheapest bed frame in black? Buy it.",
+ "constraints": {
+  "category_id": "C010201",
+  "colour": "black",
+  "max_price": 51.99
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "bed frame",
+    "skus": [
+     "MKB-101774"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item has the lowest price among matching in-stock items"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "out-of-stock or held items can look cheaper in search results",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

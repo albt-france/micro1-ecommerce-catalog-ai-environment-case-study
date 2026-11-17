@@ -1,0 +1,49 @@
+{
+ "id": "S057",
+ "type": "comparison",
+ "difficulty": 3,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 12,
+ "intent": "compare towel set options and buy the best one",
+ "request": "Buy the cheapest towel set available.",
+ "constraints": {
+  "category_id": "C020201",
+  "max_price": 21.49
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "towel set",
+    "skus": [
+     "ABO-B0014CJ20M"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item has the lowest price among matching in-stock items"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "out-of-stock or held items can look cheaper in search results",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

@@ -1,0 +1,52 @@
+{
+ "id": "S031",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 12,
+ "intent": "buy an ottoman matching several constraints",
+ "request": "Looking for an ottoman in brown by Rivet. Budget $99 max.",
+ "constraints": {
+  "category_id": "C010103",
+  "colour": "brown",
+  "brand": "Rivet",
+  "max_price": 99
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "ottoman",
+    "skus": [
+     "ABO-B083PZ8BZN"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Cognac' in a source listing",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

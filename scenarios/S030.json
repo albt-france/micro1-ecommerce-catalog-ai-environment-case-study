@@ -1,0 +1,96 @@
+{
+ "id": "S030",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P1",
+  "label": "Budget-conscious student",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Office & School Supplies",
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 5,
+ "intent": "buy a charger matching several constraints",
+ "request": "I need a charger by AmazonBasics in black, under $29.",
+ "constraints": {
+  "category_id": "C050103",
+  "colour": "black",
+  "brand": "AmazonBasics",
+  "max_price": 29
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "charger",
+    "skus": [
+     "ABO-B00511PTWM",
+     "ABO-B00M77HMU0",
+     "ABO-B010U3XVMU",
+     "ABO-B01D4I03YW",
+     "ABO-B01F2PWB0Y",
+     "ABO-B01LONQ7R6",
+     "ABO-B06Y5Q9FXB",
+     "ABO-B071J4RHH1",
+     "ABO-B071KBYFKS",
+     "ABO-B072Y118FF",
+     "ABO-B075KHGJPK",
+     "ABO-B0773CDT69",
+     "ABO-B0773J4N43",
+     "ABO-B0773J79KC",
+     "ABO-B0773J952F",
+     "ABO-B0773JCTRD",
+     "ABO-B0773JFWDC",
+     "ABO-B078LGP33Y",
+     "ABO-B07D4BPRW4",
+     "ABO-B07D4P4F5F",
+     "ABO-B07G2JV3W8",
+     "ABO-B07NW725GZ",
+     "ABO-B07P6P2L22",
+     "ABO-B07PBB81FC",
+     "ABO-B07PBCJBTC",
+     "ABO-B07PBCKZZ4",
+     "ABO-B07PBK84W5",
+     "ABO-B07PTMFR8N",
+     "ABO-B07Q1DJDGK",
+     "ABO-B07QGG5LK2",
+     "ABO-B07W87WCKG",
+     "ABO-B07XS4SL2Q",
+     "ABO-B07XS59FVT",
+     "ABO-B084C4KWJV",
+     "ABO-B085SBNFQW",
+     "ABO-B0876RMWNQ",
+     "ABO-B087MDHQMB",
+     "ABO-B087MFDTL4",
+     "ABO-B087MFL8DM",
+     "ABO-B08DDVQ9RG",
+     "ABO-B08DDYGFPC",
+     "MKB-100910",
+     "MKB-101795",
+     "MKB-101925",
+     "MKB-102118"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Nero' in a source listing; brand also spelled 'Amazon Basics'",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

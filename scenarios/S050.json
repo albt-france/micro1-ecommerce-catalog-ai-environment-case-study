@@ -1,0 +1,52 @@
+{
+ "id": "S050",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P6",
+  "label": "Gift shopper in the end-of-year season",
+  "price_focus": "low",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Home & Furniture"
+  ]
+ },
+ "month": 10,
+ "intent": "buy a hat matching several constraints",
+ "request": "I need a hat by Thirty Five Kent in beige, under $23.",
+ "constraints": {
+  "category_id": "C040301",
+  "colour": "beige",
+  "brand": "Thirty Five Kent",
+  "max_price": 23
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "hat",
+    "skus": [
+     "ABO-B013R3Q1OA",
+     "ABO-B013R45TSS-V"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Natural' in a source listing; brand also spelled 'ThirtyFiveKent'",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

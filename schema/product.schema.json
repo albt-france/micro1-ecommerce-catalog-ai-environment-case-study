@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/catalog/product.schema.json",
+  "title": "Catalogue product document",
+  "description": "One parent product with its variants and attributes nested (MongoDB-style document). Validated by src/build_schema.py; a MongoDB $jsonSchema version is in schema/mongo_validator.json.",
+  "type": "object",
+  "required": ["_id", "title", "category", "variants", "updated_from"],
+  "additionalProperties": false,
+  "properties": {
+    "_id": {"type": "string", "pattern": "^P-[A-Za-z0-9-]+$"},
+    "title": {"type": "string", "minLength": 3, "maxLength": 300},
+    "brand": {
+      "type": ["object", "null"],
+      "required": ["name", "key"],
+      "additionalProperties": false,
+      "properties": {"name": {"type": "string"}, "key": {"type": "string", "pattern": "^[^\\s]+$"}}
+    },
+    "category": {
+      "type": "object",
+      "required": ["id", "path", "google_id"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^C\\d{6}$"},
+        "path": {"type": "array", "items": {"type": "string"}, "minItems": 3, "maxItems": 4},
+        "google_id": {"type": "integer", "minimum": 1}
+      }
+    },
+    "gender": {"enum": ["men", "women", "unisex", "kids", null]},
+    "language": {"type": "string", "pattern": "^[a-z]{2}$"},
+    "description": {"type": ["string", "null"]},
+    "attributes": {
+      "description": "Long-tail attributes: open set, but each value must be a string, number or list of strings.",
+      "type": "object",
+      "additionalProperties": {"type": ["string", "number", "array"], "items": {"type": "string"}}
+    },
+    "variants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["sku", "price", "stock", "status"],
+        "additionalProperties": false,
+        "properties": {
+          "sku": {"type": "string", "pattern": "^(ABO|OFF|MKB)-[A-Za-z0-9-]+$"},
+          "title": {"type": "string"},
+          "colour": {"enum": ["black", "white", "grey", "silver", "gold", "brown", "beige", "red", "pink", "orange", "yellow",
+                              "green", "blue", "purple", "multicolour", "clear", null]},
+          "size": {"type": ["string", "null"]},
+          "material": {"type": ["string", "null"]},
+          "dimensions_cm": {
+            "type": "object", "additionalProperties": false,
+            "properties": {"length": {"type": "number", "exclusiveMinimum": 0}, "width": {"type": "number", "exclusiveMinimum": 0},
+                           "height": {"type": "number", "exclusiveMinimum": 0}}
+          },
+          "weight_g": {"type": "number", "exclusiveMinimum": 0},
+          "net_quantity": {
+            "type": "object", "required": ["value", "unit"], "additionalProperties": false,
+            "properties": {"value": {"type": "number", "exclusiveMinimum": 0}, "unit": {"enum": ["g", "ml"]}}
+          },
+          "capacity_ml": {"type": "number", "exclusiveMinimum": 0},
+          "pack_count": {"type": "integer", "minimum": 1},
+          "gtin": {"type": "string", "pattern": "^\\d{8,14}$"},
+          "price": {
+            "type": "object", "required": ["amount", "currency"], "additionalProperties": false,
+            "properties": {"amount": {"type": "number", "minimum": 0}, "currency": {"const": "USD"}}
+          },
+          "stock": {
+            "type": "object", "required": ["qty", "in_stock"], "additionalProperties": false,
+            "properties": {"qty": {"type": "integer", "minimum": 0}, "in_stock": {"type": "boolean"}}
+          },
+          "status": {"enum": ["active", "held for review"]},
+          "quality_score": {"type": "number", "minimum": 0, "maximum": 1},
+          "sources": {
+            "type": "array",
+            "items": {"type": "object", "required": ["source", "id"], "additionalProperties": false,
+                      "properties": {"source": {"enum": ["abo", "off", "mkb"]}, "id": {"type": "string"}, "match": {"type": ["string", "null"]}}}
+          }
+        }
+      }
+    },
+    "updated_from": {"type": "string", "description": "Pipeline version that produced the document"}
+  }
+}

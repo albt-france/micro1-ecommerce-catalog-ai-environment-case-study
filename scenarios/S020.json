@@ -1,0 +1,49 @@
+{
+ "id": "S020",
+ "type": "simple_search",
+ "difficulty": 1,
+ "persona": {
+  "id": "P8",
+  "label": "Health-focused grocery shopper",
+  "price_focus": "medium",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Health & Personal Care"
+  ]
+ },
+ "month": 3,
+ "intent": "buy some coffee of a known brand",
+ "request": "I'm looking for some coffee by Whole Earth.",
+ "constraints": {
+  "category_id": "C060601",
+  "brand": "Whole Earth"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "coffee",
+    "skus": [
+     "OFF-5011835100808"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "brand and category respected"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": null,
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

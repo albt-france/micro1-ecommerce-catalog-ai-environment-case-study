@@ -1,0 +1,53 @@
+{
+ "id": "S080",
+ "type": "substitution",
+ "difficulty": 3,
+ "persona": {
+  "id": "P4",
+  "label": "Regular runner replacing kit",
+  "price_focus": "medium",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Sports & Outdoors"
+  ]
+ },
+ "month": 9,
+ "intent": "replace a sold-out product",
+ "request": "I wanted to buy SKU ABO-B07NX29SDX (AmazonBasics 1,27 cm tjock yogamatta 6-delat set, gr\u00f6n) but it is out of stock. Find me the closest in-stock alternative from the same category in the same colour (green), under $25.",
+ "constraints": {
+  "category_id": "C100102",
+  "max_price": 25,
+  "colour": "green"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "yoga mat",
+    "skus": [
+     "ABO-B01LP0UQX4",
+     "ABO-B07D5432Q2"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in stock, same category",
+   "colour/size kept",
+   "within budget"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 4
+ },
+ "trap": "the requested SKU is out of stock: add_to_cart fails on it",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ],
+ "sold_out_sku": "ABO-B07NX29SDX"
+}

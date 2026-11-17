@@ -1,0 +1,55 @@
+{
+ "id": "S130",
+ "type": "ambiguous",
+ "difficulty": 4,
+ "persona": {
+  "id": "P1",
+  "label": "Budget-conscious student",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Office & School Supplies",
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 8,
+ "intent": "buy a phone case but a key detail is missing",
+ "request": "I need a phone case by Solimo.",
+ "constraints": {
+  "category_id": "C050101",
+  "brand": "Solimo"
+ },
+ "expected_action": "ask",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "phone case",
+    "skus": [
+     "ABO-B0854CLBB3",
+     "ABO-B0854FG3CS"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": {
+  "slot": "phone",
+  "answer_text": "It's for a Huawei Y9.",
+  "why": "a case only fits one device model"
+ },
+ "grading": {
+  "criteria": [
+   "asks about the phone before adding anything to the cart",
+   "then buys an item that fits the answer"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 5
+ },
+ "trap": "many phone case items match; only the phone disambiguates",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

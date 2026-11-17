@@ -1,0 +1,43 @@
+{
+ "id": "S147",
+ "type": "no_answer",
+ "difficulty": 5,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 4,
+ "intent": "ask for something the shop cannot provide",
+ "request": "I need a white curtain under $13.",
+ "constraints": {
+  "category_id": "C020301",
+  "colour": "white",
+  "max_price": 13
+ },
+ "expected_action": "no_match",
+ "acceptable_answers": {
+  "roles": [],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "reports that nothing matches",
+   "buys nothing"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 2
+ },
+ "trap": "similar products exist, but none meets every constraint",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

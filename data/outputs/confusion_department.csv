@@ -1,0 +1,15 @@
+manual,Appliances & Automotive,Bed & Bath,"Clothing, Shoes & Accessories",Electronics & Accessories,Grocery & Gourmet Food,Health & Personal Care,Home & Furniture,Household Supplies,Kitchen & Dining,Office & School Supplies,Other,"Pets, Baby & Toys",Sports & Outdoors,Tools & Home Improvement
+Appliances & Automotive,1,0,0,0,0,0,0,0,0,0,0,0,1,0
+Bed & Bath,0,1,0,0,0,0,0,0,0,0,0,0,0,1
+"Clothing, Shoes & Accessories",0,0,22,0,0,0,0,0,0,0,0,0,1,0
+Electronics & Accessories,0,0,0,16,0,0,0,0,0,0,1,0,0,1
+Grocery & Gourmet Food,0,0,0,0,71,0,0,0,0,0,0,0,0,0
+Health & Personal Care,0,0,0,0,0,14,0,0,0,0,1,0,0,0
+Home & Furniture,0,0,0,0,0,0,20,3,0,1,0,0,0,0
+Household Supplies,0,0,0,0,0,1,0,6,0,0,1,0,0,0
+Kitchen & Dining,0,0,0,0,0,0,0,0,6,0,2,0,0,0
+Office & School Supplies,0,0,0,0,0,0,0,0,0,4,1,0,0,0
+Other,1,0,0,1,0,0,1,0,0,0,0,0,0,0
+"Pets, Baby & Toys",0,0,0,0,0,0,0,1,1,0,0,0,0,0
+Sports & Outdoors,0,0,0,1,0,0,0,0,0,1,1,0,7,0
+Tools & Home Improvement,0,0,0,0,0,0,0,0,0,0,1,1,0,7

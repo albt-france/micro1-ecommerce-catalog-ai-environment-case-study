@@ -1,0 +1,9 @@
+{
+ "injected": 2400,
+ "caught": 1978,
+ "fixed": 1856,
+ "mkb_new_items": 800,
+ "wrongly_merged": 40,
+ "unit_repair_suggestions": 296,
+ "unit_repair_suggestions_on_injected_errors": 18
+}

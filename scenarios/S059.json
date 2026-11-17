@@ -1,0 +1,51 @@
+{
+ "id": "S059",
+ "type": "comparison",
+ "difficulty": 3,
+ "persona": {
+  "id": "P8",
+  "label": "Health-focused grocery shopper",
+  "price_focus": "medium",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Health & Personal Care"
+  ]
+ },
+ "month": 9,
+ "intent": "compare biscuits options and buy the best one",
+ "request": "What's the cheapest biscuits in brown? Buy it.",
+ "constraints": {
+  "category_id": "C060301",
+  "colour": "brown",
+  "max_price": 1.99
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "biscuits",
+    "skus": [
+     "OFF-0030100757467",
+     "OFF-0044000055752",
+     "OFF-0044000058036"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item has the lowest price among matching in-stock items"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "out-of-stock or held items can look cheaper in search results",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

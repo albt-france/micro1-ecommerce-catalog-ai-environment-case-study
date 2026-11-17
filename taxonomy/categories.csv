@@ -1,0 +1,213 @@
+node_id,parent_id,name,path,level,is_leaf,gpt_id,attribute_template
+Nhome-furniture,,Home & Furniture,Home & Furniture,1,False,,
+Nhome-furniture-living-room-furniture,Nhome-furniture,Living Room Furniture,Home & Furniture > Living Room Furniture,2,False,,
+C010101,Nhome-furniture-living-room-furniture,Sofas & Couches,Home & Furniture > Living Room Furniture > Sofas & Couches,3,True,460,furniture
+C010102,Nhome-furniture-living-room-furniture,Armchairs & Accent Chairs,Home & Furniture > Living Room Furniture > Armchairs & Accent Chairs,3,True,6499,furniture
+C010103,Nhome-furniture-living-room-furniture,Ottomans & Poufs,Home & Furniture > Living Room Furniture > Ottomans & Poufs,3,True,458,furniture
+C010104,Nhome-furniture-living-room-furniture,"Coffee Tables, Side Tables & TV Stands","Home & Furniture > Living Room Furniture > Coffee Tables, Side Tables & TV Stands",3,True,6369,furniture
+Nhome-furniture-bedroom-furniture,Nhome-furniture,Bedroom Furniture,Home & Furniture > Bedroom Furniture,2,False,,
+C010201,Nhome-furniture-bedroom-furniture,"Beds, Frames & Headboards","Home & Furniture > Bedroom Furniture > Beds, Frames & Headboards",3,True,505764,furniture
+C010202,Nhome-furniture-bedroom-furniture,Dressers & Chests,Home & Furniture > Bedroom Furniture > Dressers & Chests,3,True,4195,furniture
+Nhome-furniture-dining-furniture,Nhome-furniture,Dining Furniture,Home & Furniture > Dining Furniture,2,False,,
+C010301,Nhome-furniture-dining-furniture,Dining Chairs,Home & Furniture > Dining Furniture > Dining Chairs,3,True,5886,furniture
+C010302,Nhome-furniture-dining-furniture,Dining Tables,Home & Furniture > Dining Furniture > Dining Tables,3,True,4355,furniture
+C010303,Nhome-furniture-dining-furniture,Stools & Benches,Home & Furniture > Dining Furniture > Stools & Benches,3,True,1463,furniture
+Nhome-furniture-home-office-furniture,Nhome-furniture,Home Office Furniture,Home & Furniture > Home Office Furniture,2,False,,
+C010401,Nhome-furniture-home-office-furniture,Office Chairs,Home & Furniture > Home Office Furniture > Office Chairs,3,True,2045,furniture
+C010402,Nhome-furniture-home-office-furniture,Desks,Home & Furniture > Home Office Furniture > Desks,3,True,4191,furniture
+Nhome-furniture-storage-furniture,Nhome-furniture,Storage Furniture,Home & Furniture > Storage Furniture,2,False,,
+C010501,Nhome-furniture-storage-furniture,"Shelves, Cabinets & Bookcases","Home & Furniture > Storage Furniture > Shelves, Cabinets & Bookcases",3,True,465,furniture
+C010502,Nhome-furniture-storage-furniture,Furniture Covers & Slipcovers,Home & Furniture > Storage Furniture > Furniture Covers & Slipcovers,3,True,6345,textile
+Nhome-furniture-home-decor,Nhome-furniture,Home Decor,Home & Furniture > Home Decor,2,False,,
+C010601,Nhome-furniture-home-decor,Area Rugs,Home & Furniture > Home Decor > Area Rugs,3,True,598,rug
+C010602,Nhome-furniture-home-decor,"Wall Art, Posters & Decals","Home & Furniture > Home Decor > Wall Art, Posters & Decals",3,True,500044,decor
+C010603,Nhome-furniture-home-decor,Picture Frames,Home & Furniture > Home Decor > Picture Frames,3,True,597,decor
+C010604,Nhome-furniture-home-decor,Mirrors & Clocks,Home & Furniture > Home Decor > Mirrors & Clocks,3,True,595,decor
+C010605,Nhome-furniture-home-decor,"Vases, Candles & Home Fragrance","Home & Furniture > Home Decor > Vases, Candles & Home Fragrance",3,True,592,decor
+C010606,Nhome-furniture-home-decor,Decorative Pillows & Cushion Covers,Home & Furniture > Home Decor > Decorative Pillows & Cushion Covers,3,True,4454,textile
+Nhome-furniture-lighting,Nhome-furniture,Lighting,Home & Furniture > Lighting,2,False,,
+C010701,Nhome-furniture-lighting,Table & Floor Lamps,Home & Furniture > Lighting > Table & Floor Lamps,3,True,4636,lighting
+C010702,Nhome-furniture-lighting,Ceiling & Wall Lights,Home & Furniture > Lighting > Ceiling & Wall Lights,3,True,3006,lighting
+C010703,Nhome-furniture-lighting,Light Bulbs & String Lights,Home & Furniture > Lighting > Light Bulbs & String Lights,3,True,2425,lighting
+Nbed-bath,,Bed & Bath,Bed & Bath,1,False,,
+Nbed-bath-bedding,Nbed-bath,Bedding,Bed & Bath > Bedding,2,False,,
+C020101,Nbed-bath-bedding,Sheets & Sheet Sets,Bed & Bath > Bedding > Sheets & Sheet Sets,3,True,2314,bedding
+C020102,Nbed-bath-bedding,Pillowcases,Bed & Bath > Bedding > Pillowcases,3,True,2927,bedding
+C020103,Nbed-bath-bedding,Duvet Covers & Sets,Bed & Bath > Bedding > Duvet Covers & Sets,3,True,2541,bedding
+C020104,Nbed-bath-bedding,Comforters & Duvets,Bed & Bath > Bedding > Comforters & Duvets,3,True,505287,bedding
+C020105,Nbed-bath-bedding,Pillows & Mattress Protectors,Bed & Bath > Bedding > Pillows & Mattress Protectors,3,True,2700,bedding
+C020106,Nbed-bath-bedding,Blankets & Throws,Bed & Bath > Bedding > Blankets & Throws,3,True,1985,textile
+Nbed-bath-bath,Nbed-bath,Bath,Bed & Bath > Bath,2,False,,
+C020201,Nbed-bath-bath,Towels & Bath Mats,Bed & Bath > Bath > Towels & Bath Mats,3,True,576,textile
+C020202,Nbed-bath-bath,Bathroom Accessories,Bed & Bath > Bath > Bathroom Accessories,3,True,574,generic
+Nbed-bath-window-treatments,Nbed-bath,Window Treatments,Bed & Bath > Window Treatments,2,False,,
+C020301,Nbed-bath-window-treatments,Curtains & Drapes,Bed & Bath > Window Treatments > Curtains & Drapes,3,True,2882,textile
+C020302,Nbed-bath-window-treatments,"Blinds, Shades & Curtain Hardware","Bed & Bath > Window Treatments > Blinds, Shades & Curtain Hardware",3,True,2885,generic
+Nkitchen-dining,,Kitchen & Dining,Kitchen & Dining,1,False,,
+Nkitchen-dining-cookware,Nkitchen-dining,Cookware,Kitchen & Dining > Cookware,2,False,,
+C030101,Nkitchen-dining-cookware,Frying Pans & Skillets,Kitchen & Dining > Cookware > Frying Pans & Skillets,3,True,662,cookware
+C030102,Nkitchen-dining-cookware,"Pots, Saucepans & Cookware Sets","Kitchen & Dining > Cookware > Pots, Saucepans & Cookware Sets",3,True,4721,cookware
+Nkitchen-dining-dinnerware-drinkware,Nkitchen-dining,Dinnerware & Drinkware,Kitchen & Dining > Dinnerware & Drinkware,2,False,,
+C030201,Nkitchen-dining-dinnerware-drinkware,"Plates, Bowls & Dinnerware Sets","Kitchen & Dining > Dinnerware & Drinkware > Plates, Bowls & Dinnerware Sets",3,True,3553,tableware
+C030202,Nkitchen-dining-dinnerware-drinkware,"Cups, Mugs & Glasses","Kitchen & Dining > Dinnerware & Drinkware > Cups, Mugs & Glasses",3,True,674,tableware
+C030203,Nkitchen-dining-dinnerware-drinkware,Knives & Cutlery,Kitchen & Dining > Dinnerware & Drinkware > Knives & Cutlery,3,True,675,tableware
+C030204,Nkitchen-dining-dinnerware-drinkware,Water Bottles & Flasks,Kitchen & Dining > Dinnerware & Drinkware > Water Bottles & Flasks,3,True,3809,tableware
+C030205,Nkitchen-dining-dinnerware-drinkware,Table Linen & Disposables,Kitchen & Dining > Dinnerware & Drinkware > Table Linen & Disposables,3,True,2547,textile
+Nkitchen-dining-kitchen-tools-storage,Nkitchen-dining,Kitchen Tools & Storage,Kitchen & Dining > Kitchen Tools & Storage,2,False,,
+C030301,Nkitchen-dining-kitchen-tools-storage,Kitchen Gadgets & Utensils,Kitchen & Dining > Kitchen Tools & Storage > Kitchen Gadgets & Utensils,3,True,668,generic
+C030302,Nkitchen-dining-kitchen-tools-storage,Food Storage,Kitchen & Dining > Kitchen Tools & Storage > Food Storage,3,True,667,generic
+Nkitchen-dining-small-kitchen-appliances,Nkitchen-dining,Small Kitchen Appliances,Kitchen & Dining > Small Kitchen Appliances,2,False,,
+C030401,Nkitchen-dining-small-kitchen-appliances,Coffee Makers,Kitchen & Dining > Small Kitchen Appliances > Coffee Makers,3,True,736,appliance
+C030402,Nkitchen-dining-small-kitchen-appliances,Blenders & Other Small Appliances,Kitchen & Dining > Small Kitchen Appliances > Blenders & Other Small Appliances,3,True,730,appliance
+Nclothing-shoes-accessories,,"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories",1,False,,
+Nclothing-shoes-accessories-shoes,Nclothing-shoes-accessories,Shoes,"Clothing, Shoes & Accessories > Shoes",2,False,,
+C040101,Nclothing-shoes-accessories-shoes,Sneakers & Trainers,"Clothing, Shoes & Accessories > Shoes > Sneakers & Trainers",3,True,187,shoes
+C040102,Nclothing-shoes-accessories-shoes,Running & Sports Shoes,"Clothing, Shoes & Accessories > Shoes > Running & Sports Shoes",3,True,187,shoes
+C040103,Nclothing-shoes-accessories-shoes,Formal & Dress Shoes,"Clothing, Shoes & Accessories > Shoes > Formal & Dress Shoes",3,True,187,shoes
+C040104,Nclothing-shoes-accessories-shoes,Loafers & Moccasins,"Clothing, Shoes & Accessories > Shoes > Loafers & Moccasins",3,True,187,shoes
+C040105,Nclothing-shoes-accessories-shoes,Boots,"Clothing, Shoes & Accessories > Shoes > Boots",3,True,187,shoes
+C040106,Nclothing-shoes-accessories-shoes,Sandals & Slippers,"Clothing, Shoes & Accessories > Shoes > Sandals & Slippers",3,True,187,shoes
+C040107,Nclothing-shoes-accessories-shoes,Flats & Heels,"Clothing, Shoes & Accessories > Shoes > Flats & Heels",3,True,187,shoes
+Nclothing-shoes-accessories-clothing,Nclothing-shoes-accessories,Clothing,"Clothing, Shoes & Accessories > Clothing",2,False,,
+C040201,Nclothing-shoes-accessories-clothing,Tops & T-Shirts,"Clothing, Shoes & Accessories > Clothing > Tops & T-Shirts",3,True,212,apparel
+C040202,Nclothing-shoes-accessories-clothing,Dresses,"Clothing, Shoes & Accessories > Clothing > Dresses",3,True,2271,apparel
+C040203,Nclothing-shoes-accessories-clothing,Outerwear & Knitwear,"Clothing, Shoes & Accessories > Clothing > Outerwear & Knitwear",3,True,203,apparel
+C040204,Nclothing-shoes-accessories-clothing,"Trousers, Jeans & Shorts","Clothing, Shoes & Accessories > Clothing > Trousers, Jeans & Shorts",3,True,204,apparel
+C040205,Nclothing-shoes-accessories-clothing,"Activewear, Socks & Underwear","Clothing, Shoes & Accessories > Clothing > Activewear, Socks & Underwear",3,True,5322,apparel
+Nclothing-shoes-accessories-accessories,Nclothing-shoes-accessories,Accessories,"Clothing, Shoes & Accessories > Accessories",2,False,,
+C040301,Nclothing-shoes-accessories-accessories,Hats & Caps,"Clothing, Shoes & Accessories > Accessories > Hats & Caps",3,True,173,accessory
+C040302,Nclothing-shoes-accessories-accessories,"Scarves, Gloves & Gaiters","Clothing, Shoes & Accessories > Accessories > Scarves, Gloves & Gaiters",3,True,170,accessory
+C040303,Nclothing-shoes-accessories-accessories,Belts & Ties,"Clothing, Shoes & Accessories > Accessories > Belts & Ties",3,True,169,accessory
+C040304,Nclothing-shoes-accessories-accessories,Wallets,"Clothing, Shoes & Accessories > Accessories > Wallets",3,True,2668,accessory
+C040305,Nclothing-shoes-accessories-accessories,Handbags,"Clothing, Shoes & Accessories > Accessories > Handbags",3,True,3032,accessory
+C040306,Nclothing-shoes-accessories-accessories,Backpacks,"Clothing, Shoes & Accessories > Accessories > Backpacks",3,True,100,bag
+C040307,Nclothing-shoes-accessories-accessories,Tote & Carry Bags,"Clothing, Shoes & Accessories > Accessories > Tote & Carry Bags",3,True,5608,bag
+C040308,Nclothing-shoes-accessories-accessories,Sunglasses & Eyewear,"Clothing, Shoes & Accessories > Accessories > Sunglasses & Eyewear",3,True,178,accessory
+C040309,Nclothing-shoes-accessories-accessories,Watches,"Clothing, Shoes & Accessories > Accessories > Watches",3,True,201,jewelry
+C040310,Nclothing-shoes-accessories-accessories,Umbrellas,"Clothing, Shoes & Accessories > Accessories > Umbrellas",3,True,167,accessory
+Nclothing-shoes-accessories-jewelry,Nclothing-shoes-accessories,Jewelry,"Clothing, Shoes & Accessories > Jewelry",2,False,,
+C040401,Nclothing-shoes-accessories-jewelry,Necklaces & Pendants,"Clothing, Shoes & Accessories > Jewelry > Necklaces & Pendants",3,True,196,jewelry
+C040402,Nclothing-shoes-accessories-jewelry,Bracelets & Anklets,"Clothing, Shoes & Accessories > Jewelry > Bracelets & Anklets",3,True,191,jewelry
+C040403,Nclothing-shoes-accessories-jewelry,Rings,"Clothing, Shoes & Accessories > Jewelry > Rings",3,True,200,jewelry
+C040404,Nclothing-shoes-accessories-jewelry,Earrings,"Clothing, Shoes & Accessories > Jewelry > Earrings",3,True,194,jewelry
+C040405,Nclothing-shoes-accessories-jewelry,Jewelry Sets & Storage,"Clothing, Shoes & Accessories > Jewelry > Jewelry Sets & Storage",3,True,6463,jewelry
+Nclothing-shoes-accessories-luggage,Nclothing-shoes-accessories,Luggage,"Clothing, Shoes & Accessories > Luggage",2,False,,
+C040501,Nclothing-shoes-accessories-luggage,Suitcases & Luggage,"Clothing, Shoes & Accessories > Luggage > Suitcases & Luggage",3,True,107,bag
+Nelectronics-accessories,,Electronics & Accessories,Electronics & Accessories,1,False,,
+Nelectronics-accessories-phone-tablet-acc,Nelectronics-accessories,Phone & Tablet Accessories,Electronics & Accessories > Phone & Tablet Accessories,2,False,,
+C050101,Nelectronics-accessories-phone-tablet-acc,Phone & Tablet Cases,Electronics & Accessories > Phone & Tablet Accessories > Phone & Tablet Cases,3,True,2353,phone_case
+C050102,Nelectronics-accessories-phone-tablet-acc,Screen Protectors & Mounts,Electronics & Accessories > Phone & Tablet Accessories > Screen Protectors & Mounts,3,True,5468,phone_case
+C050103,Nelectronics-accessories-phone-tablet-acc,Chargers & Cables,Electronics & Accessories > Phone & Tablet Accessories > Chargers & Cables,3,True,505295,electronics
+Nelectronics-accessories-computer-accesso,Nelectronics-accessories,Computer Accessories,Electronics & Accessories > Computer Accessories,2,False,,
+C050201,Nelectronics-accessories-computer-accesso,Mice & Keyboards,Electronics & Accessories > Computer Accessories > Mice & Keyboards,3,True,1928,electronics
+C050202,Nelectronics-accessories-computer-accesso,Computer Components & Add-ons,Electronics & Accessories > Computer Accessories > Computer Components & Add-ons,3,True,285,electronics
+C050203,Nelectronics-accessories-computer-accesso,Storage Drives & Memory Cards,Electronics & Accessories > Computer Accessories > Storage Drives & Memory Cards,3,True,2414,electronics
+Nelectronics-accessories-audio-video,Nelectronics-accessories,Audio & Video,Electronics & Accessories > Audio & Video,2,False,,
+C050301,Nelectronics-accessories-audio-video,Headphones & Speakers,Electronics & Accessories > Audio & Video > Headphones & Speakers,3,True,505771,electronics
+C050302,Nelectronics-accessories-audio-video,"Video, Camera & Gaming Accessories","Electronics & Accessories > Audio & Video > Video, Camera & Gaming Accessories",3,True,4458,electronics
+Nelectronics-accessories-power,Nelectronics-accessories,Power,Electronics & Accessories > Power,2,False,,
+C050401,Nelectronics-accessories-power,Batteries & Power,Electronics & Accessories > Power > Batteries & Power,3,True,276,electronics
+C050402,Nelectronics-accessories-power,Office & Security Electronics,Electronics & Accessories > Power > Office & Security Electronics,3,True,359,electronics
+Ngrocery-gourmet-food,,Grocery & Gourmet Food,Grocery & Gourmet Food,1,False,,
+Ngrocery-gourmet-food-breakfast-spreads,Ngrocery-gourmet-food,Breakfast & Spreads,Grocery & Gourmet Food > Breakfast & Spreads,2,False,,
+C060101,Ngrocery-gourmet-food-breakfast-spreads,Breakfast Cereals & Granola,Grocery & Gourmet Food > Breakfast & Spreads > Breakfast Cereals & Granola,3,True,4689,food
+C060102,Ngrocery-gourmet-food-breakfast-spreads,Jams & Preserves,Grocery & Gourmet Food > Breakfast & Spreads > Jams & Preserves,3,True,2188,food
+C060103,Ngrocery-gourmet-food-breakfast-spreads,"Honey, Syrups & Nut Butters","Grocery & Gourmet Food > Breakfast & Spreads > Honey, Syrups & Nut Butters",3,True,4947,food
+Ngrocery-gourmet-food-snacks-sweets,Ngrocery-gourmet-food,Snacks & Sweets,Grocery & Gourmet Food > Snacks & Sweets,2,False,,
+Ngrocery-gourmet-food-snacks-sweets-savou,Ngrocery-gourmet-food-snacks-sweets,Savoury Snacks,Grocery & Gourmet Food > Snacks & Sweets > Savoury Snacks,3,False,,
+C060201,Ngrocery-gourmet-food-snacks-sweets-savou,"Crisps, Crackers & Pretzels","Grocery & Gourmet Food > Snacks & Sweets > Savoury Snacks > Crisps, Crackers & Pretzels",4,True,2392,food
+C060202,Ngrocery-gourmet-food-snacks-sweets-savou,"Nuts, Seeds & Trail Mix","Grocery & Gourmet Food > Snacks & Sweets > Savoury Snacks > Nuts, Seeds & Trail Mix",4,True,433,food
+Ngrocery-gourmet-food-snacks-sweets-sweet,Ngrocery-gourmet-food-snacks-sweets,Sweet Snacks,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks,3,False,,
+C060301,Ngrocery-gourmet-food-snacks-sweets-sweet,Biscuits & Cookies,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks > Biscuits & Cookies,4,True,2229,food
+C060302,Ngrocery-gourmet-food-snacks-sweets-sweet,Chocolate & Sweets,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks > Chocolate & Sweets,4,True,4748,food
+C060303,Ngrocery-gourmet-food-snacks-sweets-sweet,Dried Fruit & Fruit Snacks,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks > Dried Fruit & Fruit Snacks,4,True,1755,food
+C060304,Ngrocery-gourmet-food-snacks-sweets-sweet,Snack & Cereal Bars,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks > Snack & Cereal Bars,4,True,5747,food
+Ngrocery-gourmet-food-bakery-fresh,Ngrocery-gourmet-food,Bakery & Fresh,Grocery & Gourmet Food > Bakery & Fresh,2,False,,
+C060401,Ngrocery-gourmet-food-bakery-fresh,"Bread, Cakes & Pastries","Grocery & Gourmet Food > Bakery & Fresh > Bread, Cakes & Pastries",3,True,424,food
+C060402,Ngrocery-gourmet-food-bakery-fresh,Sandwiches & Ready Meals,Grocery & Gourmet Food > Bakery & Fresh > Sandwiches & Ready Meals,3,True,5814,food
+C060403,Ngrocery-gourmet-food-bakery-fresh,Fresh Fruit & Vegetables,Grocery & Gourmet Food > Bakery & Fresh > Fresh Fruit & Vegetables,3,True,5795,food
+C060404,Ngrocery-gourmet-food-bakery-fresh,"Meat, Poultry & Eggs","Grocery & Gourmet Food > Bakery & Fresh > Meat, Poultry & Eggs",3,True,432,food
+Ngrocery-gourmet-food-dairy-chilled,Ngrocery-gourmet-food,Dairy & Chilled,Grocery & Gourmet Food > Dairy & Chilled,2,False,,
+C060501,Ngrocery-gourmet-food-dairy-chilled,Cheese,Grocery & Gourmet Food > Dairy & Chilled > Cheese,3,True,429,food
+C060502,Ngrocery-gourmet-food-dairy-chilled,Yogurt,Grocery & Gourmet Food > Dairy & Chilled > Yogurt,3,True,1954,food
+C060503,Ngrocery-gourmet-food-dairy-chilled,"Milk, Cream & Dairy Drinks","Grocery & Gourmet Food > Dairy & Chilled > Milk, Cream & Dairy Drinks",3,True,418,food
+Ngrocery-gourmet-food-beverages,Ngrocery-gourmet-food,Beverages,Grocery & Gourmet Food > Beverages,2,False,,
+C060601,Ngrocery-gourmet-food-beverages,Coffee,Grocery & Gourmet Food > Beverages > Coffee,3,True,1868,food
+C060602,Ngrocery-gourmet-food-beverages,Tea,Grocery & Gourmet Food > Beverages > Tea,3,True,2073,food
+C060603,Ngrocery-gourmet-food-beverages,Fruit Juices,Grocery & Gourmet Food > Beverages > Fruit Juices,3,True,2887,food
+C060604,Ngrocery-gourmet-food-beverages,Soft Drinks,Grocery & Gourmet Food > Beverages > Soft Drinks,3,True,2628,food
+C060605,Ngrocery-gourmet-food-beverages,Water,Grocery & Gourmet Food > Beverages > Water,3,True,420,food
+C060606,Ngrocery-gourmet-food-beverages,Wine,Grocery & Gourmet Food > Beverages > Wine,3,True,421,food
+Ngrocery-gourmet-food-pantry,Ngrocery-gourmet-food,Pantry,Grocery & Gourmet Food > Pantry,2,False,,
+C060701,Ngrocery-gourmet-food-pantry,Pasta & Noodles,Grocery & Gourmet Food > Pantry > Pasta & Noodles,3,True,434,food
+C060702,Ngrocery-gourmet-food-pantry,"Rice, Grains & Legumes","Grocery & Gourmet Food > Pantry > Rice, Grains & Legumes",3,True,4682,food
+C060703,Ngrocery-gourmet-food-pantry,"Sauces, Soups & Condiments","Grocery & Gourmet Food > Pantry > Sauces, Soups & Condiments",3,True,5759,food
+C060704,Ngrocery-gourmet-food-pantry,Cooking Oils & Vinegar,Grocery & Gourmet Food > Pantry > Cooking Oils & Vinegar,3,True,2126,food
+C060705,Ngrocery-gourmet-food-pantry,"Herbs, Spices & Baking","Grocery & Gourmet Food > Pantry > Herbs, Spices & Baking",3,True,2660,food
+Nhealth-personal-care,,Health & Personal Care,Health & Personal Care,1,False,,
+Nhealth-personal-care-vitamins-supplement,Nhealth-personal-care,Vitamins & Supplements,Health & Personal Care > Vitamins & Supplements,2,False,,
+C070101,Nhealth-personal-care-vitamins-supplement,Vitamins & Supplements,Health & Personal Care > Vitamins & Supplements > Vitamins & Supplements,3,True,525,health
+C070102,Nhealth-personal-care-vitamins-supplement,Protein & Sports Nutrition,Health & Personal Care > Vitamins & Supplements > Protein & Sports Nutrition,3,True,5702,health
+Nhealth-personal-care-personal-care,Nhealth-personal-care,Personal Care,Health & Personal Care > Personal Care,2,False,,
+C070201,Nhealth-personal-care-personal-care,Shampoo & Conditioner,Health & Personal Care > Personal Care > Shampoo & Conditioner,3,True,2441,health
+C070202,Nhealth-personal-care-personal-care,"Body Wash, Soap & Deodorant","Health & Personal Care > Personal Care > Body Wash, Soap & Deodorant",3,True,2747,health
+C070203,Nhealth-personal-care-personal-care,Skin Care & Sunscreen,Health & Personal Care > Personal Care > Skin Care & Sunscreen,3,True,567,health
+C070204,Nhealth-personal-care-personal-care,Oral Care,Health & Personal Care > Personal Care > Oral Care,3,True,526,health
+C070205,Nhealth-personal-care-personal-care,Beauty Tools & Appliances,Health & Personal Care > Personal Care > Beauty Tools & Appliances,3,True,2619,health
+Nhealth-personal-care-health-care,Nhealth-personal-care,Health Care,Health & Personal Care > Health Care,2,False,,
+C070301,Nhealth-personal-care-health-care,"Medicines, First Aid & Supports","Health & Personal Care > Health Care > Medicines, First Aid & Supports",3,True,508,health
+C070302,Nhealth-personal-care-health-care,Baby & Feminine Care,Health & Personal Care > Health Care > Baby & Feminine Care,3,True,548,health
+Nhousehold-supplies,,Household Supplies,Household Supplies,1,False,,
+Nhousehold-supplies-cleaning,Nhousehold-supplies,Cleaning,Household Supplies > Cleaning,2,False,,
+C080101,Nhousehold-supplies-cleaning,Cleaning Products & Tools,Household Supplies > Cleaning > Cleaning Products & Tools,3,True,4973,household
+C080102,Nhousehold-supplies-cleaning,Laundry & Dishwasher Detergents,Household Supplies > Cleaning > Laundry & Dishwasher Detergents,3,True,2754,household
+C080103,Nhousehold-supplies-cleaning,Trash Bags & Bins,Household Supplies > Cleaning > Trash Bags & Bins,3,True,4516,household
+C080104,Nhousehold-supplies-cleaning,Paper Towels & Tissues,Household Supplies > Cleaning > Paper Towels & Tissues,3,True,2530,household
+Nhousehold-supplies-storage-organisation,Nhousehold-supplies,Storage & Organisation,Household Supplies > Storage & Organisation,2,False,,
+C080201,Nhousehold-supplies-storage-organisation,"Storage Boxes, Bins & Baskets","Household Supplies > Storage & Organisation > Storage Boxes, Bins & Baskets",3,True,5631,generic
+C080202,Nhousehold-supplies-storage-organisation,Hooks & Hangers,Household Supplies > Storage & Organisation > Hooks & Hangers,3,True,631,generic
+C080203,Nhousehold-supplies-storage-organisation,Laundry Hampers & Drying Racks,Household Supplies > Storage & Organisation > Laundry Hampers & Drying Racks,3,True,2677,generic
+Noffice-school-supplies,,Office & School Supplies,Office & School Supplies,1,False,,
+Noffice-school-supplies-office-supplies,Noffice-school-supplies,Office Supplies,Office & School Supplies > Office Supplies,2,False,,
+C090101,Noffice-school-supplies-office-supplies,Binders & Folders,Office & School Supplies > Office Supplies > Binders & Folders,3,True,4303,office
+C090102,Noffice-school-supplies-office-supplies,"Paper, Notebooks & Envelopes","Office & School Supplies > Office Supplies > Paper, Notebooks & Envelopes",3,True,956,office
+C090103,Noffice-school-supplies-office-supplies,Pens & Writing Instruments,Office & School Supplies > Office Supplies > Pens & Writing Instruments,3,True,977,office
+C090104,Noffice-school-supplies-office-supplies,Desk Accessories & Whiteboards,Office & School Supplies > Office Supplies > Desk Accessories & Whiteboards,3,True,964,office
+C090105,Noffice-school-supplies-office-supplies,Ink & Toner,Office & School Supplies > Office Supplies > Ink & Toner,3,True,502990,office
+Nsports-outdoors,,Sports & Outdoors,Sports & Outdoors,1,False,,
+Nsports-outdoors-fitness,Nsports-outdoors,Fitness,Sports & Outdoors > Fitness,2,False,,
+C100101,Nsports-outdoors-fitness,Dumbbells & Weights,Sports & Outdoors > Fitness > Dumbbells & Weights,3,True,3164,sports
+C100102,Nsports-outdoors-fitness,"Yoga Mats, Bands & Recovery","Sports & Outdoors > Fitness > Yoga Mats, Bands & Recovery",3,True,3640,sports
+C100103,Nsports-outdoors-fitness,Sports Balls,Sports & Outdoors > Fitness > Sports Balls,3,True,499713,sports
+Nsports-outdoors-outdoor-recreation,Nsports-outdoors,Outdoor Recreation,Sports & Outdoors > Outdoor Recreation,2,False,,
+C100201,Nsports-outdoors-outdoor-recreation,Tents & Camping,Sports & Outdoors > Outdoor Recreation > Tents & Camping,3,True,1022,sports
+Nsports-outdoors-patio-garden,Nsports-outdoors,Patio & Garden,Sports & Outdoors > Patio & Garden,2,False,,
+C100301,Nsports-outdoors-patio-garden,Patio Furniture & Shade,Sports & Outdoors > Patio & Garden > Patio Furniture & Shade,3,True,4299,furniture
+C100302,Nsports-outdoors-patio-garden,Grills & BBQ Accessories,Sports & Outdoors > Patio & Garden > Grills & BBQ Accessories,3,True,3684,generic
+C100303,Nsports-outdoors-patio-garden,Planters & Garden Watering,Sports & Outdoors > Patio & Garden > Planters & Garden Watering,3,True,721,generic
+Ntools-home-improvement,,Tools & Home Improvement,Tools & Home Improvement,1,False,,
+Ntools-home-improvement-tools,Ntools-home-improvement,Tools,Tools & Home Improvement > Tools,2,False,,
+C110101,Ntools-home-improvement-tools,Tools & Tool Accessories,Tools & Home Improvement > Tools > Tools & Tool Accessories,3,True,1167,tools
+Ntools-home-improvement-hardware,Ntools-home-improvement,Hardware,Tools & Home Improvement > Hardware,2,False,,
+C110201,Ntools-home-improvement-hardware,Door & Cabinet Hardware,Tools & Home Improvement > Hardware > Door & Cabinet Hardware,3,True,4696,tools
+C110202,Ntools-home-improvement-hardware,Locks & Safes,Tools & Home Improvement > Hardware > Locks & Safes,3,True,1974,tools
+C110203,Ntools-home-improvement-hardware,Faucets & Plumbing,Tools & Home Improvement > Hardware > Faucets & Plumbing,3,True,133,tools
+C110204,Ntools-home-improvement-hardware,Fasteners & Mechanical Parts,Tools & Home Improvement > Hardware > Fasteners & Mechanical Parts,3,True,2878,tools
+C110205,Ntools-home-improvement-hardware,Safety Equipment,Tools & Home Improvement > Hardware > Safety Equipment,3,True,2047,tools
+Npets-baby-toys,,"Pets, Baby & Toys","Pets, Baby & Toys",1,False,,
+Npets-baby-toys-pet-supplies,Npets-baby-toys,Pet Supplies,"Pets, Baby & Toys > Pet Supplies",2,False,,
+C120101,Npets-baby-toys-pet-supplies,"Pet Beds, Cat Trees & Furniture","Pets, Baby & Toys > Pet Supplies > Pet Beds, Cat Trees & Furniture",3,True,4434,pet
+C120102,Npets-baby-toys-pet-supplies,"Pet Harnesses, Carriers & Apparel","Pets, Baby & Toys > Pet Supplies > Pet Harnesses, Carriers & Apparel",3,True,6249,pet
+C120103,Npets-baby-toys-pet-supplies,Pet Feeding & Food,"Pets, Baby & Toys > Pet Supplies > Pet Feeding & Food",3,True,6252,pet
+Npets-baby-toys-toys-kids,Npets-baby-toys,Toys & Kids,"Pets, Baby & Toys > Toys & Kids",2,False,,
+C120201,Npets-baby-toys-toys-kids,"Toys, Games & Costumes","Pets, Baby & Toys > Toys & Kids > Toys, Games & Costumes",3,True,1253,generic
+Nappliances-automotive,,Appliances & Automotive,Appliances & Automotive,1,False,,
+Nappliances-automotive-home-appliances,Nappliances-automotive,Home Appliances,Appliances & Automotive > Home Appliances,2,False,,
+C130101,Nappliances-automotive-home-appliances,Major Appliances,Appliances & Automotive > Home Appliances > Major Appliances,3,True,604,appliance
+C130102,Nappliances-automotive-home-appliances,Vacuum Cleaners,Appliances & Automotive > Home Appliances > Vacuum Cleaners,3,True,619,appliance
+C130103,Nappliances-automotive-home-appliances,"Fans, Heaters & Water Purifiers","Appliances & Automotive > Home Appliances > Fans, Heaters & Water Purifiers",3,True,621,appliance
+Nappliances-automotive-automotive,Nappliances-automotive,Automotive,Appliances & Automotive > Automotive,2,False,,
+C130201,Nappliances-automotive-automotive,Car Accessories & Parts,Appliances & Automotive > Automotive > Car Accessories & Parts,3,True,913,generic
+Nother,,Other,Other,1,False,,
+Nother-other,Nother,Other,Other > Other,2,False,,
+C140101,Nother-other,Other Products,Other > Other > Other Products,3,True,632,generic

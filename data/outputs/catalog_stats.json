@@ -1,0 +1,50 @@
+{
+ "raw_listings": 22007,
+ "by_source": {
+  "abo": 13165,
+  "off": 6442,
+  "mkb": 2400
+ },
+ "clean_skus": 19789,
+ "parents": 19040,
+ "variant_groups": 442,
+ "skus_in_variant_groups": 1191,
+ "duplicates_merged": 2218,
+ "dup_methods": {
+  "title similarity": 2153,
+  "gtin": 35,
+  "brand+model number": 22
+ },
+ "held_for_review": 689,
+ "active": 19100,
+ "reference_brands": 492,
+ "brand_methods": {
+  "reference": 16838,
+  "new": 2197,
+  "missing": 1791,
+  "variant": 1106,
+  "fuzzy": 75
+ },
+ "colour_methods": {
+  "missing": 11225,
+  "field": 7824,
+  "title": 1377,
+  "unmapped": 1173,
+  "placeholder": 408
+ },
+ "category_methods": {
+  "source category": 16846,
+  "keyword rule": 3179,
+  "other (low confidence)": 848,
+  "text model": 529,
+  "text model (within source group)": 357,
+  "text model (overrode source)": 248
+ },
+ "unit_repair_suggestions": 296,
+ "non_english_titles": 4383,
+ "quality_before": 0.8689,
+ "quality_after": 0.9305,
+ "issues_before": 67830,
+ "issues_after": 37909,
+ "seconds": 382
+}

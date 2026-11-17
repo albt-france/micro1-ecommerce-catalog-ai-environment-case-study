@@ -1,0 +1,52 @@
+{
+ "id": "S051",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 12,
+ "intent": "buy a dining chair matching several constraints",
+ "request": "Looking for a dining chair in grey by Rivet. Budget $119 max.",
+ "constraints": {
+  "category_id": "C010301",
+  "colour": "grey",
+  "brand": "Rivet",
+  "max_price": 119
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "dining chair",
+    "skus": [
+     "ABO-B075YN3GVN"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Felt Gray' in a source listing",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

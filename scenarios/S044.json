@@ -1,0 +1,53 @@
+{
+ "id": "S044",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 8,
+ "intent": "buy a wall clock matching several constraints",
+ "request": "Find me a wall clock in gold by Stone & Beam for less than $183.",
+ "constraints": {
+  "category_id": "C010604",
+  "colour": "gold",
+  "brand": "Stone & Beam",
+  "max_price": 183
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "wall clock",
+    "skus": [
+     "ABO-B071RNV5PK",
+     "ABO-B073WHKXD4"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Bronze' in a source listing; brand also spelled 'Stone & Beam Inc.'",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

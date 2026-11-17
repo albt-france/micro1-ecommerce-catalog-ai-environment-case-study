@@ -1,0 +1,52 @@
+{
+ "id": "S034",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 10,
+ "intent": "buy a curtain matching several constraints",
+ "request": "I need a curtain by AmazonBasics in silver, under $856.",
+ "constraints": {
+  "category_id": "C020301",
+  "colour": "silver",
+  "brand": "AmazonBasics",
+  "max_price": 856
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "curtain",
+    "skus": [
+     "MKB-102120"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'N\u00edquel Satinado' in a source listing",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

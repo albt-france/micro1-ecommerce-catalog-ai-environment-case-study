@@ -1,0 +1,56 @@
+{
+ "id": "S033",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P6",
+  "label": "Gift shopper in the end-of-year season",
+  "price_focus": "low",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Home & Furniture"
+  ]
+ },
+ "month": 7,
+ "intent": "buy a coffee table matching several constraints",
+ "request": "I need a coffee table by Stone & Beam in brown, under $384.",
+ "constraints": {
+  "category_id": "C010104",
+  "colour": "brown",
+  "brand": "Stone & Beam",
+  "max_price": 384
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "coffee table",
+    "skus": [
+     "ABO-B071FJR46L",
+     "ABO-B0728KSP2R",
+     "ABO-B074KLFZRM",
+     "ABO-B074KMVDRS",
+     "ABO-B07B8RYY41",
+     "ABO-B07QGFS4GS"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Walnut/Black' in a source listing",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

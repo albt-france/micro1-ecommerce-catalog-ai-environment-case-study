@@ -1,0 +1,50 @@
+{
+ "id": "S005",
+ "type": "simple_search",
+ "difficulty": 1,
+ "persona": {
+  "id": "P1",
+  "label": "Budget-conscious student",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Office & School Supplies",
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 9,
+ "intent": "buy some crisps of a known brand",
+ "request": "Please find me crisps from Charley's Chips.",
+ "constraints": {
+  "category_id": "C060201",
+  "brand": "Charley's Chips"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "crisps",
+    "skus": [
+     "OFF-0858403004008"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "brand and category respected"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": null,
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

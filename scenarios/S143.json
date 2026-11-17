@@ -1,0 +1,42 @@
+{
+ "id": "S143",
+ "type": "no_answer",
+ "difficulty": 5,
+ "persona": {
+  "id": "P6",
+  "label": "Gift shopper in the end-of-year season",
+  "price_focus": "low",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Home & Furniture"
+  ]
+ },
+ "month": 12,
+ "intent": "ask for something the shop cannot provide",
+ "request": "I need a brown handbag under $9.",
+ "constraints": {
+  "category_id": "C040305",
+  "colour": "brown",
+  "max_price": 9
+ },
+ "expected_action": "no_match",
+ "acceptable_answers": {
+  "roles": [],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "reports that nothing matches",
+   "buys nothing"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 2
+ },
+ "trap": "similar products exist, but none meets every constraint",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

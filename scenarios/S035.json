@@ -1,0 +1,52 @@
+{
+ "id": "S035",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P6",
+  "label": "Gift shopper in the end-of-year season",
+  "price_focus": "low",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Home & Furniture"
+  ]
+ },
+ "month": 9,
+ "intent": "buy a cushion cover matching several constraints",
+ "request": "I need a cushion cover by Rivet in white, under $30.",
+ "constraints": {
+  "category_id": "C010606",
+  "colour": "white",
+  "brand": "Rivet",
+  "max_price": 30
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "cushion cover",
+    "skus": [
+     "ABO-B07BMQ64HR",
+     "ABO-B07JL5Q7FC"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Ivory/Gray' in a source listing; the same product is listed twice across sources",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

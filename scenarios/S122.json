@@ -1,0 +1,54 @@
+{
+ "id": "S122",
+ "type": "ambiguous",
+ "difficulty": 4,
+ "persona": {
+  "id": "P4",
+  "label": "Regular runner replacing kit",
+  "price_focus": "medium",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Sports & Outdoors"
+  ]
+ },
+ "month": 6,
+ "intent": "buy a pair of formal shoes but a key detail is missing",
+ "request": "I need a pair of formal shoes by Symbol.",
+ "constraints": {
+  "category_id": "C040103",
+  "brand": "Symbol",
+  "size": "46"
+ },
+ "expected_action": "ask",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "formal shoes",
+    "skus": [
+     "ABO-B07WN6G78K"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": {
+  "slot": "size",
+  "answer_text": "Size 46.",
+  "why": "size is a required attribute of the category"
+ },
+ "grading": {
+  "criteria": [
+   "asks about the size before adding anything to the cart",
+   "then buys an item that fits the answer"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 5
+ },
+ "trap": "many formal shoes items match; only the size disambiguates",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

@@ -1,0 +1,42 @@
+{
+ "id": "S144",
+ "type": "no_answer",
+ "difficulty": 5,
+ "persona": {
+  "id": "P5",
+  "label": "Small-office manager restocking supplies",
+  "price_focus": "medium",
+  "departments": [
+   "Office & School Supplies",
+   "Household Supplies"
+  ]
+ },
+ "month": 5,
+ "intent": "ask for something the shop cannot provide",
+ "request": "I need a purple binder under $8.",
+ "constraints": {
+  "category_id": "C090101",
+  "colour": "purple",
+  "max_price": 8
+ },
+ "expected_action": "no_match",
+ "acceptable_answers": {
+  "roles": [],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "reports that nothing matches",
+   "buys nothing"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 2
+ },
+ "trap": "similar products exist, but none meets every constraint",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

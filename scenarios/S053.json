@@ -1,0 +1,55 @@
+{
+ "id": "S053",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P4",
+  "label": "Regular runner replacing kit",
+  "price_focus": "medium",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Sports & Outdoors"
+  ]
+ },
+ "month": 10,
+ "intent": "buy a backpack matching several constraints",
+ "request": "I need a backpack by AmazonBasics in red, under $65.",
+ "constraints": {
+  "category_id": "C040306",
+  "colour": "red",
+  "brand": "AmazonBasics",
+  "max_price": 65
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "backpack",
+    "skus": [
+     "ABO-B01AIVT5M4",
+     "ABO-B079LCH6FX",
+     "ABO-B07D811C4R",
+     "ABO-B07FF6ZGH8",
+     "ABO-B07NBWP6YW"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Maroon' in a source listing; the same product is listed twice across sources",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

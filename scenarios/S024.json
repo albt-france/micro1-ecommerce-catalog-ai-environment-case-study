@@ -1,0 +1,50 @@
+{
+ "id": "S024",
+ "type": "simple_search",
+ "difficulty": 1,
+ "persona": {
+  "id": "P1",
+  "label": "Budget-conscious student",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Office & School Supplies",
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 10,
+ "intent": "buy some biscuits of a known brand",
+ "request": "I'm looking for some biscuits by Give and Go Prepared Foods.",
+ "constraints": {
+  "category_id": "C060301",
+  "brand": "Give and Go Prepared Foods"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "biscuits",
+    "skus": [
+     "OFF-0629014015444"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "brand and category respected"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "brand also spelled 'Give and Go Prepared Foods Corp'",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

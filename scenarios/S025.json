@@ -1,0 +1,60 @@
+{
+ "id": "S025",
+ "type": "simple_search",
+ "difficulty": 1,
+ "persona": {
+  "id": "P3",
+  "label": "Parent organising family meals and outings",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Household Supplies"
+  ]
+ },
+ "month": 9,
+ "intent": "buy a breakfast cereal of a known brand",
+ "request": "Please find me breakfast cereal from Kellogg's.",
+ "constraints": {
+  "category_id": "C060101",
+  "brand": "Kellogg's"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "breakfast cereal",
+    "skus": [
+     "OFF-0032000016170",
+     "OFF-0038000124891",
+     "OFF-0038000219436",
+     "OFF-0038000219528",
+     "OFF-0038000219696",
+     "OFF-0038000270093",
+     "OFF-0038000318290",
+     "OFF-5050083392801",
+     "OFF-5053827189026",
+     "OFF-5059319014814",
+     "OFF-56526363",
+     "OFF-7501008057223"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "brand and category respected"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "brand also spelled 'kellogg's'; the same product is listed twice across sources",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

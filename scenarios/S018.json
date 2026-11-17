@@ -1,0 +1,102 @@
+{
+ "id": "S018",
+ "type": "simple_search",
+ "difficulty": 1,
+ "persona": {
+  "id": "P1",
+  "label": "Budget-conscious student",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Office & School Supplies",
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 11,
+ "intent": "buy some pens of a known brand",
+ "request": "I'm looking for some pens by AmazonBasics.",
+ "constraints": {
+  "category_id": "C090103",
+  "brand": "AmazonBasics"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "pens",
+    "skus": [
+     "ABO-B00JKQKAL4",
+     "ABO-B010RLCVR6",
+     "ABO-B017T0RH4A",
+     "ABO-B0188A39B0",
+     "ABO-B0188A3QRM",
+     "ABO-B01MDMFZAS",
+     "ABO-B0739WZ9K3",
+     "ABO-B0739Z9YXP",
+     "ABO-B07BDV7PDL",
+     "ABO-B07BDV7QXS",
+     "ABO-B07BH5FL8H",
+     "ABO-B07CWDT5N3",
+     "ABO-B07CWGPGHL",
+     "ABO-B07CWRYQZ6",
+     "ABO-B07DDCHCDD",
+     "ABO-B07DDCTFBD",
+     "ABO-B07FGNVT1R",
+     "ABO-B07FYKDLTS",
+     "ABO-B07P8KT4WF",
+     "ABO-B07PDSGRLX",
+     "ABO-B07PL4K492",
+     "ABO-B07QNYL7KF",
+     "ABO-B07QPFLQCG",
+     "ABO-B07S3RRHJQ",
+     "ABO-B07S9G3VGF",
+     "ABO-B07SM9CSWT",
+     "ABO-B07SNFK6TP",
+     "ABO-B07VJFW3FJ",
+     "ABO-B07VVB7DSK",
+     "ABO-B07VX9RBXC",
+     "ABO-B07VYKTLD6",
+     "ABO-B07WRLB1MG",
+     "ABO-B07XTF3W8Z",
+     "ABO-B07Y87SKNV",
+     "ABO-B07YF2L8YK",
+     "ABO-B07ZL373YL",
+     "ABO-B081FG172W",
+     "ABO-B086R97RYT",
+     "ABO-B087RKW5NF",
+     "ABO-B087RLLGZ2",
+     "ABO-B087RLXRMW",
+     "ABO-B087RLZY9C",
+     "ABO-B087RMQDPQ",
+     "ABO-B087RMY488",
+     "ABO-B087RNDG39",
+     "ABO-B087TXKP4V",
+     "ABO-B088GG6B91",
+     "ABO-B089MW6B2N",
+     "ABO-B08B426NY2",
+     "MKB-101660",
+     "MKB-101842",
+     "MKB-102336",
+     "MKB-102394"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "brand and category respected"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "brand also spelled 'Amazon\u30d9\u30fc\u30b7\u30c3\u30af(AmazonBasics)'; the same product is listed twice across sources",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

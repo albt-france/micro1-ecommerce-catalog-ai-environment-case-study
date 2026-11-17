@@ -1,0 +1,68 @@
+{
+ "row_counts": {
+  "brand": 2290,
+  "brand_alias": 2758,
+  "category": 212,
+  "attribute": 17,
+  "category_attribute": 581,
+  "product": 19040,
+  "variant": 19789,
+  "price": 19789,
+  "inventory": 19789,
+  "variant_attribute": 19907,
+  "source_listing": 22007
+ },
+ "checks": [
+  {
+   "check": "variants without a product",
+   "result": 0
+  },
+  {
+   "check": "products in a non-leaf category",
+   "result": 0
+  },
+  {
+   "check": "leaves without a Google id",
+   "result": 0
+  },
+  {
+   "check": "SKUs without a price",
+   "result": 0
+  },
+  {
+   "check": "SKUs without stock row",
+   "result": 0
+  },
+  {
+   "check": "required attributes missing (active SKUs)",
+   "result": 9225
+  },
+  {
+   "check": "listings merged into another SKU",
+   "result": 2218
+  },
+  {
+   "check": "parents with 2+ variants",
+   "result": 442
+  },
+  {
+   "check": "max tree depth",
+   "result": 4
+  },
+  {
+   "check": "blue sofas under $700 in stock (filter query an agent tool runs)",
+   "result": 11
+  }
+ ],
+ "documents": 19040,
+ "documents_invalid": 1,
+ "validation_errors_sample": [
+  [
+   "P-ABO-B074VM7J6B",
+   "'Compatible: The Cellvare Micro USB cable is compatible with all micro USB devices such as Samsung S7,S7 Edge, S6, S6 Edge & Note4/5, S4, S3, S2, and also LG, Motorola, Huawei Models. Compatible as well with all speakers such as JBL, Megaboom, Wonderboom, Sony or Samsung and headsets as Sennheiser, Sony, LG, Samsung and so many others' is too long"
+  ]
+ ],
+ "eav_rows": 19907,
+ "impossible_measures_nulled": 148,
+ "avg_variants_per_document": 1.039
+}

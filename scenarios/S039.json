@@ -1,0 +1,51 @@
+{
+ "id": "S039",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P8",
+  "label": "Health-focused grocery shopper",
+  "price_focus": "medium",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Health & Personal Care"
+  ]
+ },
+ "month": 12,
+ "intent": "buy some tea matching several constraints",
+ "request": "I need some tea by Buddha Teas in green, under $7.",
+ "constraints": {
+  "category_id": "C060602",
+  "colour": "green",
+  "brand": "Buddha Teas",
+  "max_price": 7
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "tea",
+    "skus": [
+     "OFF-0819005011641"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": null,
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

@@ -1,0 +1,152 @@
+category_id,path,gpt_id,gpt_path
+C010101,Home & Furniture > Living Room Furniture > Sofas & Couches,460,Furniture > Sofas
+C010102,Home & Furniture > Living Room Furniture > Armchairs & Accent Chairs,6499,"Furniture > Chairs > Arm Chairs, Recliners & Sleeper Chairs"
+C010103,Home & Furniture > Living Room Furniture > Ottomans & Poufs,458,Furniture > Ottomans
+C010104,"Home & Furniture > Living Room Furniture > Coffee Tables, Side Tables & TV Stands",6369,Furniture > Tables > Accent Tables
+C010201,"Home & Furniture > Bedroom Furniture > Beds, Frames & Headboards",505764,Furniture > Beds & Accessories > Beds & Bed Frames
+C010202,Home & Furniture > Bedroom Furniture > Dressers & Chests,4195,Furniture > Cabinets & Storage > Dressers
+C010301,Home & Furniture > Dining Furniture > Dining Chairs,5886,Furniture > Chairs > Kitchen & Dining Room Chairs
+C010302,Home & Furniture > Dining Furniture > Dining Tables,4355,Furniture > Tables > Kitchen & Dining Room Tables
+C010303,Home & Furniture > Dining Furniture > Stools & Benches,1463,Furniture > Chairs > Table & Bar Stools
+C010401,Home & Furniture > Home Office Furniture > Office Chairs,2045,Furniture > Office Furniture > Office Chairs
+C010402,Home & Furniture > Home Office Furniture > Desks,4191,Furniture > Office Furniture > Desks
+C010501,"Home & Furniture > Storage Furniture > Shelves, Cabinets & Bookcases",465,Furniture > Shelving > Bookcases & Standing Shelves
+C010502,Home & Furniture > Storage Furniture > Furniture Covers & Slipcovers,6345,Furniture > Furniture Sets
+C010601,Home & Furniture > Home Decor > Area Rugs,598,Home & Garden > Decor > Rugs
+C010602,"Home & Furniture > Home Decor > Wall Art, Posters & Decals",500044,"Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork"
+C010603,Home & Furniture > Home Decor > Picture Frames,597,Home & Garden > Decor > Picture Frames
+C010604,Home & Furniture > Home Decor > Mirrors & Clocks,595,Home & Garden > Decor > Mirrors
+C010605,"Home & Furniture > Home Decor > Vases, Candles & Home Fragrance",592,Home & Garden > Decor > Home Fragrances
+C010606,Home & Furniture > Home Decor > Decorative Pillows & Cushion Covers,4454,Home & Garden > Decor > Throw Pillows
+C010701,Home & Furniture > Lighting > Table & Floor Lamps,4636,Home & Garden > Lighting > Lamps
+C010702,Home & Furniture > Lighting > Ceiling & Wall Lights,3006,Home & Garden > Lighting > Lighting Fixtures
+C010703,Home & Furniture > Lighting > Light Bulbs & String Lights,2425,Home & Garden > Lighting > Light Bulbs
+C020101,Bed & Bath > Bedding > Sheets & Sheet Sets,2314,Home & Garden > Linens & Bedding > Bedding > Bed Sheets
+C020102,Bed & Bath > Bedding > Pillowcases,2927,Home & Garden > Linens & Bedding > Bedding > Pillowcases & Shams
+C020103,Bed & Bath > Bedding > Duvet Covers & Sets,2541,Home & Garden > Linens & Bedding > Bedding > Duvet Covers
+C020104,Bed & Bath > Bedding > Comforters & Duvets,505287,Home & Garden > Linens & Bedding > Bedding > Quilts & Comforters
+C020105,Bed & Bath > Bedding > Pillows & Mattress Protectors,2700,Home & Garden > Linens & Bedding > Bedding > Pillows
+C020106,Bed & Bath > Bedding > Blankets & Throws,1985,Home & Garden > Linens & Bedding > Bedding > Blankets
+C020201,Bed & Bath > Bath > Towels & Bath Mats,576,Home & Garden > Linens & Bedding > Towels > Bath Towels & Washcloths
+C020202,Bed & Bath > Bath > Bathroom Accessories,574,Home & Garden > Bathroom Accessories
+C020301,Bed & Bath > Window Treatments > Curtains & Drapes,2882,Home & Garden > Decor > Window Treatments > Curtains & Drapes
+C020302,"Bed & Bath > Window Treatments > Blinds, Shades & Curtain Hardware",2885,Home & Garden > Decor > Window Treatments > Window Blinds & Shades
+C030101,Kitchen & Dining > Cookware > Frying Pans & Skillets,662,Home & Garden > Kitchen & Dining > Cookware & Bakeware > Cookware > Skillets & Frying Pans
+C030102,"Kitchen & Dining > Cookware > Pots, Saucepans & Cookware Sets",4721,Home & Garden > Kitchen & Dining > Cookware & Bakeware > Cookware > Cookware Sets
+C030201,"Kitchen & Dining > Dinnerware & Drinkware > Plates, Bowls & Dinnerware Sets",3553,Home & Garden > Kitchen & Dining > Tableware > Dinnerware > Plates
+C030202,"Kitchen & Dining > Dinnerware & Drinkware > Cups, Mugs & Glasses",674,Home & Garden > Kitchen & Dining > Tableware > Drinkware
+C030203,Kitchen & Dining > Dinnerware & Drinkware > Knives & Cutlery,675,Home & Garden > Kitchen & Dining > Tableware > Flatware
+C030204,Kitchen & Dining > Dinnerware & Drinkware > Water Bottles & Flasks,3809,Home & Garden > Kitchen & Dining > Food & Beverage Carriers > Water Bottles
+C030205,Kitchen & Dining > Dinnerware & Drinkware > Table Linen & Disposables,2547,Home & Garden > Linens & Bedding > Table Linens > Placemats
+C030301,Kitchen & Dining > Kitchen Tools & Storage > Kitchen Gadgets & Utensils,668,Home & Garden > Kitchen & Dining > Kitchen Tools & Utensils
+C030302,Kitchen & Dining > Kitchen Tools & Storage > Food Storage,667,Home & Garden > Kitchen & Dining > Food Storage > Food Storage Containers
+C030401,Kitchen & Dining > Small Kitchen Appliances > Coffee Makers,736,Home & Garden > Kitchen & Dining > Kitchen Appliances > Coffee Makers & Espresso Machines
+C030402,Kitchen & Dining > Small Kitchen Appliances > Blenders & Other Small Appliances,730,Home & Garden > Kitchen & Dining > Kitchen Appliances
+C040101,"Clothing, Shoes & Accessories > Shoes > Sneakers & Trainers",187,Apparel & Accessories > Shoes
+C040102,"Clothing, Shoes & Accessories > Shoes > Running & Sports Shoes",187,Apparel & Accessories > Shoes
+C040103,"Clothing, Shoes & Accessories > Shoes > Formal & Dress Shoes",187,Apparel & Accessories > Shoes
+C040104,"Clothing, Shoes & Accessories > Shoes > Loafers & Moccasins",187,Apparel & Accessories > Shoes
+C040105,"Clothing, Shoes & Accessories > Shoes > Boots",187,Apparel & Accessories > Shoes
+C040106,"Clothing, Shoes & Accessories > Shoes > Sandals & Slippers",187,Apparel & Accessories > Shoes
+C040107,"Clothing, Shoes & Accessories > Shoes > Flats & Heels",187,Apparel & Accessories > Shoes
+C040201,"Clothing, Shoes & Accessories > Clothing > Tops & T-Shirts",212,Apparel & Accessories > Clothing > Shirts & Tops
+C040202,"Clothing, Shoes & Accessories > Clothing > Dresses",2271,Apparel & Accessories > Clothing > Dresses
+C040203,"Clothing, Shoes & Accessories > Clothing > Outerwear & Knitwear",203,Apparel & Accessories > Clothing > Outerwear
+C040204,"Clothing, Shoes & Accessories > Clothing > Trousers, Jeans & Shorts",204,Apparel & Accessories > Clothing > Pants
+C040205,"Clothing, Shoes & Accessories > Clothing > Activewear, Socks & Underwear",5322,Apparel & Accessories > Clothing > Activewear
+C040301,"Clothing, Shoes & Accessories > Accessories > Hats & Caps",173,Apparel & Accessories > Clothing Accessories > Hats
+C040302,"Clothing, Shoes & Accessories > Accessories > Scarves, Gloves & Gaiters",170,Apparel & Accessories > Clothing Accessories > Gloves & Mittens
+C040303,"Clothing, Shoes & Accessories > Accessories > Belts & Ties",169,Apparel & Accessories > Clothing Accessories > Belts
+C040304,"Clothing, Shoes & Accessories > Accessories > Wallets",2668,"Apparel & Accessories > Handbags, Wallets & Cases > Wallets & Money Clips"
+C040305,"Clothing, Shoes & Accessories > Accessories > Handbags",3032,"Apparel & Accessories > Handbags, Wallets & Cases > Handbags"
+C040306,"Clothing, Shoes & Accessories > Accessories > Backpacks",100,Luggage & Bags > Backpacks
+C040307,"Clothing, Shoes & Accessories > Accessories > Tote & Carry Bags",5608,Luggage & Bags > Shopping Totes
+C040308,"Clothing, Shoes & Accessories > Accessories > Sunglasses & Eyewear",178,Apparel & Accessories > Clothing Accessories > Sunglasses
+C040309,"Clothing, Shoes & Accessories > Accessories > Watches",201,Apparel & Accessories > Jewelry > Watches
+C040310,"Clothing, Shoes & Accessories > Accessories > Umbrellas",167,Apparel & Accessories > Clothing Accessories
+C040401,"Clothing, Shoes & Accessories > Jewelry > Necklaces & Pendants",196,Apparel & Accessories > Jewelry > Necklaces
+C040402,"Clothing, Shoes & Accessories > Jewelry > Bracelets & Anklets",191,Apparel & Accessories > Jewelry > Bracelets
+C040403,"Clothing, Shoes & Accessories > Jewelry > Rings",200,Apparel & Accessories > Jewelry > Rings
+C040404,"Clothing, Shoes & Accessories > Jewelry > Earrings",194,Apparel & Accessories > Jewelry > Earrings
+C040405,"Clothing, Shoes & Accessories > Jewelry > Jewelry Sets & Storage",6463,Apparel & Accessories > Jewelry > Jewelry Sets
+C040501,"Clothing, Shoes & Accessories > Luggage > Suitcases & Luggage",107,Luggage & Bags > Suitcases
+C050101,Electronics & Accessories > Phone & Tablet Accessories > Phone & Tablet Cases,2353,Electronics > Communications > Telephony > Mobile Phone Accessories > Mobile Phone Cases
+C050102,Electronics & Accessories > Phone & Tablet Accessories > Screen Protectors & Mounts,5468,Electronics > Electronics Accessories > Electronics Films & Shields > Screen Protectors
+C050103,Electronics & Accessories > Phone & Tablet Accessories > Chargers & Cables,505295,Electronics > Electronics Accessories > Power > Power Adapters & Chargers
+C050201,Electronics & Accessories > Computer Accessories > Mice & Keyboards,1928,Electronics > Electronics Accessories > Computer Components > Input Devices
+C050202,Electronics & Accessories > Computer Accessories > Computer Components & Add-ons,285,Electronics > Electronics Accessories > Computer Components
+C050203,Electronics & Accessories > Computer Accessories > Storage Drives & Memory Cards,2414,Electronics > Electronics Accessories > Computer Components > Storage Devices
+C050301,Electronics & Accessories > Audio & Video > Headphones & Speakers,505771,Electronics > Audio > Audio Components > Headphones & Headsets
+C050302,"Electronics & Accessories > Audio & Video > Video, Camera & Gaming Accessories",4458,Electronics > Video > Video Accessories > Television Parts & Accessories > TV & Monitor Mounts
+C050401,Electronics & Accessories > Power > Batteries & Power,276,Electronics > Electronics Accessories > Power > Batteries
+C050402,Electronics & Accessories > Power > Office & Security Electronics,359,Home & Garden > Business & Home Security
+C060101,Grocery & Gourmet Food > Breakfast & Spreads > Breakfast Cereals & Granola,4689,"Food, Beverages & Tobacco > Food Items > Grains, Rice & Cereal > Cereal & Granola"
+C060102,Grocery & Gourmet Food > Breakfast & Spreads > Jams & Preserves,2188,"Food, Beverages & Tobacco > Food Items > Dips & Spreads > Jams & Jellies"
+C060103,"Grocery & Gourmet Food > Breakfast & Spreads > Honey, Syrups & Nut Butters",4947,"Food, Beverages & Tobacco > Food Items > Condiments & Sauces > Honey"
+C060201,"Grocery & Gourmet Food > Snacks & Sweets > Savoury Snacks > Crisps, Crackers & Pretzels",2392,"Food, Beverages & Tobacco > Food Items > Snack Foods > Chips"
+C060202,"Grocery & Gourmet Food > Snacks & Sweets > Savoury Snacks > Nuts, Seeds & Trail Mix",433,"Food, Beverages & Tobacco > Food Items > Nuts & Seeds"
+C060301,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks > Biscuits & Cookies,2229,"Food, Beverages & Tobacco > Food Items > Bakery > Cookies"
+C060302,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks > Chocolate & Sweets,4748,"Food, Beverages & Tobacco > Food Items > Candy & Chocolate"
+C060303,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks > Dried Fruit & Fruit Snacks,1755,"Food, Beverages & Tobacco > Food Items > Fruits & Vegetables > Dried Fruits"
+C060304,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks > Snack & Cereal Bars,5747,"Food, Beverages & Tobacco > Food Items > Snack Foods > Cereal & Granola Bars"
+C060401,"Grocery & Gourmet Food > Bakery & Fresh > Bread, Cakes & Pastries",424,"Food, Beverages & Tobacco > Food Items > Bakery > Breads & Buns"
+C060402,Grocery & Gourmet Food > Bakery & Fresh > Sandwiches & Ready Meals,5814,"Food, Beverages & Tobacco > Food Items > Prepared Foods"
+C060403,Grocery & Gourmet Food > Bakery & Fresh > Fresh Fruit & Vegetables,5795,"Food, Beverages & Tobacco > Food Items > Fruits & Vegetables > Fresh & Frozen Fruits"
+C060404,"Grocery & Gourmet Food > Bakery & Fresh > Meat, Poultry & Eggs",432,"Food, Beverages & Tobacco > Food Items > Meat, Seafood & Eggs"
+C060501,Grocery & Gourmet Food > Dairy & Chilled > Cheese,429,"Food, Beverages & Tobacco > Food Items > Dairy Products > Cheese"
+C060502,Grocery & Gourmet Food > Dairy & Chilled > Yogurt,1954,"Food, Beverages & Tobacco > Food Items > Dairy Products > Yogurt"
+C060503,"Grocery & Gourmet Food > Dairy & Chilled > Milk, Cream & Dairy Drinks",418,"Food, Beverages & Tobacco > Beverages > Milk"
+C060601,Grocery & Gourmet Food > Beverages > Coffee,1868,"Food, Beverages & Tobacco > Beverages > Coffee"
+C060602,Grocery & Gourmet Food > Beverages > Tea,2073,"Food, Beverages & Tobacco > Beverages > Tea & Infusions"
+C060603,Grocery & Gourmet Food > Beverages > Fruit Juices,2887,"Food, Beverages & Tobacco > Beverages > Juice"
+C060604,Grocery & Gourmet Food > Beverages > Soft Drinks,2628,"Food, Beverages & Tobacco > Beverages > Soda"
+C060605,Grocery & Gourmet Food > Beverages > Water,420,"Food, Beverages & Tobacco > Beverages > Water"
+C060606,Grocery & Gourmet Food > Beverages > Wine,421,"Food, Beverages & Tobacco > Beverages > Alcoholic Beverages > Wine"
+C060701,Grocery & Gourmet Food > Pantry > Pasta & Noodles,434,"Food, Beverages & Tobacco > Food Items > Pasta & Noodles"
+C060702,"Grocery & Gourmet Food > Pantry > Rice, Grains & Legumes",4682,"Food, Beverages & Tobacco > Food Items > Grains, Rice & Cereal > Rice"
+C060703,"Grocery & Gourmet Food > Pantry > Sauces, Soups & Condiments",5759,"Food, Beverages & Tobacco > Food Items > Condiments & Sauces > Pasta Sauce"
+C060704,Grocery & Gourmet Food > Pantry > Cooking Oils & Vinegar,2126,"Food, Beverages & Tobacco > Food Items > Cooking & Baking Ingredients > Cooking Oils"
+C060705,"Grocery & Gourmet Food > Pantry > Herbs, Spices & Baking",2660,"Food, Beverages & Tobacco > Food Items > Cooking & Baking Ingredients"
+C070101,Health & Personal Care > Vitamins & Supplements > Vitamins & Supplements,525,Health & Beauty > Health Care > Fitness & Nutrition > Vitamins & Supplements
+C070102,Health & Personal Care > Vitamins & Supplements > Protein & Sports Nutrition,5702,Health & Beauty > Health Care > Fitness & Nutrition > Nutrition Drinks & Shakes
+C070201,Health & Personal Care > Personal Care > Shampoo & Conditioner,2441,Health & Beauty > Personal Care > Hair Care > Shampoo & Conditioner
+C070202,"Health & Personal Care > Personal Care > Body Wash, Soap & Deodorant",2747,Health & Beauty > Personal Care > Cosmetics > Bath & Body > Body Wash
+C070203,Health & Personal Care > Personal Care > Skin Care & Sunscreen,567,Health & Beauty > Personal Care > Cosmetics > Skin Care
+C070204,Health & Personal Care > Personal Care > Oral Care,526,Health & Beauty > Personal Care > Oral Care
+C070205,Health & Personal Care > Personal Care > Beauty Tools & Appliances,2619,Health & Beauty > Personal Care > Cosmetics > Cosmetic Tools
+C070301,"Health & Personal Care > Health Care > Medicines, First Aid & Supports",508,Health & Beauty > Health Care > First Aid
+C070302,Health & Personal Care > Health Care > Baby & Feminine Care,548,Baby & Toddler > Diapering
+C080101,Household Supplies > Cleaning > Cleaning Products & Tools,4973,Home & Garden > Household Supplies > Household Cleaning Supplies > Household Cleaning Products
+C080102,Household Supplies > Cleaning > Laundry & Dishwasher Detergents,2754,Home & Garden > Household Supplies > Laundry Supplies > Laundry Detergent
+C080103,Household Supplies > Cleaning > Trash Bags & Bins,4516,Home & Garden > Household Supplies > Waste Containment
+C080104,Household Supplies > Cleaning > Paper Towels & Tissues,2530,Home & Garden > Household Supplies > Household Paper Products
+C080201,"Household Supplies > Storage & Organisation > Storage Boxes, Bins & Baskets",5631,Home & Garden > Household Supplies > Storage & Organization > Household Storage Containers
+C080202,Household Supplies > Storage & Organisation > Hooks & Hangers,631,Home & Garden > Household Supplies > Storage & Organization > Clothing & Closet Storage > Hangers
+C080203,Household Supplies > Storage & Organisation > Laundry Hampers & Drying Racks,2677,Home & Garden > Household Supplies > Laundry Supplies > Drying Racks & Hangers
+C090101,Office & School Supplies > Office Supplies > Binders & Folders,4303,Office Supplies > Filing & Organization > Binding Supplies > Binders
+C090102,"Office & School Supplies > Office Supplies > Paper, Notebooks & Envelopes",956,Office Supplies > General Office Supplies > Paper Products
+C090103,Office & School Supplies > Office Supplies > Pens & Writing Instruments,977,Office Supplies > Office Instruments > Writing & Drawing Instruments
+C090104,Office & School Supplies > Office Supplies > Desk Accessories & Whiteboards,964,Office Supplies > Presentation Supplies
+C090105,Office & School Supplies > Office Supplies > Ink & Toner,502990,"Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories"
+C100101,Sports & Outdoors > Fitness > Dumbbells & Weights,3164,Sporting Goods > Exercise & Fitness > Weight Lifting > Free Weights
+C100102,"Sports & Outdoors > Fitness > Yoga Mats, Bands & Recovery",3640,Sporting Goods > Exercise & Fitness > Yoga & Pilates > Yoga & Pilates Mats
+C100103,Sports & Outdoors > Fitness > Sports Balls,499713,Sporting Goods > Athletics
+C100201,Sports & Outdoors > Outdoor Recreation > Tents & Camping,1022,Sporting Goods > Outdoor Recreation > Camping & Hiking > Tents
+C100301,Sports & Outdoors > Patio & Garden > Patio Furniture & Shade,4299,Furniture > Outdoor Furniture
+C100302,Sports & Outdoors > Patio & Garden > Grills & BBQ Accessories,3684,Home & Garden > Kitchen & Dining > Kitchen Appliance Accessories > Outdoor Grill Accessories
+C100303,Sports & Outdoors > Patio & Garden > Planters & Garden Watering,721,Home & Garden > Lawn & Garden > Gardening > Pots & Planters
+C110101,Tools & Home Improvement > Tools > Tools & Tool Accessories,1167,Hardware > Tools
+C110201,Tools & Home Improvement > Hardware > Door & Cabinet Hardware,4696,Hardware > Hardware Accessories > Cabinet Hardware
+C110202,Tools & Home Improvement > Hardware > Locks & Safes,1974,Hardware > Locks & Keys
+C110203,Tools & Home Improvement > Hardware > Faucets & Plumbing,133,Hardware > Plumbing
+C110204,Tools & Home Improvement > Hardware > Fasteners & Mechanical Parts,2878,Hardware > Hardware Accessories
+C110205,Tools & Home Improvement > Hardware > Safety Equipment,2047,Business & Industrial > Work Safety Protective Gear
+C120101,"Pets, Baby & Toys > Pet Supplies > Pet Beds, Cat Trees & Furniture",4434,Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Beds
+C120102,"Pets, Baby & Toys > Pet Supplies > Pet Harnesses, Carriers & Apparel",6249,Animals & Pet Supplies > Pet Supplies > Pet Leashes
+C120103,"Pets, Baby & Toys > Pet Supplies > Pet Feeding & Food",6252,"Animals & Pet Supplies > Pet Supplies > Pet Bowls, Feeders & Waterers"
+C120201,"Pets, Baby & Toys > Toys & Kids > Toys, Games & Costumes",1253,Toys & Games > Toys
+C130101,Appliances & Automotive > Home Appliances > Major Appliances,604,Home & Garden > Household Appliances
+C130102,Appliances & Automotive > Home Appliances > Vacuum Cleaners,619,Home & Garden > Household Appliances > Vacuums
+C130103,"Appliances & Automotive > Home Appliances > Fans, Heaters & Water Purifiers",621,Home & Garden > Household Appliances > Water Heaters
+C130201,Appliances & Automotive > Automotive > Car Accessories & Parts,913,"Vehicles & Parts > Vehicle Parts & Accessories > Vehicle Maintenance, Care & Decor"
+C140101,Other > Other > Other Products,632,Hardware

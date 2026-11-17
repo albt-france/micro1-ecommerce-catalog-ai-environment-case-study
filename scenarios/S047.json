@@ -1,0 +1,68 @@
+{
+ "id": "S047",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 3,
+ "intent": "buy a sheet set matching several constraints",
+ "request": "Find me a sheet set in blue by AmazonBasics for less than $48.",
+ "constraints": {
+  "category_id": "C020101",
+  "colour": "blue",
+  "brand": "AmazonBasics",
+  "max_price": 48
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "sheet set",
+    "skus": [
+     "ABO-B00Q4THWRA",
+     "ABO-B00R5W8Y72",
+     "ABO-B01M0QI540",
+     "ABO-B06WD3YTJ7",
+     "ABO-B072P2QDQS",
+     "ABO-B07C3WRF9D",
+     "ABO-B07C3WTPGL",
+     "ABO-B07DHYHT2T",
+     "ABO-B07DHYHTZD",
+     "ABO-B07DHYV9XZ",
+     "ABO-B07DJB6Y14",
+     "ABO-B07KZ7DWBC",
+     "ABO-B07KZ8LJYX",
+     "ABO-B07PG94LHT",
+     "ABO-B07RDZ1F8G",
+     "ABO-B07T5VYFCX",
+     "ABO-B07T5W8V88"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Cool Aqua' in a source listing; brand also spelled 'AMAZONBASICS'",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

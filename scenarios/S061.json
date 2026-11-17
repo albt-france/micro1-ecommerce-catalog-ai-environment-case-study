@@ -1,0 +1,47 @@
+{
+ "id": "S061",
+ "type": "comparison",
+ "difficulty": 3,
+ "persona": {
+  "id": "P7",
+  "label": "Phone owner needing accessories",
+  "price_focus": "high",
+  "departments": [
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 11,
+ "intent": "compare charger options and buy the best one",
+ "request": "Buy the cheapest charger available.",
+ "constraints": {
+  "category_id": "C050103",
+  "max_price": 7.49
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "charger",
+    "skus": [
+     "ABO-B082T67QP9"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item has the lowest price among matching in-stock items"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "out-of-stock or held items can look cheaper in search results",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

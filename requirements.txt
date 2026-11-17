@@ -1,0 +1,21 @@
+# Python 3.13
+pandas==3.1.1
+numpy==2.5.5
+scipy==1.18.1
+pyarrow==26.0.1
+duckdb==2.0.0
+pyyaml==6.0.3
+rapidfuzz==3.14.6
+requests==2.34.2
+scikit-learn==1.9.1
+jsonschema==4.26.0
+matplotlib==3.11.2
+plotly==7.1.0
+jinja2==3.1.6
+openpyxl==3.1.5
+pypdf==7.1.0
+nbformat==5.11.1
+nbconvert==7.17.2
+ipykernel==7.4.0
+pytest==9.2.0
+# PDF and page images: Microsoft Edge (headless). MongoDB is optional.

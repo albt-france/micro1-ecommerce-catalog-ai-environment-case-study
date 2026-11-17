@@ -1,0 +1,293 @@
+{
+ "$jsonSchema": {
+  "description": "One parent product with its variants and attributes nested (MongoDB-style document). Validated by src/build_schema.py; a MongoDB $jsonSchema version is in schema/mongo_validator.json.",
+  "bsonType": "object",
+  "required": [
+   "_id",
+   "title",
+   "category",
+   "variants",
+   "updated_from"
+  ],
+  "additionalProperties": false,
+  "properties": {
+   "_id": {
+    "bsonType": "string",
+    "pattern": "^P-[A-Za-z0-9-]+$"
+   },
+   "brand": {
+    "bsonType": [
+     "object",
+     "null"
+    ],
+    "required": [
+     "name",
+     "key"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "name": {
+      "bsonType": "string"
+     },
+     "key": {
+      "bsonType": "string",
+      "pattern": "^[^\\s]+$"
+     }
+    }
+   },
+   "category": {
+    "bsonType": "object",
+    "required": [
+     "id",
+     "path",
+     "google_id"
+    ],
+    "additionalProperties": false,
+    "properties": {
+     "id": {
+      "bsonType": "string",
+      "pattern": "^C\\d{6}$"
+     },
+     "path": {
+      "bsonType": "array",
+      "items": {
+       "bsonType": "string"
+      },
+      "minItems": 3,
+      "maxItems": 4
+     },
+     "google_id": {
+      "bsonType": "int",
+      "minimum": 1
+     }
+    }
+   },
+   "gender": {
+    "enum": [
+     "men",
+     "women",
+     "unisex",
+     "kids",
+     null
+    ]
+   },
+   "language": {
+    "bsonType": "string",
+    "pattern": "^[a-z]{2}$"
+   },
+   "description": {
+    "bsonType": [
+     "string",
+     "null"
+    ]
+   },
+   "attributes": {
+    "description": "Long-tail attributes: open set, but each value must be a string, number or list of strings.",
+    "bsonType": "object",
+    "additionalProperties": {
+     "bsonType": [
+      "string",
+      "double",
+      "array"
+     ],
+     "items": {
+      "bsonType": "string"
+     }
+    }
+   },
+   "variants": {
+    "bsonType": "array",
+    "minItems": 1,
+    "items": {
+     "bsonType": "object",
+     "required": [
+      "sku",
+      "price",
+      "stock",
+      "status"
+     ],
+     "additionalProperties": false,
+     "properties": {
+      "sku": {
+       "bsonType": "string",
+       "pattern": "^(ABO|OFF|MKB)-[A-Za-z0-9-]+$"
+      },
+      "colour": {
+       "enum": [
+        "black",
+        "white",
+        "grey",
+        "silver",
+        "gold",
+        "brown",
+        "beige",
+        "red",
+        "pink",
+        "orange",
+        "yellow",
+        "green",
+        "blue",
+        "purple",
+        "multicolour",
+        "clear",
+        null
+       ]
+      },
+      "size": {
+       "bsonType": [
+        "string",
+        "null"
+       ]
+      },
+      "material": {
+       "bsonType": [
+        "string",
+        "null"
+       ]
+      },
+      "dimensions_cm": {
+       "bsonType": "object",
+       "additionalProperties": false,
+       "properties": {
+        "length": {
+         "bsonType": "double",
+         "minimum": 0,
+         "exclusiveMinimum": true
+        },
+        "width": {
+         "bsonType": "double",
+         "minimum": 0,
+         "exclusiveMinimum": true
+        },
+        "height": {
+         "bsonType": "double",
+         "minimum": 0,
+         "exclusiveMinimum": true
+        }
+       }
+      },
+      "weight_g": {
+       "bsonType": "double",
+       "minimum": 0,
+       "exclusiveMinimum": true
+      },
+      "net_quantity": {
+       "bsonType": "object",
+       "required": [
+        "value",
+        "unit"
+       ],
+       "additionalProperties": false,
+       "properties": {
+        "value": {
+         "bsonType": "double",
+         "minimum": 0,
+         "exclusiveMinimum": true
+        },
+        "unit": {
+         "enum": [
+          "g",
+          "ml"
+         ]
+        }
+       }
+      },
+      "capacity_ml": {
+       "bsonType": "double",
+       "minimum": 0,
+       "exclusiveMinimum": true
+      },
+      "pack_count": {
+       "bsonType": "int",
+       "minimum": 1
+      },
+      "gtin": {
+       "bsonType": "string",
+       "pattern": "^\\d{8,14}$"
+      },
+      "price": {
+       "bsonType": "object",
+       "required": [
+        "amount",
+        "currency"
+       ],
+       "additionalProperties": false,
+       "properties": {
+        "amount": {
+         "bsonType": "double",
+         "minimum": 0
+        },
+        "currency": {
+         "enum": [
+          "USD"
+         ]
+        }
+       }
+      },
+      "stock": {
+       "bsonType": "object",
+       "required": [
+        "qty",
+        "in_stock"
+       ],
+       "additionalProperties": false,
+       "properties": {
+        "qty": {
+         "bsonType": "int",
+         "minimum": 0
+        },
+        "in_stock": {
+         "bsonType": "bool"
+        }
+       }
+      },
+      "status": {
+       "enum": [
+        "active",
+        "held for review"
+       ]
+      },
+      "quality_score": {
+       "bsonType": "double",
+       "minimum": 0,
+       "maximum": 1
+      },
+      "sources": {
+       "bsonType": "array",
+       "items": {
+        "bsonType": "object",
+        "required": [
+         "source",
+         "id"
+        ],
+        "additionalProperties": false,
+        "properties": {
+         "source": {
+          "enum": [
+           "abo",
+           "off",
+           "mkb"
+          ]
+         },
+         "id": {
+          "bsonType": "string"
+         },
+         "match": {
+          "bsonType": [
+           "string",
+           "null"
+          ]
+         }
+        }
+       }
+      }
+     }
+    }
+   },
+   "updated_from": {
+    "bsonType": "string",
+    "description": "Pipeline version that produced the document"
+   }
+  }
+ }
+}

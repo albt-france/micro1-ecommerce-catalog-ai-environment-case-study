@@ -1,0 +1,50 @@
+{
+ "id": "S016",
+ "type": "simple_search",
+ "difficulty": 1,
+ "persona": {
+  "id": "P1",
+  "label": "Budget-conscious student",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Office & School Supplies",
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 10,
+ "intent": "buy a breakfast cereal of a known brand",
+ "request": "I'm looking for a breakfast cereal by Organix.",
+ "constraints": {
+  "category_id": "C060101",
+  "brand": "Organix"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "breakfast cereal",
+    "skus": [
+     "OFF-5024121226311"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "brand and category respected"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": null,
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

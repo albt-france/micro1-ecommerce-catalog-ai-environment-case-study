@@ -1,0 +1,53 @@
+{
+ "id": "S032",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P4",
+  "label": "Regular runner replacing kit",
+  "price_focus": "medium",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Sports & Outdoors"
+  ]
+ },
+ "month": 12,
+ "intent": "buy a pair of earrings matching several constraints",
+ "request": "Find me a pair of earrings in gold by Amazon Collection for less than $22.",
+ "constraints": {
+  "category_id": "C040404",
+  "colour": "gold",
+  "brand": "Amazon Collection",
+  "max_price": 22
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "earrings",
+    "skus": [
+     "ABO-B07ZD4B8DJ",
+     "ABO-B07ZQFNMGX",
+     "MKB-102227"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Rose Gold' in a source listing",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

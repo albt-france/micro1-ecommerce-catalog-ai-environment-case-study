@@ -1,0 +1,59 @@
+{
+ "id": "S067",
+ "type": "comparison",
+ "difficulty": 3,
+ "persona": {
+  "id": "P1",
+  "label": "Budget-conscious student",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Office & School Supplies",
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 9,
+ "intent": "compare chocolate options and buy the best one",
+ "request": "Buy the cheapest chocolate available.",
+ "constraints": {
+  "category_id": "C060302",
+  "max_price": 1.49
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "chocolate",
+    "skus": [
+     "OFF-0041497025909",
+     "OFF-0076580156857",
+     "OFF-0085239194683",
+     "OFF-0747599612749",
+     "OFF-0894162002039",
+     "OFF-5010525126500",
+     "OFF-5011835103823",
+     "OFF-5060137140531",
+     "OFF-5060430551775",
+     "OFF-5400113614371",
+     "OFF-8593893776104"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item has the lowest price among matching in-stock items"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "out-of-stock or held items can look cheaper in search results",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "id": "S116",
+ "type": "ambiguous",
+ "difficulty": 4,
+ "persona": {
+  "id": "P6",
+  "label": "Gift shopper in the end-of-year season",
+  "price_focus": "low",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Home & Furniture"
+  ]
+ },
+ "month": 9,
+ "intent": "buy a pair of sneakers but a key detail is missing",
+ "request": "I need a pair of sneakers by House & Shields.",
+ "constraints": {
+  "category_id": "C040101",
+  "brand": "House & Shields",
+  "size": "40.5"
+ },
+ "expected_action": "ask",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "sneakers",
+    "skus": [
+     "ABO-B07VSYNG1S"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": {
+  "slot": "size",
+  "answer_text": "Size 40.5.",
+  "why": "size is a required attribute of the category"
+ },
+ "grading": {
+  "criteria": [
+   "asks about the size before adding anything to the cart",
+   "then buys an item that fits the answer"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 5
+ },
+ "trap": "many sneakers items match; only the size disambiguates",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

@@ -1,0 +1,54 @@
+{
+ "id": "S077",
+ "type": "substitution",
+ "difficulty": 3,
+ "persona": {
+  "id": "P8",
+  "label": "Health-focused grocery shopper",
+  "price_focus": "medium",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Health & Personal Care"
+  ]
+ },
+ "month": 11,
+ "intent": "replace a sold-out product",
+ "request": "I wanted to buy SKU OFF-0876941009644 (Mini chocolate chip cookies, mini chocolate chip) but it is out of stock. Find me the closest in-stock alternative from the same category in the same colour (brown), under $2.",
+ "constraints": {
+  "category_id": "C060301",
+  "max_price": 2,
+  "colour": "brown"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "biscuits",
+    "skus": [
+     "OFF-0030100757467",
+     "OFF-0044000055752",
+     "OFF-0044000058036"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in stock, same category",
+   "colour/size kept",
+   "within budget"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 4
+ },
+ "trap": "the requested SKU is out of stock: add_to_cart fails on it",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ],
+ "sold_out_sku": "OFF-0876941009644"
+}

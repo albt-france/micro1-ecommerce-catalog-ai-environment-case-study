@@ -1,0 +1,59 @@
+{
+ "id": "S085",
+ "type": "substitution",
+ "difficulty": 3,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 3,
+ "intent": "replace a sold-out product",
+ "request": "I wanted to buy SKU ABO-B07K9RM2S3 ((Renewed) Solimo Wall-Mounted Wall Shelf with Key Hook (Matte Finish, ) but it is out of stock. Find me the closest in-stock alternative from the same category in the same colour (brown), under $35.",
+ "constraints": {
+  "category_id": "C010501",
+  "max_price": 35,
+  "colour": "brown"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "bookcase",
+    "skus": [
+     "ABO-B073RK3H2G",
+     "ABO-B073RK8NQN",
+     "ABO-B073RL92DW",
+     "ABO-B07JZ7RK6W",
+     "ABO-B07Y73R54G",
+     "ABO-B08GGSFH94",
+     "MKB-101534"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in stock, same category",
+   "colour/size kept",
+   "within budget"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 4
+ },
+ "trap": "the requested SKU is out of stock: add_to_cart fails on it",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ],
+ "sold_out_sku": "ABO-B07K9RM2S3"
+}

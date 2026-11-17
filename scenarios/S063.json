@@ -1,0 +1,48 @@
+{
+ "id": "S063",
+ "type": "comparison",
+ "difficulty": 3,
+ "persona": {
+  "id": "P3",
+  "label": "Parent organising family meals and outings",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Household Supplies"
+  ]
+ },
+ "month": 9,
+ "intent": "compare crisps options and buy the best one",
+ "request": "Buy the lightest crisps you have.",
+ "constraints": {
+  "category_id": "C060201",
+  "max_weight_g": 28.4
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "crisps",
+    "skus": [
+     "ABO-B07PFWPHQ1"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item has the lowest weight in the category (2 % tolerance)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "out-of-stock or held items can look cheaper in search results",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

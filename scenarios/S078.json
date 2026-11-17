@@ -1,0 +1,53 @@
+{
+ "id": "S078",
+ "type": "substitution",
+ "difficulty": 3,
+ "persona": {
+  "id": "P7",
+  "label": "Phone owner needing accessories",
+  "price_focus": "high",
+  "departments": [
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 12,
+ "intent": "replace a sold-out product",
+ "request": "I wanted to buy SKU ABO-B075XVTSP2 (AmazonBasics Portable Charger/Power Bank, 3,350 mAh, Gold) but it is out of stock. Find me the closest in-stock alternative from the same category in the same colour (gold), under $24.",
+ "constraints": {
+  "category_id": "C050103",
+  "max_price": 24,
+  "colour": "gold"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "charger",
+    "skus": [
+     "ABO-B07XS5J1QX",
+     "ABO-B082T67QP9",
+     "MKB-101321"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in stock, same category",
+   "colour/size kept",
+   "within budget"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 4
+ },
+ "trap": "the requested SKU is out of stock: add_to_cart fails on it",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ],
+ "sold_out_sku": "ABO-B075XVTSP2"
+}

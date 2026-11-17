@@ -1,0 +1,51 @@
+{
+ "id": "S001",
+ "type": "simple_search",
+ "difficulty": 1,
+ "persona": {
+  "id": "P3",
+  "label": "Parent organising family meals and outings",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Household Supplies"
+  ]
+ },
+ "month": 11,
+ "intent": "buy a breakfast cereal of a known brand",
+ "request": "Can you get me a breakfast cereal by Bob's Red Mill?",
+ "constraints": {
+  "category_id": "C060101",
+  "brand": "Bob's Red Mill"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "breakfast cereal",
+    "skus": [
+     "OFF-0039978003645",
+     "OFF-06925895",
+     "OFF-0939578031874"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "brand and category respected"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": null,
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

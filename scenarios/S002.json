@@ -1,0 +1,49 @@
+{
+ "id": "S002",
+ "type": "simple_search",
+ "difficulty": 1,
+ "persona": {
+  "id": "P8",
+  "label": "Health-focused grocery shopper",
+  "price_focus": "medium",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Health & Personal Care"
+  ]
+ },
+ "month": 2,
+ "intent": "buy some olive oil of a known brand",
+ "request": "I'm looking for some olive oil by Harris Teeter Organics.",
+ "constraints": {
+  "category_id": "C060704",
+  "brand": "Harris Teeter Organics"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "olive oil",
+    "skus": [
+     "OFF-0072036724717"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "brand and category respected"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": null,
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

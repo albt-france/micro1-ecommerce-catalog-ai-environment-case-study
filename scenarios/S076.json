@@ -1,0 +1,112 @@
+{
+ "id": "S076",
+ "type": "substitution",
+ "difficulty": 3,
+ "persona": {
+  "id": "P8",
+  "label": "Health-focused grocery shopper",
+  "price_focus": "medium",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Health & Personal Care"
+  ]
+ },
+ "month": 12,
+ "intent": "replace a sold-out product",
+ "request": "I wanted to buy SKU ABO-B07GS65BBP (Lutrovita Children Sugar Free Multi Vitamin Mix, 150 Count) but it is out of stock. Find me the closest in-stock alternative from the same category, under $14.",
+ "constraints": {
+  "category_id": "C070101",
+  "max_price": 14
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "vitamins",
+    "skus": [
+     "ABO-B01L081K0O",
+     "ABO-B074H5LYQD",
+     "ABO-B074H5M1KZ",
+     "ABO-B074H64BNB",
+     "ABO-B074H6F6HF",
+     "ABO-B074H6PJXW",
+     "ABO-B074H6PK3B",
+     "ABO-B074H6R39L",
+     "ABO-B074H6R6DQ",
+     "ABO-B074H6YNKK",
+     "ABO-B074H73HSS",
+     "ABO-B074H7CBWL",
+     "ABO-B074H7K3HZ",
+     "ABO-B074KKKMBP",
+     "ABO-B074MFYGVP",
+     "ABO-B074MGJ6HT",
+     "ABO-B074MGJZT4",
+     "ABO-B074MGK12Q",
+     "ABO-B074MGVXF5",
+     "ABO-B074MH1W2T",
+     "ABO-B074MH6GRX",
+     "ABO-B074MHDHQZ",
+     "ABO-B074MHGDGX",
+     "ABO-B074MJ5PT2",
+     "ABO-B075DLLC4Z",
+     "ABO-B075MBSCJW",
+     "ABO-B078465XC2",
+     "ABO-B079C7H8LR",
+     "ABO-B07BBLDC4M",
+     "ABO-B07BFRVP95",
+     "ABO-B07CJNHQ6J",
+     "ABO-B07CJR2VMF",
+     "ABO-B07CSNKC16",
+     "ABO-B07DDD56VF",
+     "ABO-B07DR17K47",
+     "ABO-B07DR6DS4Z",
+     "ABO-B07GT535GM",
+     "ABO-B07GTBGSL3",
+     "ABO-B07GTCBVN1",
+     "ABO-B07GTCCCV3",
+     "ABO-B07GTFT5K8",
+     "ABO-B07HG4TD2D",
+     "ABO-B07HPC9HRR",
+     "ABO-B07NRTQLXJ",
+     "ABO-B07PPHMWTD",
+     "ABO-B07PSTSDFL",
+     "ABO-B07QP8HJDV",
+     "ABO-B07RHV1G43",
+     "ABO-B07RJY1XM6",
+     "ABO-B07RM2ZNRP",
+     "ABO-B07RM3WJZN",
+     "ABO-B07RM4L3FG",
+     "ABO-B083V9RS1M",
+     "ABO-B083V9Y3Y3",
+     "ABO-B083VB1WCN",
+     "ABO-B083VBFLC5",
+     "ABO-B083VBFQMD",
+     "ABO-B083VBGPXH",
+     "ABO-B089GQ2QCG",
+     "MKB-100599",
+     "MKB-102099",
+     "MKB-102255"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in stock, same category",
+   "colour/size kept",
+   "within budget"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 4
+ },
+ "trap": "the requested SKU is out of stock: add_to_cart fails on it",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ],
+ "sold_out_sku": "ABO-B07GS65BBP"
+}

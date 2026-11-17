@@ -1,0 +1,54 @@
+{
+ "sample": 200,
+ "ambiguous_in_sample": 13,
+ "final_accuracy": 0.775,
+ "final_accuracy_unambiguous": 0.824,
+ "department_accuracy": 0.875,
+ "in_other": 8,
+ "precision_by_method": [
+  {
+   "category_method": "keyword rule",
+   "n": 24,
+   "precision": 0.833
+  },
+  {
+   "category_method": "other (low confidence)",
+   "n": 8,
+   "precision": 0.0
+  },
+  {
+   "category_method": "source category",
+   "n": 156,
+   "precision": 0.833
+  },
+  {
+   "category_method": "text model",
+   "n": 5,
+   "precision": 0.4
+  },
+  {
+   "category_method": "text model (overrode source)",
+   "n": 3,
+   "precision": 0.667
+  },
+  {
+   "category_method": "text model (within source group)",
+   "n": 4,
+   "precision": 0.25
+  }
+ ],
+ "rules_precision": 0.825,
+ "rules_coverage": 0.915,
+ "model_precision": 0.715,
+ "model_precision_proba_0.8": 0.908,
+ "model_share_proba_0.8": 0.595,
+ "method_share_all_listings": {
+  "source category": 0.7655,
+  "keyword rule": 0.1445,
+  "other (low confidence)": 0.0385,
+  "text model": 0.024,
+  "text model (within source group)": 0.0162,
+  "text model (overrode source)": 0.0113
+ },
+ "other_share_catalogue": 0.0391
+}

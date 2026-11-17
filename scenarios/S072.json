@@ -1,0 +1,49 @@
+{
+ "id": "S072",
+ "type": "comparison",
+ "difficulty": 3,
+ "persona": {
+  "id": "P4",
+  "label": "Regular runner replacing kit",
+  "price_focus": "medium",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Sports & Outdoors"
+  ]
+ },
+ "month": 8,
+ "intent": "compare handbag options and buy the best one",
+ "request": "Buy the cheapest handbag in silver available.",
+ "constraints": {
+  "category_id": "C040305",
+  "colour": "silver",
+  "max_price": 31.99
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "handbag",
+    "skus": [
+     "ABO-B083TG1MH8"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item has the lowest price among matching in-stock items"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Metallic Silver' in a source listing",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

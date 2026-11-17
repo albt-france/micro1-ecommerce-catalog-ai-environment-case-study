@@ -1,0 +1,42 @@
+{
+ "id": "S150",
+ "type": "no_answer",
+ "difficulty": 5,
+ "persona": {
+  "id": "P4",
+  "label": "Regular runner replacing kit",
+  "price_focus": "medium",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Sports & Outdoors"
+  ]
+ },
+ "month": 8,
+ "intent": "ask for something the shop cannot provide",
+ "request": "I need a beige yoga mat under $13.",
+ "constraints": {
+  "category_id": "C100102",
+  "colour": "beige",
+  "max_price": 13
+ },
+ "expected_action": "no_match",
+ "acceptable_answers": {
+  "roles": [],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "reports that nothing matches",
+   "buys nothing"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 2
+ },
+ "trap": "similar products exist, but none meets every constraint",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

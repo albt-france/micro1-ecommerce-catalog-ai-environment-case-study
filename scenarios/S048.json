@@ -1,0 +1,65 @@
+{
+ "id": "S048",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P4",
+  "label": "Regular runner replacing kit",
+  "price_focus": "medium",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Sports & Outdoors"
+  ]
+ },
+ "month": 12,
+ "intent": "buy a pair of earrings matching several constraints",
+ "request": "I need a pair of earrings by Amazon Collection in silver, under $335.",
+ "constraints": {
+  "category_id": "C040404",
+  "colour": "silver",
+  "brand": "Amazon Collection",
+  "max_price": 335
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "earrings",
+    "skus": [
+     "ABO-B0035FZK52",
+     "ABO-B0046XRLCW",
+     "ABO-B008KKOLCU",
+     "ABO-B0093UQQUQ",
+     "ABO-B00CIOBWHQ",
+     "ABO-B00L7PIRH0",
+     "ABO-B00L7PIU22",
+     "ABO-B00N1PDB84",
+     "ABO-B015OCP80U",
+     "ABO-B06Y12YRLV",
+     "ABO-B07CGQN9BX",
+     "ABO-B07ZQFP1P3",
+     "ABO-B07ZQFR71M",
+     "ABO-B07ZQFRM5R",
+     "ABO-B07ZQGXLKS"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Argento' in a source listing; brand also spelled 'Amazon Collection Inc.'",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

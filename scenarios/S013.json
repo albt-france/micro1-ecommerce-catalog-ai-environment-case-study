@@ -1,0 +1,49 @@
+{
+ "id": "S013",
+ "type": "simple_search",
+ "difficulty": 1,
+ "persona": {
+  "id": "P3",
+  "label": "Parent organising family meals and outings",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Household Supplies"
+  ]
+ },
+ "month": 5,
+ "intent": "buy some tea of a known brand",
+ "request": "Can you get me some tea by Hindu?",
+ "constraints": {
+  "category_id": "C060602",
+  "brand": "Hindu"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "tea",
+    "skus": [
+     "OFF-0023545211267"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "brand and category respected"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": null,
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

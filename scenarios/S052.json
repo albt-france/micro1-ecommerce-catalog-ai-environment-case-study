@@ -1,0 +1,52 @@
+{
+ "id": "S052",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P1",
+  "label": "Budget-conscious student",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Office & School Supplies",
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 11,
+ "intent": "buy some crisps matching several constraints",
+ "request": "I need some crisps by Kowalski's Markets in yellow, under $4.",
+ "constraints": {
+  "category_id": "C060201",
+  "colour": "yellow",
+  "brand": "Kowalski's Markets",
+  "max_price": 4
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "crisps",
+    "skus": [
+     "OFF-0879147009845"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": null,
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "id": "S068",
+ "type": "comparison",
+ "difficulty": 3,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 5,
+ "intent": "compare mug options and buy the best one",
+ "request": "Buy the lightest mug you have.",
+ "constraints": {
+  "category_id": "C030202",
+  "max_weight_g": 3.8
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "mug",
+    "skus": [
+     "ABO-B08C3SW7V9"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item has the lowest weight in the category (2 % tolerance)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "out-of-stock or held items can look cheaper in search results",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

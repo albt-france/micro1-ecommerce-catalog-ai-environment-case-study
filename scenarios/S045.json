@@ -1,0 +1,58 @@
+{
+ "id": "S045",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P6",
+  "label": "Gift shopper in the end-of-year season",
+  "price_focus": "low",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Home & Furniture"
+  ]
+ },
+ "month": 11,
+ "intent": "buy an ottoman matching several constraints",
+ "request": "I need an ottoman by Rivet in grey, under $101.",
+ "constraints": {
+  "category_id": "C010103",
+  "colour": "grey",
+  "brand": "Rivet",
+  "max_price": 101
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "ottoman",
+    "skus": [
+     "ABO-B0714QGLVP",
+     "ABO-B071PDYXKC",
+     "ABO-B072PZC1PM",
+     "ABO-B072PZVY9J",
+     "ABO-B0746HFVWY",
+     "ABO-B075X33SC6",
+     "ABO-B07HGGHQ6X",
+     "ABO-B07QBMQPWG"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Dark Grey' in a source listing; the same product is listed twice across sources",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

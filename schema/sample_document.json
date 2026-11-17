@@ -1,0 +1,116 @@
+{
+ "_id": "P-007e623568",
+ "title": "Solefit Men's Navy Slippers-7 UK (41 EU) (SLFT-0092)",
+ "brand": {
+  "name": "Solefit",
+  "key": "solefit"
+ },
+ "category": {
+  "id": "C040106",
+  "path": [
+   "Clothing, Shoes & Accessories",
+   "Shoes",
+   "Sandals & Slippers"
+  ],
+  "google_id": 187
+ },
+ "gender": "men",
+ "language": "en",
+ "description": "Outer Material: EVA | Closure Type: Slip On | Toe Style: Open Toe",
+ "attributes": {
+  "style": "Slippers"
+ },
+ "variants": [
+  {
+   "sku": "ABO-B08CHVFF9K",
+   "title": "Solefit Men's Navy Slippers-7 UK (41 EU) (SLFT-0092)",
+   "colour": "blue",
+   "size": null,
+   "material": null,
+   "price": {
+    "amount": 65.49,
+    "currency": "USD"
+   },
+   "stock": {
+    "qty": 98,
+    "in_stock": true
+   },
+   "status": "active",
+   "quality_score": 0.92,
+   "sources": [
+    {
+     "source": "abo",
+     "id": "B08CHVFF9K",
+     "match": null
+    }
+   ],
+   "dimensions_cm": {
+    "length": 30.0,
+    "width": 10.0,
+    "height": 4.0
+   },
+   "weight_g": 300.0
+  },
+  {
+   "sku": "ABO-B08CHVFQX6",
+   "title": "Solefit Men's Brown Slippers-7 UK (41 EU) (SLFT-0090)",
+   "colour": "brown",
+   "size": null,
+   "material": null,
+   "price": {
+    "amount": 39.49,
+    "currency": "USD"
+   },
+   "stock": {
+    "qty": 103,
+    "in_stock": true
+   },
+   "status": "active",
+   "quality_score": 0.9231,
+   "sources": [
+    {
+     "source": "abo",
+     "id": "B08CHVFQX6",
+     "match": null
+    }
+   ],
+   "dimensions_cm": {
+    "length": 30.0,
+    "width": 10.0,
+    "height": 4.0
+   },
+   "weight_g": 300.0
+  },
+  {
+   "sku": "ABO-B08CHY4W31",
+   "title": "Solefit Men's Black Slippers-7 UK (41 EU) (SLFT-0087)",
+   "colour": "black",
+   "size": null,
+   "material": null,
+   "price": {
+    "amount": 59.99,
+    "currency": "USD"
+   },
+   "stock": {
+    "qty": 131,
+    "in_stock": true
+   },
+   "status": "active",
+   "quality_score": 0.9231,
+   "sources": [
+    {
+     "source": "abo",
+     "id": "B08CHY4W31",
+     "match": null
+    }
+   ],
+   "dimensions_cm": {
+    "length": 30.0,
+    "width": 10.0,
+    "height": 4.0
+   },
+   "weight_g": 300.0
+  }
+ ],
+ "updated_from": "catalog-pipeline 1.0"
+}

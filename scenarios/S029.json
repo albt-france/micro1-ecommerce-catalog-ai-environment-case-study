@@ -1,0 +1,54 @@
+{
+ "id": "S029",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P6",
+  "label": "Gift shopper in the end-of-year season",
+  "price_focus": "low",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Home & Furniture"
+  ]
+ },
+ "month": 10,
+ "intent": "buy a necklace matching several constraints",
+ "request": "I need a necklace by Amazon Collection in yellow, under $23.",
+ "constraints": {
+  "category_id": "C040401",
+  "colour": "yellow",
+  "brand": "Amazon Collection",
+  "max_price": 23
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "necklace",
+    "skus": [
+     "ABO-B013SQQG0A",
+     "ABO-B073S7VM25",
+     "ABO-B082MDGHSK",
+     "ABO-B082PF21QC"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Yellow Gold' in a source listing",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

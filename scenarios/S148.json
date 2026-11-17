@@ -1,0 +1,40 @@
+{
+ "id": "S148",
+ "type": "no_answer",
+ "difficulty": 5,
+ "persona": {
+  "id": "P4",
+  "label": "Regular runner replacing kit",
+  "price_focus": "medium",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Sports & Outdoors"
+  ]
+ },
+ "month": 3,
+ "intent": "ask for something the shop cannot provide",
+ "request": "Do you sell a trampoline? If so, buy one under $200.",
+ "constraints": {
+  "_reason": "no 'trampoline' in the catalogue"
+ },
+ "expected_action": "no_match",
+ "acceptable_answers": {
+  "roles": [],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "reports that nothing matches",
+   "buys nothing"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 2
+ },
+ "trap": "search still returns loosely related items",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

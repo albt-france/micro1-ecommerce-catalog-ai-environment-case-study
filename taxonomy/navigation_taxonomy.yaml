@@ -1,0 +1,283 @@
+# Navigation taxonomy of the demo shop (source of truth). Built by src/build_taxonomy.py into
+# taxonomy/categories.csv (ids, paths, Google Product Taxonomy ids) and taxonomy/source_mapping.csv.
+#
+# department > group [/ subgroup] > leaf      (3 or 4 levels)
+# Per leaf:
+#   gpt    Google Product Taxonomy path (2021-09-21, en-US); resolved to its numeric id at build time
+#   attrs  attribute template (taxonomy/category_attributes.yaml)
+#   abo    ABO product_type values that map directly to this leaf
+#   off_cat Open Food Facts query categories that map directly to this leaf
+#   kw     regular expression on the source browse path + title, used for generic source types
+#          (SHOES, HOME, GROCERY, ACCESSORY...) and by the keyword stage of the classifier. First match wins.
+departments:
+- name: "Home & Furniture"
+  groups:
+  - name: "Living Room Furniture"
+    leaves:
+    - {name: "Sofas & Couches", gpt: "Furniture > Sofas", attrs: furniture, abo: [SOFA], kw: "sofas? |couch|sofa-?bed|loveseat|sectional"}
+    - {name: "Armchairs & Accent Chairs", gpt: "Furniture > Chairs > Arm Chairs, Recliners & Sleeper Chairs", attrs: furniture, abo: [BEAN_BAG_CHAIR], kw: "living room furniture/chairs|accent chair|armchair|club chair|recliner|bean ?bag"}
+    - {name: "Ottomans & Poufs", gpt: "Furniture > Ottomans", attrs: furniture, abo: [OTTOMAN], kw: "ottoman|pouf"}
+    - {name: "Coffee Tables, Side Tables & TV Stands", gpt: "Furniture > Tables > Accent Tables", attrs: furniture, kw: "coffee table|side table|end table|accent table|console table|nightstand|tv stand|media (storage|console)|entertainment center|television stand"}
+  - name: "Bedroom Furniture"
+    leaves:
+    - {name: "Beds, Frames & Headboards", gpt: "Furniture > Beds & Accessories > Beds & Bed Frames", attrs: furniture, abo: [BED, BED_FRAME, HEADBOARD], kw: "bed frame|platform bed|daybed|headboard"}
+    - {name: "Dressers & Chests", gpt: "Furniture > Cabinets & Storage > Dressers", attrs: furniture, abo: [DRESSER], kw: "dresser|chest of drawers"}
+  - name: "Dining Furniture"
+    leaves:
+    - {name: "Dining Chairs", gpt: "Furniture > Chairs > Kitchen & Dining Room Chairs", attrs: furniture, kw: "dining (room )?(furniture/)?chairs?|kitchen & dining room furniture/chairs"}
+    - {name: "Dining Tables", gpt: "Furniture > Tables > Kitchen & Dining Room Tables", attrs: furniture, kw: "dining table|kitchen table"}
+    - {name: "Stools & Benches", gpt: "Furniture > Chairs > Table & Bar Stools", attrs: furniture, abo: [STOOL_SEATING, BENCH], kw: "bar stool|counter stool|barstool|\\bbench"}
+  - name: "Home Office Furniture"
+    leaves:
+    - {name: "Office Chairs", gpt: "Furniture > Office Furniture > Office Chairs", attrs: furniture, kw: "office chair|desk chair|task chair|gaming chair|home office chairs"}
+    - {name: "Desks", gpt: "Furniture > Office Furniture > Desks", attrs: furniture, abo: [DESK], kw: "\\bdesk\\b|writing desk|standing desk"}
+  - name: "Storage Furniture"
+    leaves:
+    - {name: "Shelves, Cabinets & Bookcases", gpt: "Furniture > Shelving > Bookcases & Standing Shelves", attrs: furniture, abo: [SHELF, CABINET, FURNITURE], kw: "bookcase|bookshelf|shelving unit|shelves|wall shelf|cabinet|sideboard|buffet|cupboard"}
+    - {name: "Furniture Covers & Slipcovers", gpt: "Furniture > Furniture Sets", attrs: textile, abo: [FURNITURE_COVER], kw: "slipcover|sofa cover|furniture cover|chair cover"}
+  - name: "Home Decor"
+    leaves:
+    - {name: "Area Rugs", gpt: "Home & Garden > Decor > Rugs", attrs: rug, abo: [RUG], kw: "area rugs?|\\brug\\b|runner rug|rugs, pads"}
+    - {name: "Wall Art, Posters & Decals", gpt: "Home & Garden > Decor > Artwork > Posters, Prints, & Visual Artwork", attrs: decor, abo: [WALL_ART, STICKER_DECAL], kw: "wall art|poster|canvas print|artwork|prints|wall sticker|decal|mural|window film"}
+    - {name: "Picture Frames", gpt: "Home & Garden > Decor > Picture Frames", attrs: decor, kw: "picture frame|photo frame|tabletop frames|photo album"}
+    - {name: "Mirrors & Clocks", gpt: "Home & Garden > Decor > Mirrors", attrs: decor, abo: [CLOCK, HOME_MIRROR], kw: "wall clock|alarm clock|\\bclocks?\\b|\\bmirror"}
+    - {name: "Vases, Candles & Home Fragrance", gpt: "Home & Garden > Decor > Home Fragrances", attrs: decor, abo: [VASE, CANDLE, INCENSE, AREA_DEODORIZER], kw: "\\bvases?\\b|candle|room spray|incense|reed diffuser|home fragrance|air freshener"}
+    - {name: "Decorative Pillows & Cushion Covers", gpt: "Home & Garden > Decor > Throw Pillows", attrs: textile, abo: [PILLOW], kw: "throw pillow|cushion cover|decorative pillow|zierkissen|pillow cover"}
+  - name: "Lighting"
+    leaves:
+    - {name: "Table & Floor Lamps", gpt: "Home & Garden > Lighting > Lamps", attrs: lighting, abo: [LAMP], kw: "table lamp|floor lamp|desk lamp|\\blamps?\\b"}
+    - {name: "Ceiling & Wall Lights", gpt: "Home & Garden > Lighting > Lighting Fixtures", attrs: lighting, abo: [LIGHT_FIXTURE, HOME_LIGHTING_ACCESSORY], kw: "pendant|chandelier|ceiling light|wall sconce|light fixture|flush mount"}
+    - {name: "Light Bulbs & String Lights", gpt: "Home & Garden > Lighting > Light Bulbs", attrs: lighting, abo: [LIGHT_BULB, STRING_LIGHT], kw: "light bulb|led bulb|\\bbulbs?\\b|string light|fairy light"}
+- name: "Bed & Bath"
+  groups:
+  - name: "Bedding"
+    leaves:
+    - {name: "Sheets & Sheet Sets", gpt: "Home & Garden > Linens & Bedding > Bedding > Bed Sheets", attrs: bedding, abo: [FLAT_SHEET], kw: "fitted sheet|flat sheet|sheet set|bedsheet|bettlaken|spannbett|sheets? & pillowcase sets"}
+    - {name: "Pillowcases", gpt: "Home & Garden > Linens & Bedding > Bedding > Pillowcases & Shams", attrs: bedding, kw: "pillowcase|pillow case|pillow sham|kissenbez"}
+    - {name: "Duvet Covers & Sets", gpt: "Home & Garden > Linens & Bedding > Bedding > Duvet Covers", attrs: bedding, kw: "duvet cover|bettbez|bettwäsche"}
+    - {name: "Comforters & Duvets", gpt: "Home & Garden > Linens & Bedding > Bedding > Quilts & Comforters", attrs: bedding, kw: "comforter|duvets? &|\\bduvet\\b|quilt"}
+    - {name: "Pillows & Mattress Protectors", gpt: "Home & Garden > Linens & Bedding > Bedding > Pillows", attrs: bedding, kw: "bed pillow|bedding/pillows|memory foam pillow|sleeping pillow|mattress (protector|topper|pad|encasement)"}
+    - {name: "Blankets & Throws", gpt: "Home & Garden > Linens & Bedding > Bedding > Blankets", attrs: textile, kw: "blanket|\\bthrow\\b|throws"}
+  - name: "Bath"
+    leaves:
+    - {name: "Towels & Bath Mats", gpt: "Home & Garden > Linens & Bedding > Towels > Bath Towels & Washcloths", attrs: textile, kw: "towel set|bath towel|hand towel|washcloth|\\btowels?\\b|bath mat|bath rug|bathroom linen/bath mats"}
+    - {name: "Bathroom Accessories", gpt: "Home & Garden > Bathroom Accessories", attrs: generic, abo: [TOWEL_HOLDER, TOILET_PAPER_HOLDER, TOILET_SEAT], kw: "towel (bar|holder|ring)|toilet (paper|roll) holder|toilet seat|shower curtain|soap dish"}
+  - name: "Window Treatments"
+    leaves:
+    - {name: "Curtains & Drapes", gpt: "Home & Garden > Decor > Window Treatments > Curtains & Drapes", attrs: textile, abo: [CURTAIN], kw: "curtain|drape|vorh(ä|a)nge"}
+    - {name: "Blinds, Shades & Curtain Hardware", gpt: "Home & Garden > Decor > Window Treatments > Window Blinds & Shades", attrs: generic, abo: [WINDOW_SHADE], kw: "finial|curtain rod|window treatment hardware|curtain ring|blind|roller shade|window shade"}
+- name: "Kitchen & Dining"
+  groups:
+  - name: "Cookware"
+    leaves:
+    - {name: "Frying Pans & Skillets", gpt: "Home & Garden > Kitchen & Dining > Cookware & Bakeware > Cookware > Skillets & Frying Pans", attrs: cookware, abo: [SAUTE_FRY_PAN], kw: "fry(ing)? pan|skillet|saute pan|tawa"}
+    - {name: "Pots, Saucepans & Cookware Sets", gpt: "Home & Garden > Kitchen & Dining > Cookware & Bakeware > Cookware > Cookware Sets", attrs: cookware, abo: [DUTCH_OVENS], kw: "dutch oven|pressure cooker|saucepan|stock ?pot|cookware set|pot & pan|pots? and pans|milk pot|casserole"}
+  - name: "Dinnerware & Drinkware"
+    leaves:
+    - {name: "Plates, Bowls & Dinnerware Sets", gpt: "Home & Garden > Kitchen & Dining > Tableware > Dinnerware > Plates", attrs: tableware, abo: [DISHWARE_PLATE, DISHWARE_PLACE_SETTING, DISHWARE_BOWL], kw: "dinnerware set|dinner plate|\\bplates?\\b|place setting|\\bbowls?\\b"}
+    - {name: "Cups, Mugs & Glasses", gpt: "Home & Garden > Kitchen & Dining > Tableware > Drinkware", attrs: tableware, abo: [DRINKING_CUP], kw: "\\bmugs?\\b|\\bcups?\\b|tumbler|drinking glass|wine glass"}
+    - {name: "Knives & Cutlery", gpt: "Home & Garden > Kitchen & Dining > Tableware > Flatware", attrs: tableware, abo: [FLATWARE, KITCHEN_KNIFE], kw: "flatware|cutlery|spoons?|forks?|chef knife|kitchen knife|knife set|paring knife"}
+    - {name: "Water Bottles & Flasks", gpt: "Home & Garden > Kitchen & Dining > Food & Beverage Carriers > Water Bottles", attrs: tableware, abo: [BOTTLE], kw: "water bottle|vacuum flask|thermos|flask|shaker bottle"}
+    - {name: "Table Linen & Disposables", gpt: "Home & Garden > Linens & Bedding > Table Linens > Placemats", attrs: textile, abo: [PLACEMAT, FOOD_SERVICE_SUPPLY], kw: "placemat|table runner|tablecloth|disposable|paper plates?|paper cups?|plastic cups?|napkins"}
+  - name: "Kitchen Tools & Storage"
+    leaves:
+    - {name: "Kitchen Gadgets & Utensils", gpt: "Home & Garden > Kitchen & Dining > Kitchen Tools & Utensils", attrs: generic, abo: [FOOD_SLICER, MEAL_HOLDER], kw: "peeler|grater|slicer|spatula|ladle|whisk|tongs|utensil|can opener"}
+    - {name: "Food Storage", gpt: "Home & Garden > Kitchen & Dining > Food Storage > Food Storage Containers", attrs: generic, abo: [JAR, FOOD_STORAGE_BAG], kw: "\\bjars?\\b|food container|storage container|canister|lunch box|freezer bag|storage bag|zip ?lock|aluminium foil|cling film|vacuum bag"}
+  - name: "Small Kitchen Appliances"
+    leaves:
+    - {name: "Coffee Makers", gpt: "Home & Garden > Kitchen & Dining > Kitchen Appliances > Coffee Makers & Espresso Machines", attrs: appliance, abo: [COFFEE_MAKER], kw: "coffee maker|espresso machine|coffee machine|french press"}
+    - {name: "Blenders & Other Small Appliances", gpt: "Home & Garden > Kitchen & Dining > Kitchen Appliances", attrs: appliance, abo: [FOOD_BLENDER], kw: "blender|food processor|mixer grinder|small kitchen appliances|kettle|toaster|rice cooker|air fryer|sandwich maker"}
+- name: "Clothing, Shoes & Accessories"
+  groups:
+  - name: "Shoes"
+    leaves:
+    - {name: "Sneakers & Trainers", gpt: "Apparel & Accessories > Shoes", attrs: shoes, kw: "sneakers?|trainers?|casual shoes"}
+    - {name: "Running & Sports Shoes", gpt: "Apparel & Accessories > Shoes", attrs: shoes, abo: [TECHNICAL_SPORT_SHOE], kw: "running shoe|sports & outdoor shoes|athletic|walking shoe|trail"}
+    - {name: "Formal & Dress Shoes", gpt: "Apparel & Accessories > Shoes", attrs: shoes, kw: "formal shoes|oxford|derby|brogue|dress shoe"}
+    - {name: "Loafers & Moccasins", gpt: "Apparel & Accessories > Shoes", attrs: shoes, kw: "loafer|moccasin|slip-on|boat shoe"}
+    - {name: "Boots", gpt: "Apparel & Accessories > Shoes", attrs: shoes, abo: [BOOT], kw: "\\bboots?\\b|chelsea|laarzen|stiefel|bottes?"}
+    - {name: "Sandals & Slippers", gpt: "Apparel & Accessories > Shoes", attrs: shoes, abo: [SANDAL], kw: "sandal|flip.?flop|slide|slipper"}
+    - {name: "Flats & Heels", gpt: "Apparel & Accessories > Shoes", attrs: shoes, kw: "ballet flat|\\bflats?\\b|pumps?|heels?|mules?"}
+  - name: "Clothing"
+    leaves:
+    - {name: "Tops & T-Shirts", gpt: "Apparel & Accessories > Clothing > Shirts & Tops", attrs: apparel, kw: "t-shirt|\\btee\\b|\\btop\\b|blouse|shirt|polo|tank"}
+    - {name: "Dresses", gpt: "Apparel & Accessories > Clothing > Dresses", attrs: apparel, kw: "\\bdress(es)?\\b|kurta|salwar|leotard"}
+    - {name: "Outerwear & Knitwear", gpt: "Apparel & Accessories > Clothing > Outerwear", attrs: apparel, kw: "sweater|sweatshirt|hoodie|cardigan|pullover|jumper|jacket|coat|parka|blazer|vest"}
+    - {name: "Trousers, Jeans & Shorts", gpt: "Apparel & Accessories > Clothing > Pants", attrs: apparel, kw: "trousers|pants|jeans|chinos|shorts|leggings|joggers|skirt"}
+    - {name: "Activewear, Socks & Underwear", gpt: "Apparel & Accessories > Clothing > Activewear", attrs: apparel, abo: [SALWAR_SUIT_SET, LEOTARD], kw: "activewear|sports bra|yoga pants|track ?suit|\\bsocks?\\b|underwear|briefs|boxers?|\\bbra\\b"}
+  - name: "Accessories"
+    leaves:
+    - {name: "Hats & Caps", gpt: "Apparel & Accessories > Clothing Accessories > Hats", attrs: accessory, abo: [HAT], kw: "\\bhats?\\b|\\bcaps?\\b|beanie|balaclava"}
+    - {name: "Scarves, Gloves & Gaiters", gpt: "Apparel & Accessories > Clothing Accessories > Gloves & Mittens", attrs: accessory, abo: [EARMUFF], kw: "gloves?|mittens?|scarf|scarves|neck gaiter|shawl|pashmina|bandana|earmuff"}
+    - {name: "Belts & Ties", gpt: "Apparel & Accessories > Clothing Accessories > Belts", attrs: accessory, kw: "\\bbelts?\\b|necktie|bow tie|\\bties?\\b"}
+    - {name: "Wallets", gpt: "Apparel & Accessories > Handbags, Wallets & Cases > Wallets & Money Clips", attrs: accessory, abo: [WALLET], kw: "wallet|card holder|money clip"}
+    - {name: "Handbags", gpt: "Apparel & Accessories > Handbags, Wallets & Cases > Handbags", attrs: accessory, abo: [HANDBAG], kw: "handbag|shoulder bag|crossbody|clutch|purse"}
+    - {name: "Backpacks", gpt: "Luggage & Bags > Backpacks", attrs: bag, abo: [BACKPACK], kw: "backpack|rucksack"}
+    - {name: "Tote & Carry Bags", gpt: "Luggage & Bags > Shopping Totes", attrs: bag, abo: [TOTE_BAG, CARRYING_CASE_OR_BAG, COSMETIC_CASE], kw: "tote|carry bag|cosmetic (case|bag)|toiletry bag|pouch"}
+    - {name: "Sunglasses & Eyewear", gpt: "Apparel & Accessories > Clothing Accessories > Sunglasses", attrs: accessory, abo: [EYEWEAR], kw: "sunglasses|eyewear|reading glasses"}
+    - {name: "Watches", gpt: "Apparel & Accessories > Jewelry > Watches", attrs: jewelry, abo: [WATCH], kw: "\\bwatch(es)?\\b"}
+    - {name: "Umbrellas", gpt: "Apparel & Accessories > Clothing Accessories", attrs: accessory, abo: [UMBRELLA], kw: "umbrella"}
+  - name: "Jewelry"
+    leaves:
+    - {name: "Necklaces & Pendants", gpt: "Apparel & Accessories > Jewelry > Necklaces", attrs: jewelry, abo: [NECKLACE], kw: "necklace|pendant|chain"}
+    - {name: "Bracelets & Anklets", gpt: "Apparel & Accessories > Jewelry > Bracelets", attrs: jewelry, abo: [BRACELET], kw: "bracelet|anklet|bangle"}
+    - {name: "Rings", gpt: "Apparel & Accessories > Jewelry > Rings", attrs: jewelry, abo: [FINERING, RING, FASHIONRING], kw: "\\brings?\\b"}
+    - {name: "Earrings", gpt: "Apparel & Accessories > Jewelry > Earrings", attrs: jewelry, abo: [FINEEARRING, EARRING, FASHIONEARRING], kw: "earring|stud|hoop"}
+    - {name: "Jewelry Sets & Storage", gpt: "Apparel & Accessories > Jewelry > Jewelry Sets", attrs: jewelry, abo: [JEWELRY_SET, JEWELRY_STORAGE, FINEOTHER], kw: "jewelry set|jewellery box|jewelry box|jewelry organi[sz]er"}
+  - name: "Luggage"
+    leaves:
+    - {name: "Suitcases & Luggage", gpt: "Luggage & Bags > Suitcases", attrs: bag, abo: [SUITCASE, LUGGAGE], kw: "suitcase|luggage|carry-on|trolley bag|duffel"}
+- name: "Electronics & Accessories"
+  groups:
+  - name: "Phone & Tablet Accessories"
+    leaves:
+    - {name: "Phone & Tablet Cases", gpt: "Electronics > Communications > Telephony > Mobile Phone Accessories > Mobile Phone Cases", attrs: phone_case, abo: [CELLULAR_PHONE_CASE, PORTABLE_ELECTRONIC_DEVICE_COVER], kw: "phone case|mobile cover|back cover|bumper case|flip cover|cases & covers|tablet case|kindle cover|ipad case|e-reader cover"}
+    - {name: "Screen Protectors & Mounts", gpt: "Electronics > Electronics Accessories > Electronics Films & Shields > Screen Protectors", attrs: phone_case, abo: [SCREEN_PROTECTOR, PORTABLE_ELECTRONIC_DEVICE_MOUNT, PORTABLE_ELECTRONIC_DEVICE_STAND], kw: "screen protector|tempered glass|phone (mount|stand|holder)|car mount|tablet stand"}
+    - {name: "Chargers & Cables", gpt: "Electronics > Electronics Accessories > Power > Power Adapters & Chargers", attrs: electronics, abo: [CHARGING_ADAPTER, ELECTRONIC_ADAPTER, WIRELESS_ACCESSORY, PHONE_ACCESSORY, ELECTRONIC_CABLE], kw: "charger|charging|usb cable|lightning cable|adapter|power bank"}
+  - name: "Computer Accessories"
+    leaves:
+    - {name: "Mice & Keyboards", gpt: "Electronics > Electronics Accessories > Computer Components > Input Devices", attrs: electronics, abo: [INPUT_MOUSE, KEYBOARDS, MOUSE_PAD], kw: "\\bmouse\\b|keyboard|mouse pad"}
+    - {name: "Computer Components & Add-ons", gpt: "Electronics > Electronics Accessories > Computer Components", attrs: electronics, abo: [MULTIPORT_HUB, COMPUTER_ADD_ON, COMPUTER_COMPONENT, NETWORKING_DEVICE, THERMOPLASTIC_FILAMENT], kw: "usb hub|docking station|multiport|network|switch|router|graphics card|laptop stand|webcam|computer|filament|pla|petg"}
+    - {name: "Storage Drives & Memory Cards", gpt: "Electronics > Electronics Accessories > Computer Components > Storage Devices", attrs: electronics, abo: [COMPUTER_DRIVE_OR_STORAGE, FLASH_MEMORY], kw: "hard drive|ssd|memory card|flash drive|usb drive|sd card"}
+  - name: "Audio & Video"
+    leaves:
+    - {name: "Headphones & Speakers", gpt: "Electronics > Audio > Audio Components > Headphones & Headsets", attrs: electronics, abo: [HEADPHONES, SPEAKERS, PORTABLE_AUDIO], kw: "headphone|earphone|earbud|headset|speaker|soundbar|portable audio"}
+    - {name: "Video, Camera & Gaming Accessories", gpt: "Electronics > Video > Video Accessories > Television Parts & Accessories > TV & Monitor Mounts", attrs: electronics, abo: [FLAT_SCREEN_DISPLAY_MOUNT, CE_ACCESSORY, CAMERA_TRIPOD, CAMERA_OTHER_ACCESSORIES, CAMERA_BAGS_AND_CASES, VIDEO_GAME_ACCESSORIES], kw: "tv mount|wall mount|hdmi|remote control|tripod|camera bag|camera case|lens|controller|gaming headset|console"}
+  - name: "Power"
+    leaves:
+    - {name: "Batteries & Power", gpt: "Electronics > Electronics Accessories > Power > Batteries", attrs: electronics, abo: [BATTERY, POWER_STRIP, POWER_SUPPLIES_OR_PROTECTION], kw: "batter(y|ies)|\\baa\\b|\\baaa\\b|power strip|surge protector|extension (cord|lead)|ups"}
+    - {name: "Office & Security Electronics", gpt: "Home & Garden > Business & Home Security", attrs: electronics, abo: [SECURITY_ELECTRONICS, OFFICE_ELECTRONICS], kw: "security camera|doorbell|alarm system|shredder|calculator|label maker"}
+- name: "Grocery & Gourmet Food"
+  groups:
+  - name: "Breakfast & Spreads"
+    leaves:
+    - {name: "Breakfast Cereals & Granola", gpt: "Food, Beverages & Tobacco > Food Items > Grains, Rice & Cereal > Cereal & Granola", attrs: food, off_cat: [breakfast-cereals], abo: [BREAKFAST_CEREAL], kw: "cereal|granola|muesli|oats|porridge|cornflakes"}
+    - {name: "Jams & Preserves", gpt: "Food, Beverages & Tobacco > Food Items > Dips & Spreads > Jams & Jellies", attrs: food, off_cat: [jams], kw: "\\bjam\\b|jams|preserves?|marmalade|jelly|compote"}
+    - {name: "Honey, Syrups & Nut Butters", gpt: "Food, Beverages & Tobacco > Food Items > Condiments & Sauces > Honey", attrs: food, off_cat: [honeys], abo: [HONEY, NUT_BUTTER], kw: "honey|maple syrup|agave|peanut butter|almond butter|nut butter|hazelnut spread"}
+  - name: "Snacks & Sweets / Savoury Snacks"
+    leaves:
+    - {name: "Crisps, Crackers & Pretzels", gpt: "Food, Beverages & Tobacco > Food Items > Snack Foods > Chips", attrs: food, off_cat: [crisps], abo: [SNACK_CHIP_AND_CRISP, CRACKER, POPCORN], kw: "crisps|chips|tortilla chips|puffs|cracker|pretzel|popcorn|rice cake"}
+    - {name: "Nuts, Seeds & Trail Mix", gpt: "Food, Beverages & Tobacco > Food Items > Nuts & Seeds", attrs: food, off_cat: [nuts], abo: [NUTS, SNACK_MIX], kw: "almonds|cashews?|peanuts|pistachios?|walnuts?|\\bnuts\\b|seeds|mixed nuts|trail mix|snack mix|snack & trail"}
+  - name: "Snacks & Sweets / Sweet Snacks"
+    leaves:
+    - {name: "Biscuits & Cookies", gpt: "Food, Beverages & Tobacco > Food Items > Bakery > Cookies", attrs: food, off_cat: [biscuits], abo: [COOKIE], kw: "biscuits?|cookies?|shortbread|digestive|wafer"}
+    - {name: "Chocolate & Sweets", gpt: "Food, Beverages & Tobacco > Food Items > Candy & Chocolate", attrs: food, off_cat: [chocolates], kw: "chocolate|candy|sweets|truffle|fudge|gummies"}
+    - {name: "Dried Fruit & Fruit Snacks", gpt: "Food, Beverages & Tobacco > Food Items > Fruits & Vegetables > Dried Fruits", attrs: food, off_cat: [dried-fruits], abo: [FRUIT_SNACK], kw: "dried (fruit|apricots|mango|cranberries)|raisins|dates|prunes|fruit snack"}
+    - {name: "Snack & Cereal Bars", gpt: "Food, Beverages & Tobacco > Food Items > Snack Foods > Cereal & Granola Bars", attrs: food, abo: [SNACK_FOOD_BAR], kw: "snack bar|protein bar|granola bar|cereal bar|energy bar"}
+  - name: "Bakery & Fresh"
+    leaves:
+    - {name: "Bread, Cakes & Pastries", gpt: "Food, Beverages & Tobacco > Food Items > Bakery > Breads & Buns", attrs: food, off_cat: [breads], abo: [BREAD, CAKE], kw: "\\bbread\\b|loaf|baguette|rolls|buns|bagels?|tortillas|wraps|sourdough|brioche|\\bcakes?\\b|brownie|muffin|pastr(y|ies)|croissant|pie"}
+    - {name: "Sandwiches & Ready Meals", gpt: "Food, Beverages & Tobacco > Food Items > Prepared Foods", attrs: food, off_cat: [sandwiches], kw: "sandwich|meal kit|ready meal|entree|deli salad|wrap|prepared foods|fresh meal kits"}
+    - {name: "Fresh Fruit & Vegetables", gpt: "Food, Beverages & Tobacco > Food Items > Fruits & Vegetables > Fresh & Frozen Fruits", attrs: food, off_cat: [fresh-fruits], abo: [FRUIT, VEGETABLE], kw: "\\b(apples?|bananas?|oranges?|grapes|berries|strawberries|lemons?|avocados?|pears?|mangoes?)\\b|vegetables?|carrots|potatoes|onions|tomatoes|lettuce|spinach|broccoli"}
+    - {name: "Meat, Poultry & Eggs", gpt: "Food, Beverages & Tobacco > Food Items > Meat, Seafood & Eggs", attrs: food, abo: [MEAT, POULTRY], kw: "chicken|beef|pork|turkey|bacon|sausage|\\beggs?\\b|salmon|fish"}
+  - name: "Dairy & Chilled"
+    leaves:
+    - {name: "Cheese", gpt: "Food, Beverages & Tobacco > Food Items > Dairy Products > Cheese", attrs: food, off_cat: [cheeses], abo: [DAIRY_BASED_CHEESE], kw: "cheese|cheddar|mozzarella|brie|parmesan|gouda|feta"}
+    - {name: "Yogurt", gpt: "Food, Beverages & Tobacco > Food Items > Dairy Products > Yogurt", attrs: food, off_cat: [yogurts], kw: "yog(h)?urt|skyr|kefir"}
+    - {name: "Milk, Cream & Dairy Drinks", gpt: "Food, Beverages & Tobacco > Beverages > Milk", attrs: food, abo: [DAIRY_BASED_DRINK, DAIRY_BASED_CREAM, MILK_SUBSTITUTE, DAIRY_BASED_ICE_CREAM], kw: "\\bmilk\\b|cream|oat drink|almond drink|ice cream|butter"}
+  - name: "Beverages"
+    leaves:
+    - {name: "Coffee", gpt: "Food, Beverages & Tobacco > Beverages > Coffee", attrs: food, off_cat: [coffees], abo: [COFFEE], kw: "coffee|espresso|k-cup|coffee pods|ground coffee|instant coffee"}
+    - {name: "Tea", gpt: "Food, Beverages & Tobacco > Beverages > Tea & Infusions", attrs: food, off_cat: [teas], abo: [TEA], kw: "\\btea\\b|teas|green tea|herbal tea|chai|infusion|tea bags"}
+    - {name: "Fruit Juices", gpt: "Food, Beverages & Tobacco > Beverages > Juice", attrs: food, off_cat: [fruit-juices], abo: [JUICE_AND_JUICE_DRINK], kw: "juice|smoothie|nectar"}
+    - {name: "Soft Drinks", gpt: "Food, Beverages & Tobacco > Beverages > Soda", attrs: food, off_cat: [sodas], abo: [DRINK_FLAVORED], kw: "soda|cola|lemonade|soft drink|tonic|ginger ale|sparkling"}
+    - {name: "Water", gpt: "Food, Beverages & Tobacco > Beverages > Water", attrs: food, off_cat: [waters], abo: [WATER], kw: "\\bwater\\b|mineral water|spring water"}
+    - {name: "Wine", gpt: "Food, Beverages & Tobacco > Beverages > Alcoholic Beverages > Wine", attrs: food, abo: [WINE], kw: "\\bwine\\b|cabernet|merlot|chardonnay|sauvignon|pinot"}
+  - name: "Pantry"
+    leaves:
+    - {name: "Pasta & Noodles", gpt: "Food, Beverages & Tobacco > Food Items > Pasta & Noodles", attrs: food, off_cat: [pastas], abo: [NOODLE], kw: "pasta|spaghetti|penne|fusilli|noodles|macaroni|lasagne|ramen"}
+    - {name: "Rice, Grains & Legumes", gpt: "Food, Beverages & Tobacco > Food Items > Grains, Rice & Cereal > Rice", attrs: food, off_cat: [rices], abo: [LEGUME], kw: "\\brice\\b|basmati|quinoa|couscous|bulgur|beans|lentils|chickpeas|\\bdal\\b|legumes"}
+    - {name: "Sauces, Soups & Condiments", gpt: "Food, Beverages & Tobacco > Food Items > Condiments & Sauces > Pasta Sauce", attrs: food, off_cat: [tomato-sauces], abo: [SAUCE, PACKAGED_SOUP_AND_STEW, SALAD_DRESSING], kw: "pasta sauce|tomato sauce|passata|pesto|marinara|bolognese|salsa|ketchup|soup|broth|stock|dressing|mayonnaise|mustard|condiment"}
+    - {name: "Cooking Oils & Vinegar", gpt: "Food, Beverages & Tobacco > Food Items > Cooking & Baking Ingredients > Cooking Oils", attrs: food, off_cat: [olive-oils], abo: [EDIBLE_OIL_VEGETABLE, VINEGAR], kw: "olive oil|\\boils?\\b|vinegar|ghee"}
+    - {name: "Herbs, Spices & Baking", gpt: "Food, Beverages & Tobacco > Food Items > Cooking & Baking Ingredients", attrs: food, abo: [FLOUR, SUGAR, HERB], kw: "flour|sugar|baking|yeast|cocoa powder|sweetener|spice|seasoning|herbs|pepper|cumin|turmeric|paprika|cinnamon|salt|masala"}
+- name: "Health & Personal Care"
+  groups:
+  - name: "Vitamins & Supplements"
+    leaves:
+    - {name: "Vitamins & Supplements", gpt: "Health & Beauty > Health Care > Fitness & Nutrition > Vitamins & Supplements", attrs: health, abo: [VITAMIN, HERBAL_SUPPLEMENT, MINERAL_SUPPLEMENT, NUTRITIONAL_SUPPLEMENT], kw: "vitamin|multivitamin|gummies|vitamins & dietary|supplement|magnesium|zinc|calcium|omega|probiotic|collagen|ashwagandha|turmeric capsules"}
+    - {name: "Protein & Sports Nutrition", gpt: "Health & Beauty > Health Care > Fitness & Nutrition > Nutrition Drinks & Shakes", attrs: health, abo: [PROTEIN_SUPPLEMENT_POWDER], kw: "protein powder|whey|sports nutrition|bcaa|creatine"}
+  - name: "Personal Care"
+    leaves:
+    - {name: "Shampoo & Conditioner", gpt: "Health & Beauty > Personal Care > Hair Care > Shampoo & Conditioner", attrs: health, abo: [SHAMPOO, CONDITIONER], kw: "shampoo|conditioner|hair care"}
+    - {name: "Body Wash, Soap & Deodorant", gpt: "Health & Beauty > Personal Care > Cosmetics > Bath & Body > Body Wash", attrs: health, abo: [SKIN_CLEANING_AGENT, SKIN_CLEANING_WIPE, BATHWATER_ADDITIVE], kw: "body wash|shower gel|hand wash|\\bsoap\\b|bubble bath|wipes|hand sanitizer|deodorant|antiperspirant"}
+    - {name: "Skin Care & Sunscreen", gpt: "Health & Beauty > Personal Care > Cosmetics > Skin Care", attrs: health, abo: [SKIN_MOISTURIZER, BEAUTY, ABIS_BEAUTY, SUNSCREEN], kw: "moisturi[sz]er|lotion|serum|face cream|face mask|skin care|facial|sunscreen|spf|sun cream"}
+    - {name: "Oral Care", gpt: "Health & Beauty > Personal Care > Oral Care", attrs: health, abo: [MOUTHWASH], kw: "mouthwash|toothpaste|toothbrush|dental floss|oral care"}
+    - {name: "Beauty Tools & Appliances", gpt: "Health & Beauty > Personal Care > Cosmetics > Cosmetic Tools", attrs: health, abo: [COSMETIC_BRUSH, PERSONAL_CARE_APPLIANCE], kw: "makeup brush|cosmetic brush|hair dryer|straightener|trimmer|shaver|razor"}
+  - name: "Health Care"
+    leaves:
+    - {name: "Medicines, First Aid & Supports", gpt: "Health & Beauty > Health Care > First Aid", attrs: health, abo: [MEDICATION, PROFESSIONAL_HEALTHCARE, ABIS_DRUGSTORE, EARPLUG, ORTHOPEDIC_BRACE, BODY_POSITIONER], kw: "medicine|tablets|pain relief|allergy|first aid|bandage|nicotine|sleep aid|thermometer|ear ?plugs|brace|support|posture|knee sleeve|wedge pillow"}
+    - {name: "Baby & Feminine Care", gpt: "Baby & Toddler > Diapering", attrs: health, abo: [BABY_PRODUCT], kw: "diaper|nappy|nappies|baby wipes|baby|tampons?|sanitary pads?|panty liners?|feminine"}
+- name: "Household Supplies"
+  groups:
+  - name: "Cleaning"
+    leaves:
+    - {name: "Cleaning Products & Tools", gpt: "Home & Garden > Household Supplies > Household Cleaning Supplies > Household Cleaning Products", attrs: household, abo: [CLEANING_AGENT, JANITORIAL_SUPPLY, CLEANING_BRUSH], kw: "cleaner|disinfectant|bleach|spray|janitorial|toilet cleaner|multi-surface|brush|mop|sponge|broom|duster|microfiber cloth"}
+    - {name: "Laundry & Dishwasher Detergents", gpt: "Home & Garden > Household Supplies > Laundry Supplies > Laundry Detergent", attrs: household, abo: [LAUNDRY_DETERGENT, DISHWASHER_DETERGENT], kw: "detergent|laundry|fabric softener|dishwasher (tablets|pods)|washing up"}
+    - {name: "Trash Bags & Bins", gpt: "Home & Garden > Household Supplies > Waste Containment", attrs: household, abo: [WASTE_BAG, TRASH_CAN], kw: "trash bag|bin bag|garbage bag|trash can|waste bin|dustbin"}
+    - {name: "Paper Towels & Tissues", gpt: "Home & Garden > Household Supplies > Household Paper Products", attrs: household, abo: [PAPER_PRODUCT, FACIAL_TISSUE], kw: "paper towel|toilet paper|tissues?|kitchen roll|napkin"}
+  - name: "Storage & Organisation"
+    leaves:
+    - {name: "Storage Boxes, Bins & Baskets", gpt: "Home & Garden > Household Supplies > Storage & Organization > Household Storage Containers", attrs: generic, abo: [STORAGE_BOX, STORAGE_BAG, BASKET], kw: "storage box|storage bin|storage boxes|organi[sz]er|storage bag|vacuum storage|\\bbaskets?\\b|hamper basket"}
+    - {name: "Hooks & Hangers", gpt: "Home & Garden > Household Supplies > Storage & Organization > Clothing & Closet Storage > Hangers", attrs: generic, abo: [STORAGE_HOOK, CLOTHES_HANGER], kw: "hooks?|hangers?"}
+    - {name: "Laundry Hampers & Drying Racks", gpt: "Home & Garden > Household Supplies > Laundry Supplies > Drying Racks & Hangers", attrs: generic, abo: [CLOTHES_RACK, DRYING_RACK, LAUNDRY_HAMPER], kw: "clothes rack|garment rack|drying rack|airer|laundry hamper|laundry basket"}
+- name: "Office & School Supplies"
+  groups:
+  - name: "Office Supplies"
+    leaves:
+    - {name: "Binders & Folders", gpt: "Office Supplies > Filing & Organization > Binding Supplies > Binders", attrs: office, abo: [STORAGE_BINDER, FILE_FOLDER], kw: "binder|folder|dividers?|sheet protector|file"}
+    - {name: "Paper, Notebooks & Envelopes", gpt: "Office Supplies > General Office Supplies > Paper Products", attrs: office, abo: [PRINT_COPY_PAPER, LABEL, ENVELOPE], kw: "notebook|notepad|copy paper|printer paper|writing pad|journal|sticky notes|labels?|envelopes?|mailers?|shipping"}
+    - {name: "Pens & Writing Instruments", gpt: "Office Supplies > Office Instruments > Writing & Drawing Instruments", attrs: office, abo: [WRITING_INSTRUMENT], kw: "\\bpens?\\b|pencils?|markers?|highlighters?"}
+    - {name: "Desk Accessories & Whiteboards", gpt: "Office Supplies > Presentation Supplies", attrs: office, abo: [WRITING_BOARD, TEACHING_EQUIPMENT, STAPLER], kw: "whiteboard|cork board|presentation|chalkboard|flip chart|stapler|tape dispenser|scissors|paper clips|rubber bands|desk organi[sz]er"}
+    - {name: "Ink & Toner", gpt: "Electronics > Print, Copy, Scan & Fax > Printer, Copier & Fax Machine Accessories", attrs: office, kw: "ink cartridge|toner|tintenpatronen"}
+- name: "Sports & Outdoors"
+  groups:
+  - name: "Fitness"
+    leaves:
+    - {name: "Dumbbells & Weights", gpt: "Sporting Goods > Exercise & Fitness > Weight Lifting > Free Weights", attrs: sports, kw: "dumbbell|kettlebell|weight plate|barbell|weight lifting"}
+    - {name: "Yoga Mats, Bands & Recovery", gpt: "Sporting Goods > Exercise & Fitness > Yoga & Pilates > Yoga & Pilates Mats", attrs: sports, abo: [EXERCISE_MAT, EXERCISE_BAND, MUSCLE_ROLLER, SWEATBAND], kw: "yoga mat|exercise mat|fitness mat|\\bmats\\b|resistance band|exercise band|foam roller|massage roller|sweatband"}
+    - {name: "Sports Balls", gpt: "Sporting Goods > Athletics", attrs: sports, abo: [RECREATION_BALL], kw: "football|basketball|soccer ball|volleyball|\\bballs?\\b"}
+  - name: "Outdoor Recreation"
+    leaves:
+    - {name: "Tents & Camping", gpt: "Sporting Goods > Outdoor Recreation > Camping & Hiking > Tents", attrs: sports, abo: [FREESTANDING_SHELTER, OUTDOOR_RECREATION_PRODUCT], kw: "tent|camping|sleeping bag|hiking|canopy"}
+  - name: "Patio & Garden"
+    leaves:
+    - {name: "Patio Furniture & Shade", gpt: "Furniture > Outdoor Furniture", attrs: furniture, kw: "patio|outdoor (furniture|chair|table|sofa)|conversation set|adirondack|garden furniture|patio umbrella|umbrellas & shade|umbrella stand|sun shade|parasol"}
+    - {name: "Grills & BBQ Accessories", gpt: "Home & Garden > Kitchen & Dining > Kitchen Appliance Accessories > Outdoor Grill Accessories", attrs: generic, kw: "grill|bbq|barbecue|smoker"}
+    - {name: "Planters & Garden Watering", gpt: "Home & Garden > Lawn & Garden > Gardening > Pots & Planters", attrs: generic, abo: [PLANTER, ABIS_LAWN_AND_GARDEN], kw: "planter|flower pot|plant pot|plant stand|hose|watering|sprinkler|garden|lawn"}
+- name: "Tools & Home Improvement"
+  groups:
+  - name: "Tools"
+    leaves:
+    - {name: "Tools & Tool Accessories", gpt: "Hardware > Tools", attrs: tools, abo: [WRENCH, SCREWDRIVER, TOOLS, DRILL_BITS], kw: "wrench|screwdriver|pliers|hammer|spanner|tool set|tool kit|socket set|drill bit|saw blade|sanding|router bit"}
+  - name: "Hardware"
+    leaves:
+    - {name: "Door & Cabinet Hardware", gpt: "Hardware > Hardware Accessories > Cabinet Hardware", attrs: tools, abo: [HARDWARE_HANDLE], kw: "door handle|door lever|knob|cabinet pull|drawer pull|hinge|leve per porte|picaportes"}
+    - {name: "Locks & Safes", gpt: "Hardware > Locks & Keys", attrs: tools, abo: [LOCK, SAFE], kw: "\\block\\b|padlock|\\bsafe\\b|deadbolt"}
+    - {name: "Faucets & Plumbing", gpt: "Hardware > Plumbing", attrs: tools, abo: [FAUCET, PLUMBING_FIXTURE, PUMP_DISPENSER], kw: "faucet|tap|shower head|plumbing|sink|drain"}
+    - {name: "Fasteners & Mechanical Parts", gpt: "Hardware > Hardware Accessories", attrs: tools, abo: [HARDWARE, MECHANICAL_COMPONENTS, ACCESSORY_OR_PART_OR_SUPPLY], kw: "screws?|bolts?|nuts and bolts|anchors|bearing|spring|fastener|hardware"}
+    - {name: "Safety Equipment", gpt: "Business & Industrial > Work Safety Protective Gear", attrs: tools, abo: [SAFETY_SUPPLY], kw: "safety|gloves|goggles|hi-vis|respirator|hard hat|face mask"}
+- name: "Pets, Baby & Toys"
+  groups:
+  - name: "Pet Supplies"
+    leaves:
+    - {name: "Pet Beds, Cat Trees & Furniture", gpt: "Animals & Pet Supplies > Pet Supplies > Dog Supplies > Dog Beds", attrs: pet, kw: "pet bed|dog bed|cat bed|beds & furniture|beds, bedding|cat tree|scratch|activity tree|play tower|cat tower|condo|キャットタワー"}
+    - {name: "Pet Harnesses, Carriers & Apparel", gpt: "Animals & Pet Supplies > Pet Supplies > Pet Leashes", attrs: pet, kw: "harness|leash|collar|lead|carrier|crate|raincoat|dog coat|pet apparel|travel products"}
+    - {name: "Pet Feeding & Food", gpt: "Animals & Pet Supplies > Pet Supplies > Pet Bowls, Feeders & Waterers", attrs: pet, kw: "pet food|dog food|cat food|feeder|pet bowl|food storage|treats|food/dry"}
+  - name: "Toys & Kids"
+    leaves:
+    - {name: "Toys, Games & Costumes", gpt: "Toys & Games > Toys", attrs: generic, abo: [TOY_FIGURE, TOYS_AND_GAMES, CHILDRENS_COSTUME], kw: "\\btoys?\\b|puzzle|board game|figure|plush|lego|costume|dress-up|fancy dress"}
+- name: "Appliances & Automotive"
+  groups:
+  - name: "Home Appliances"
+    leaves:
+    - {name: "Major Appliances", gpt: "Home & Garden > Household Appliances", attrs: appliance, abo: [MAJOR_HOME_APPLIANCES], kw: "refrigerator|washing machine|dishwasher|oven|microwave|freezer|dryer"}
+    - {name: "Vacuum Cleaners", gpt: "Home & Garden > Household Appliances > Vacuums", attrs: appliance, abo: [VACUUM_CLEANER], kw: "vacuum cleaner|hoover|robot vacuum"}
+    - {name: "Fans, Heaters & Water Purifiers", gpt: "Home & Garden > Household Appliances > Water Heaters", attrs: appliance, abo: [WATER_PURIFICATION_UNIT, ELECTRIC_FAN, AIR_CONDITIONER, HUMIDIFIER], kw: "water (filter|purifier)|filter jug|ro purifier|\\bfan\\b|heater|air conditioner|humidifier|dehumidifier|air purifier"}
+  - name: "Automotive"
+    leaves:
+    - {name: "Car Accessories & Parts", gpt: "Vehicles & Parts > Vehicle Parts & Accessories > Vehicle Maintenance, Care & Decor", attrs: generic, abo: [AUTO_ACCESSORY, STEERING_WHEEL_COVER, CARGO_STRAP, AUTO_PART, AUTO_OIL], kw: "car (seat|cover|mat|organi[sz]er)|steering wheel|cargo strap|ratchet strap|tie-?down|motor oil|engine oil|wiper|brake|spark plug|auto part|air filter"}
+- name: "Other"
+  groups:
+  - name: "Other"
+    leaves:
+    - {name: "Other Products", gpt: "Hardware", attrs: generic, kw: "(?!x)x"}

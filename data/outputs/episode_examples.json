@@ -1,0 +1,524 @@
+[
+ {
+  "view": "1 raw",
+  "scenario": "S010",
+  "request": "Please find me coffee from Marks & Spencer.",
+  "grade": {
+   "scenario_id": "S010",
+   "type": "simple_search",
+   "difficulty": 1,
+   "success": true,
+   "score": 1.0,
+   "outcome": 1.0,
+   "constraints": 1.0,
+   "efficiency": 1.0,
+   "steps": 3,
+   "failure": "",
+   "view": "1 raw",
+   "agent": "keyword+filters",
+   "agent_error": ""
+  },
+  "steps": [
+   {
+    "n": 1,
+    "tool": "filter",
+    "args": {
+     "query": "coffee",
+     "brand": "Marks & Spencer",
+     "in_stock": true
+    },
+    "results": 1
+   },
+   {
+    "n": 2,
+    "tool": "add_to_cart",
+    "args": {
+     "sku": "OFF-00741323",
+     "quantity": 1
+    },
+    "results": 0
+   },
+   {
+    "n": 3,
+    "tool": "checkout",
+    "args": {},
+    "results": 0
+   }
+  ],
+  "cart": {
+   "OFF-00741323": 1
+  },
+  "questions": [],
+  "no_match": null
+ },
+ {
+  "view": "1 raw",
+  "scenario": "S040",
+  "request": "Looking for a bookcase in brown by Movian. Budget $104 max.",
+  "grade": {
+   "scenario_id": "S040",
+   "type": "multi_constraint",
+   "difficulty": 2,
+   "success": false,
+   "score": 0.1,
+   "outcome": 0.0,
+   "constraints": 0.0,
+   "efficiency": 1.0,
+   "steps": 2,
+   "failure": "role 'bookcase' not satisfied; reported no match although one exists",
+   "view": "1 raw",
+   "agent": "keyword+filters",
+   "agent_error": ""
+  },
+  "steps": [
+   {
+    "n": 1,
+    "tool": "filter",
+    "args": {
+     "query": "bookcase",
+     "brand": "Movian. Budget",
+     "colour": "brown",
+     "max_price": 104.0,
+     "in_stock": true
+    },
+    "results": 0
+   },
+   {
+    "n": 2,
+    "tool": "report_no_match",
+    "args": {
+     "reason": "no in-stock product matches all the constraints"
+    },
+    "results": 0
+   }
+  ],
+  "cart": {},
+  "questions": [],
+  "no_match": "no in-stock product matches all the constraints"
+ },
+ {
+  "view": "1 raw",
+  "scenario": "S100",
+  "request": "Office restock for a team of 4: I need 2 x pens, 2 x binder, 4 x notebook and 1 x coffee. Keep the total under $126.",
+  "grade": {
+   "scenario_id": "S100",
+   "type": "basket",
+   "difficulty": 4,
+   "success": false,
+   "score": 0.4,
+   "outcome": 0.0,
+   "constraints": 1.0,
+   "efficiency": 1.0,
+   "steps": 9,
+   "failure": "role 'coffee' not satisfied",
+   "view": "1 raw",
+   "agent": "keyword+filters",
+   "agent_error": ""
+  },
+  "steps": [
+   {
+    "n": 1,
+    "tool": "filter",
+    "args": {
+     "query": "pens",
+     "in_stock": true,
+     "sort": "price_asc"
+    },
+    "results": 10
+   },
+   {
+    "n": 2,
+    "tool": "add_to_cart",
+    "args": {
+     "sku": "ABO-B07PQQJR2G",
+     "quantity": 2
+    },
+    "results": 0
+   },
+   {
+    "n": 3,
+    "tool": "filter",
+    "args": {
+     "query": "binder",
+     "in_stock": true,
+     "sort": "price_asc"
+    },
+    "results": 10
+   },
+   {
+    "n": 4,
+    "tool": "add_to_cart",
+    "args": {
+     "sku": "ABO-B07YB3C3QB",
+     "quantity": 2
+    },
+    "results": 0
+   },
+   {
+    "n": 5,
+    "tool": "filter",
+    "args": {
+     "query": "notebook",
+     "in_stock": true,
+     "sort": "price_asc"
+    },
+    "results": 10
+   },
+   {
+    "n": 6,
+    "tool": "add_to_cart",
+    "args": {
+     "sku": "ABO-B07D2PTVHR",
+     "quantity": 4
+    },
+    "results": 0
+   },
+   {
+    "n": 7,
+    "tool": "filter",
+    "args": {
+     "query": "coffee",
+     "in_stock": true,
+     "sort": "price_asc"
+    },
+    "results": 10
+   },
+   {
+    "n": 8,
+    "tool": "add_to_cart",
+    "args": {
+     "sku": "OFF-0762111442215",
+     "quantity": 1
+    },
+    "results": 0
+   },
+   {
+    "n": 9,
+    "tool": "checkout",
+    "args": {},
+    "results": 0
+   }
+  ],
+  "cart": {
+   "ABO-B07PQQJR2G": 2,
+   "ABO-B07YB3C3QB": 2,
+   "ABO-B07D2PTVHR": 4,
+   "OFF-0762111442215": 1
+  },
+  "questions": [],
+  "no_match": null
+ },
+ {
+  "view": "1 raw",
+  "scenario": "S120",
+  "request": "I need a phone case by AmazonBrand-Solimo.",
+  "grade": {
+   "scenario_id": "S120",
+   "type": "ambiguous",
+   "difficulty": 4,
+   "success": false,
+   "score": 0.4,
+   "outcome": 0.0,
+   "constraints": 1.0,
+   "efficiency": 1.0,
+   "steps": 3,
+   "failure": "did not ask the clarifying question; role 'phone case' not satisfied",
+   "view": "1 raw",
+   "agent": "keyword+filters",
+   "agent_error": ""
+  },
+  "steps": [
+   {
+    "n": 1,
+    "tool": "filter",
+    "args": {
+     "query": "phone case",
+     "brand": "AmazonBrand-Solimo",
+     "in_stock": true
+    },
+    "results": 14
+   },
+   {
+    "n": 2,
+    "tool": "add_to_cart",
+    "args": {
+     "sku": "MKB-100892",
+     "quantity": 1
+    },
+    "results": 0
+   },
+   {
+    "n": 3,
+    "tool": "checkout",
+    "args": {},
+    "results": 0
+   }
+  ],
+  "cart": {
+   "MKB-100892": 1
+  },
+  "questions": [],
+  "no_match": null
+ },
+ {
+  "view": "4 clean",
+  "scenario": "S010",
+  "request": "Please find me coffee from Marks & Spencer.",
+  "grade": {
+   "scenario_id": "S010",
+   "type": "simple_search",
+   "difficulty": 1,
+   "success": true,
+   "score": 1.0,
+   "outcome": 1.0,
+   "constraints": 1.0,
+   "efficiency": 1.0,
+   "steps": 3,
+   "failure": "",
+   "view": "4 clean",
+   "agent": "keyword+filters",
+   "agent_error": ""
+  },
+  "steps": [
+   {
+    "n": 1,
+    "tool": "filter",
+    "args": {
+     "query": "coffee",
+     "brand": "Marks & Spencer",
+     "in_stock": true
+    },
+    "results": 1
+   },
+   {
+    "n": 2,
+    "tool": "add_to_cart",
+    "args": {
+     "sku": "OFF-00741323",
+     "quantity": 1
+    },
+    "results": 0
+   },
+   {
+    "n": 3,
+    "tool": "checkout",
+    "args": {},
+    "results": 0
+   }
+  ],
+  "cart": {
+   "OFF-00741323": 1
+  },
+  "questions": [],
+  "no_match": null
+ },
+ {
+  "view": "4 clean",
+  "scenario": "S040",
+  "request": "Looking for a bookcase in brown by Movian. Budget $104 max.",
+  "grade": {
+   "scenario_id": "S040",
+   "type": "multi_constraint",
+   "difficulty": 2,
+   "success": false,
+   "score": 0.1,
+   "outcome": 0.0,
+   "constraints": 0.0,
+   "efficiency": 1.0,
+   "steps": 2,
+   "failure": "role 'bookcase' not satisfied; reported no match although one exists",
+   "view": "4 clean",
+   "agent": "keyword+filters",
+   "agent_error": ""
+  },
+  "steps": [
+   {
+    "n": 1,
+    "tool": "filter",
+    "args": {
+     "query": "bookcase",
+     "brand": "Movian. Budget",
+     "colour": "brown",
+     "max_price": 104.0,
+     "in_stock": true
+    },
+    "results": 0
+   },
+   {
+    "n": 2,
+    "tool": "report_no_match",
+    "args": {
+     "reason": "no in-stock product matches all the constraints"
+    },
+    "results": 0
+   }
+  ],
+  "cart": {},
+  "questions": [],
+  "no_match": "no in-stock product matches all the constraints"
+ },
+ {
+  "view": "4 clean",
+  "scenario": "S100",
+  "request": "Office restock for a team of 4: I need 2 x pens, 2 x binder, 4 x notebook and 1 x coffee. Keep the total under $126.",
+  "grade": {
+   "scenario_id": "S100",
+   "type": "basket",
+   "difficulty": 4,
+   "success": true,
+   "score": 1.0,
+   "outcome": 1.0,
+   "constraints": 1.0,
+   "efficiency": 1.0,
+   "steps": 9,
+   "failure": "",
+   "view": "4 clean",
+   "agent": "keyword+filters",
+   "agent_error": ""
+  },
+  "steps": [
+   {
+    "n": 1,
+    "tool": "filter",
+    "args": {
+     "query": "pens",
+     "in_stock": true,
+     "sort": "price_asc"
+    },
+    "results": 10
+   },
+   {
+    "n": 2,
+    "tool": "add_to_cart",
+    "args": {
+     "sku": "ABO-B07PQQJR2G",
+     "quantity": 2
+    },
+    "results": 0
+   },
+   {
+    "n": 3,
+    "tool": "filter",
+    "args": {
+     "query": "binder",
+     "in_stock": true,
+     "sort": "price_asc"
+    },
+    "results": 10
+   },
+   {
+    "n": 4,
+    "tool": "add_to_cart",
+    "args": {
+     "sku": "ABO-B084MNDLKG",
+     "quantity": 2
+    },
+    "results": 0
+   },
+   {
+    "n": 5,
+    "tool": "filter",
+    "args": {
+     "query": "notebook",
+     "in_stock": true,
+     "sort": "price_asc"
+    },
+    "results": 10
+   },
+   {
+    "n": 6,
+    "tool": "add_to_cart",
+    "args": {
+     "sku": "ABO-B07D2PTVHR",
+     "quantity": 4
+    },
+    "results": 0
+   },
+   {
+    "n": 7,
+    "tool": "filter",
+    "args": {
+     "query": "coffee",
+     "in_stock": true,
+     "sort": "price_asc"
+    },
+    "results": 10
+   },
+   {
+    "n": 8,
+    "tool": "add_to_cart",
+    "args": {
+     "sku": "OFF-10070242554989",
+     "quantity": 1
+    },
+    "results": 0
+   },
+   {
+    "n": 9,
+    "tool": "checkout",
+    "args": {},
+    "results": 0
+   }
+  ],
+  "cart": {
+   "ABO-B07PQQJR2G": 2,
+   "ABO-B084MNDLKG": 2,
+   "ABO-B07D2PTVHR": 4,
+   "OFF-10070242554989": 1
+  },
+  "questions": [],
+  "no_match": null
+ },
+ {
+  "view": "4 clean",
+  "scenario": "S120",
+  "request": "I need a phone case by AmazonBrand-Solimo.",
+  "grade": {
+   "scenario_id": "S120",
+   "type": "ambiguous",
+   "difficulty": 4,
+   "success": false,
+   "score": 0.4,
+   "outcome": 0.0,
+   "constraints": 1.0,
+   "efficiency": 1.0,
+   "steps": 3,
+   "failure": "did not ask the clarifying question; role 'phone case' not satisfied",
+   "view": "4 clean",
+   "agent": "keyword+filters",
+   "agent_error": ""
+  },
+  "steps": [
+   {
+    "n": 1,
+    "tool": "filter",
+    "args": {
+     "query": "phone case",
+     "brand": "AmazonBrand-Solimo",
+     "in_stock": true
+    },
+    "results": 15
+   },
+   {
+    "n": 2,
+    "tool": "add_to_cart",
+    "args": {
+     "sku": "MKB-100010",
+     "quantity": 1
+    },
+    "results": 0
+   },
+   {
+    "n": 3,
+    "tool": "checkout",
+    "args": {},
+    "results": 0
+   }
+  ],
+  "cart": {
+   "MKB-100010": 1
+  },
+  "questions": [],
+  "no_match": null
+ }
+]

@@ -1,0 +1,49 @@
+{
+ "id": "S009",
+ "type": "simple_search",
+ "difficulty": 1,
+ "persona": {
+  "id": "P8",
+  "label": "Health-focused grocery shopper",
+  "price_focus": "medium",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Health & Personal Care"
+  ]
+ },
+ "month": 12,
+ "intent": "buy some cheese of a known brand",
+ "request": "Can you get me some cheese by Allegro?",
+ "constraints": {
+  "category_id": "C060501",
+  "brand": "Allegro"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "cheese",
+    "skus": [
+     "OFF-0067400021400"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "brand and category respected"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "brand also spelled 'allegro'",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

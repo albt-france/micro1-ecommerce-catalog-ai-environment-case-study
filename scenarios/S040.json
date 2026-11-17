@@ -1,0 +1,54 @@
+{
+ "id": "S040",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 5,
+ "intent": "buy a bookcase matching several constraints",
+ "request": "Looking for a bookcase in brown by Movian. Budget $104 max.",
+ "constraints": {
+  "category_id": "C010501",
+  "colour": "brown",
+  "brand": "Movian",
+  "max_price": 104
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "bookcase",
+    "skus": [
+     "ABO-B07H8SM6RM",
+     "ABO-B07TTY37PW",
+     "ABO-B0852178JX"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Oak Sonoma/Plain Concrete' in a source listing",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

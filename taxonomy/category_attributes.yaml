@@ -1,0 +1,35 @@
+# Attribute templates per category (referenced by `attrs` in navigation_taxonomy.yaml).
+# required -> checked by quality rule C05; optional -> shown as filters when filled; allowed -> controlled values.
+# Units are always SI in the catalogue: length/width/height in cm, weight in g, volume/capacity in ml.
+allowed_values:
+  colour: [black, white, grey, silver, gold, brown, beige, red, pink, orange, yellow, green, blue, purple, multicolour, clear]
+  apparel_size: [XXS, XS, S, M, L, XL, XXL, 3XL]
+  shoe_size: "EU size, 35 to 50 in half sizes (UK/US converted with the table in normalize.py)"
+  bed_size: [Single, Twin, Double, Full, Queen, King, California King]
+  gender: [men, women, unisex, kids]
+  nutriscore: [a, b, c, d, e]
+templates:
+  furniture:  {required: [colour, material, length_cm], optional: [width_cm, height_cm, weight_g, style]}
+  textile:    {required: [colour, material], optional: [length_cm, width_cm, pattern]}
+  rug:        {required: [colour, length_cm], optional: [width_cm, material, pattern, style]}
+  decor:      {required: [colour], optional: [material, length_cm, height_cm, style]}
+  lighting:   {required: [colour], optional: [material, style, length_cm]}
+  bedding:    {required: [colour, size], optional: [material, pattern], size_scale: bed_size}
+  cookware:   {required: [material], optional: [colour, length_cm, weight_g]}
+  tableware:  {required: [material], optional: [colour, capacity_ml, pack_count]}
+  appliance:  {required: [colour], optional: [capacity_ml, weight_g, material]}
+  shoes:      {required: [size, colour, gender], optional: [material], size_scale: shoe_size}
+  apparel:    {required: [size, colour], optional: [material, gender], size_scale: apparel_size}
+  accessory:  {required: [colour], optional: [material, gender]}
+  bag:        {required: [colour], optional: [material, length_cm, capacity_ml]}
+  jewelry:    {required: [material], optional: [colour, gender]}
+  phone_case: {required: [compatible_device], optional: [colour, material]}
+  electronics: {required: [], optional: [colour, weight_g]}
+  food:       {required: [net_qty], optional: [labels, nutriscore, allergens, pack_count]}
+  health:     {required: [net_qty], optional: [labels, pack_count]}
+  household:  {required: [], optional: [net_qty, pack_count]}
+  office:     {required: [], optional: [colour, pack_count]}
+  sports:     {required: [], optional: [colour, weight_g, material]}
+  tools:      {required: [], optional: [material, colour]}
+  pet:        {required: [], optional: [colour, size, material]}
+  generic:    {required: [], optional: [colour, material]}

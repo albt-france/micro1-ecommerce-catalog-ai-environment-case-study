@@ -1,0 +1,77 @@
+{
+ "id": "S027",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 5,
+ "intent": "buy a sheet set matching several constraints",
+ "request": "I need a sheet set by AmazonBasics in grey, under $69.",
+ "constraints": {
+  "category_id": "C020101",
+  "colour": "grey",
+  "brand": "AmazonBasics",
+  "max_price": 69
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "sheet set",
+    "skus": [
+     "ABO-B00Q693LDW",
+     "ABO-B01DT37YEY",
+     "ABO-B06W9JHMQX",
+     "ABO-B06X91B73M",
+     "ABO-B06XFYKFXK",
+     "ABO-B071HJ2S12",
+     "ABO-B07C3J374M",
+     "ABO-B07C3WZRX5",
+     "ABO-B07G4G4ZFP",
+     "ABO-B07G4GDMRM",
+     "ABO-B07G4GHYC9",
+     "ABO-B07G4RC7GF",
+     "ABO-B07G4TH3SH",
+     "ABO-B07G4Y1ZFM",
+     "ABO-B07KYXCXPL",
+     "ABO-B07KZ7B4GG",
+     "ABO-B07KZ7LWCM",
+     "ABO-B07PG94G5Z",
+     "ABO-B07PHFVK8H",
+     "ABO-B07RCGZ4SL",
+     "ABO-B07RDZ7P3V",
+     "ABO-B07RH1J4ZC",
+     "ABO-B07T4RT218",
+     "MKB-101953",
+     "MKB-102119",
+     "MKB-102253"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Anthracite' in a source listing; brand also spelled 'AmzaonBasics'",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

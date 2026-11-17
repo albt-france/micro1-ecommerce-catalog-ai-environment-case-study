@@ -1,0 +1,62 @@
+{
+ "id": "S054",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 11,
+ "intent": "buy a frying pan matching several constraints",
+ "request": "Looking for a frying pan in black by Solimo. Budget $57 max.",
+ "constraints": {
+  "category_id": "C030101",
+  "colour": "black",
+  "brand": "Solimo",
+  "max_price": 57
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "frying pan",
+    "skus": [
+     "ABO-B0123UJRW6",
+     "ABO-B0123UKA54",
+     "ABO-B0123UKFZY",
+     "ABO-B01ABXUNPC",
+     "ABO-B01ABXUNPW",
+     "ABO-B01ABXUNQQ",
+     "ABO-B07F2D2L46",
+     "ABO-B07F931L1P",
+     "ABO-B07P5SYL2M",
+     "ABO-B07PB5FTTL",
+     "MKB-101799"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Siyah' in a source listing; brand also spelled 'Amazon Brand - Solimo'",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

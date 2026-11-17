@@ -1,0 +1,16 @@
+# local environment and secrets
+.venv/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.tmp/
+.ipynb_checkpoints/
+# large raw downloads (rebuilt by src/download_data.py)
+data/raw/
+# hidden answer key of the injected errors (rebuilt by src/build_catalog.py, read only at the end)
+data/_hidden_truth.csv
+# local working notes
+DECISIONS.md
+# local DuckDB database (rebuilt by src/build_schema.py)
+data/outputs/catalog.duckdb

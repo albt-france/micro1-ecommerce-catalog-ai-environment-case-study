@@ -1,0 +1,60 @@
+{
+ "id": "S132",
+ "type": "ambiguous",
+ "difficulty": 4,
+ "persona": {
+  "id": "P6",
+  "label": "Gift shopper in the end-of-year season",
+  "price_focus": "low",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Home & Furniture"
+  ]
+ },
+ "month": 8,
+ "intent": "buy a pair of sandals but a key detail is missing",
+ "request": "I need a pair of sandals by 206 Collective.",
+ "constraints": {
+  "category_id": "C040106",
+  "brand": "206 Collective",
+  "size": "39"
+ },
+ "expected_action": "ask",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "sandals",
+    "skus": [
+     "ABO-B01N2A2NG6",
+     "ABO-B0748NMLQ5",
+     "ABO-B0748R4XGV",
+     "ABO-B07895SMH9",
+     "ABO-B0789N2TFN",
+     "ABO-B0789S8L7Q",
+     "ABO-B07M712F31"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": {
+  "slot": "size",
+  "answer_text": "Size 39.",
+  "why": "size is a required attribute of the category"
+ },
+ "grading": {
+  "criteria": [
+   "asks about the size before adding anything to the cart",
+   "then buys an item that fits the answer"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 5
+ },
+ "trap": "many sandals items match; only the size disambiguates",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

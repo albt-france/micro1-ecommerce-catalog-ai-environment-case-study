@@ -1,0 +1,582 @@
+category_id,category,template,attribute,status,skus,fill_rate
+C010101,Sofas & Couches,furniture,colour,required,198,0.788
+C010101,Sofas & Couches,furniture,material,required,198,0.727
+C010101,Sofas & Couches,furniture,length_cm,required,198,0.783
+C010101,Sofas & Couches,furniture,width_cm,optional,198,0.783
+C010101,Sofas & Couches,furniture,height_cm,optional,198,0.783
+C010101,Sofas & Couches,furniture,weight_g,optional,198,0.869
+C010101,Sofas & Couches,furniture,style,optional,198,0.606
+C010102,Armchairs & Accent Chairs,furniture,colour,required,96,0.833
+C010102,Armchairs & Accent Chairs,furniture,material,required,96,0.708
+C010102,Armchairs & Accent Chairs,furniture,length_cm,required,96,0.917
+C010102,Armchairs & Accent Chairs,furniture,width_cm,optional,96,0.917
+C010102,Armchairs & Accent Chairs,furniture,height_cm,optional,96,0.917
+C010102,Armchairs & Accent Chairs,furniture,weight_g,optional,96,0.927
+C010102,Armchairs & Accent Chairs,furniture,style,optional,96,0.646
+C010103,Ottomans & Poufs,furniture,colour,required,136,0.713
+C010103,Ottomans & Poufs,furniture,material,required,136,0.419
+C010103,Ottomans & Poufs,furniture,length_cm,required,136,0.779
+C010103,Ottomans & Poufs,furniture,width_cm,optional,136,0.779
+C010103,Ottomans & Poufs,furniture,height_cm,optional,136,0.779
+C010103,Ottomans & Poufs,furniture,weight_g,optional,136,0.75
+C010103,Ottomans & Poufs,furniture,style,optional,136,0.228
+C010104,"Coffee Tables, Side Tables & TV Stands",furniture,colour,required,91,0.692
+C010104,"Coffee Tables, Side Tables & TV Stands",furniture,material,required,91,0.725
+C010104,"Coffee Tables, Side Tables & TV Stands",furniture,length_cm,required,91,0.868
+C010104,"Coffee Tables, Side Tables & TV Stands",furniture,width_cm,optional,91,0.868
+C010104,"Coffee Tables, Side Tables & TV Stands",furniture,height_cm,optional,91,0.868
+C010104,"Coffee Tables, Side Tables & TV Stands",furniture,weight_g,optional,91,0.78
+C010104,"Coffee Tables, Side Tables & TV Stands",furniture,style,optional,91,0.615
+C010201,"Beds, Frames & Headboards",furniture,colour,required,197,0.782
+C010201,"Beds, Frames & Headboards",furniture,material,required,197,0.751
+C010201,"Beds, Frames & Headboards",furniture,length_cm,required,197,0.939
+C010201,"Beds, Frames & Headboards",furniture,width_cm,optional,197,0.939
+C010201,"Beds, Frames & Headboards",furniture,height_cm,optional,197,0.939
+C010201,"Beds, Frames & Headboards",furniture,weight_g,optional,197,0.929
+C010201,"Beds, Frames & Headboards",furniture,style,optional,197,0.766
+C010202,Dressers & Chests,furniture,colour,required,33,0.909
+C010202,Dressers & Chests,furniture,material,required,33,0.636
+C010202,Dressers & Chests,furniture,length_cm,required,33,0.97
+C010202,Dressers & Chests,furniture,width_cm,optional,33,0.97
+C010202,Dressers & Chests,furniture,height_cm,optional,33,0.97
+C010202,Dressers & Chests,furniture,weight_g,optional,33,0.939
+C010202,Dressers & Chests,furniture,style,optional,33,0.727
+C010301,Dining Chairs,furniture,colour,required,19,0.684
+C010301,Dining Chairs,furniture,material,required,19,0.632
+C010301,Dining Chairs,furniture,length_cm,required,19,0.789
+C010301,Dining Chairs,furniture,width_cm,optional,19,0.789
+C010301,Dining Chairs,furniture,height_cm,optional,19,0.789
+C010301,Dining Chairs,furniture,weight_g,optional,19,0.789
+C010301,Dining Chairs,furniture,style,optional,19,0.421
+C010302,Dining Tables,furniture,colour,required,19,0.842
+C010302,Dining Tables,furniture,material,required,19,0.895
+C010302,Dining Tables,furniture,length_cm,required,19,0.789
+C010302,Dining Tables,furniture,width_cm,optional,19,0.789
+C010302,Dining Tables,furniture,height_cm,optional,19,0.789
+C010302,Dining Tables,furniture,weight_g,optional,19,0.842
+C010302,Dining Tables,furniture,style,optional,19,0.579
+C010303,Stools & Benches,furniture,colour,required,158,0.734
+C010303,Stools & Benches,furniture,material,required,158,0.563
+C010303,Stools & Benches,furniture,length_cm,required,158,0.88
+C010303,Stools & Benches,furniture,width_cm,optional,158,0.88
+C010303,Stools & Benches,furniture,height_cm,optional,158,0.88
+C010303,Stools & Benches,furniture,weight_g,optional,158,0.854
+C010303,Stools & Benches,furniture,style,optional,158,0.487
+C010401,Office Chairs,furniture,colour,required,11,0.909
+C010401,Office Chairs,furniture,material,required,11,0.818
+C010401,Office Chairs,furniture,length_cm,required,11,0.818
+C010401,Office Chairs,furniture,width_cm,optional,11,0.818
+C010401,Office Chairs,furniture,height_cm,optional,11,0.818
+C010401,Office Chairs,furniture,weight_g,optional,11,0.818
+C010401,Office Chairs,furniture,style,optional,11,0.727
+C010402,Desks,furniture,colour,required,66,0.788
+C010402,Desks,furniture,material,required,66,0.742
+C010402,Desks,furniture,length_cm,required,66,0.955
+C010402,Desks,furniture,width_cm,optional,66,0.955
+C010402,Desks,furniture,height_cm,optional,66,0.955
+C010402,Desks,furniture,weight_g,optional,66,0.833
+C010402,Desks,furniture,style,optional,66,0.712
+C010501,"Shelves, Cabinets & Bookcases",furniture,colour,required,271,0.734
+C010501,"Shelves, Cabinets & Bookcases",furniture,material,required,271,0.683
+C010501,"Shelves, Cabinets & Bookcases",furniture,length_cm,required,271,0.9
+C010501,"Shelves, Cabinets & Bookcases",furniture,width_cm,optional,271,0.9
+C010501,"Shelves, Cabinets & Bookcases",furniture,height_cm,optional,271,0.9
+C010501,"Shelves, Cabinets & Bookcases",furniture,weight_g,optional,271,0.786
+C010501,"Shelves, Cabinets & Bookcases",furniture,style,optional,271,0.642
+C010502,Furniture Covers & Slipcovers,textile,colour,required,104,0.788
+C010502,Furniture Covers & Slipcovers,textile,material,required,104,0.635
+C010502,Furniture Covers & Slipcovers,textile,length_cm,optional,104,0.702
+C010502,Furniture Covers & Slipcovers,textile,width_cm,optional,104,0.702
+C010502,Furniture Covers & Slipcovers,textile,pattern,optional,104,0.019
+C010601,Area Rugs,rug,colour,required,171,0.883
+C010601,Area Rugs,rug,length_cm,required,171,0.854
+C010601,Area Rugs,rug,width_cm,optional,171,0.854
+C010601,Area Rugs,rug,material,optional,171,0.83
+C010601,Area Rugs,rug,pattern,optional,171,0.497
+C010601,Area Rugs,rug,style,optional,171,0.772
+C010602,"Wall Art, Posters & Decals",decor,colour,required,188,0.931
+C010602,"Wall Art, Posters & Decals",decor,material,optional,188,0.761
+C010602,"Wall Art, Posters & Decals",decor,length_cm,optional,188,0.904
+C010602,"Wall Art, Posters & Decals",decor,height_cm,optional,188,0.904
+C010602,"Wall Art, Posters & Decals",decor,style,optional,188,0.729
+C010603,Picture Frames,decor,colour,required,7,1.0
+C010603,Picture Frames,decor,material,optional,7,0.429
+C010603,Picture Frames,decor,length_cm,optional,7,0.714
+C010603,Picture Frames,decor,height_cm,optional,7,0.714
+C010603,Picture Frames,decor,style,optional,7,0.143
+C010604,Mirrors & Clocks,decor,colour,required,96,0.698
+C010604,Mirrors & Clocks,decor,material,optional,96,0.625
+C010604,Mirrors & Clocks,decor,length_cm,optional,96,0.958
+C010604,Mirrors & Clocks,decor,height_cm,optional,96,0.958
+C010604,Mirrors & Clocks,decor,style,optional,96,0.51
+C010605,"Vases, Candles & Home Fragrance",decor,colour,required,76,0.355
+C010605,"Vases, Candles & Home Fragrance",decor,material,optional,76,0.276
+C010605,"Vases, Candles & Home Fragrance",decor,length_cm,optional,76,0.776
+C010605,"Vases, Candles & Home Fragrance",decor,height_cm,optional,76,0.776
+C010605,"Vases, Candles & Home Fragrance",decor,style,optional,76,0.355
+C010606,Decorative Pillows & Cushion Covers,textile,colour,required,91,0.835
+C010606,Decorative Pillows & Cushion Covers,textile,material,required,91,0.374
+C010606,Decorative Pillows & Cushion Covers,textile,length_cm,optional,91,0.945
+C010606,Decorative Pillows & Cushion Covers,textile,width_cm,optional,91,0.945
+C010606,Decorative Pillows & Cushion Covers,textile,pattern,optional,91,0.231
+C010701,Table & Floor Lamps,lighting,colour,required,144,0.903
+C010701,Table & Floor Lamps,lighting,material,optional,144,0.535
+C010701,Table & Floor Lamps,lighting,style,optional,144,0.59
+C010701,Table & Floor Lamps,lighting,length_cm,optional,144,0.972
+C010702,Ceiling & Wall Lights,lighting,colour,required,195,0.805
+C010702,Ceiling & Wall Lights,lighting,material,optional,195,0.544
+C010702,Ceiling & Wall Lights,lighting,style,optional,195,0.621
+C010702,Ceiling & Wall Lights,lighting,length_cm,optional,195,0.954
+C010703,Light Bulbs & String Lights,lighting,colour,required,185,0.481
+C010703,Light Bulbs & String Lights,lighting,material,optional,185,0.205
+C010703,Light Bulbs & String Lights,lighting,style,optional,185,0.627
+C010703,Light Bulbs & String Lights,lighting,length_cm,optional,185,0.795
+C020101,Sheets & Sheet Sets,bedding,colour,required,194,0.716
+C020101,Sheets & Sheet Sets,bedding,size,required,194,0.144
+C020101,Sheets & Sheet Sets,bedding,material,optional,194,0.66
+C020101,Sheets & Sheet Sets,bedding,pattern,optional,194,0.242
+C020102,Pillowcases,bedding,colour,required,14,0.786
+C020102,Pillowcases,bedding,size,required,14,0.143
+C020102,Pillowcases,bedding,material,optional,14,0.571
+C020102,Pillowcases,bedding,pattern,optional,14,0.357
+C020103,Duvet Covers & Sets,bedding,colour,required,22,0.773
+C020103,Duvet Covers & Sets,bedding,size,required,22,0.227
+C020103,Duvet Covers & Sets,bedding,material,optional,22,0.591
+C020103,Duvet Covers & Sets,bedding,pattern,optional,22,0.182
+C020104,Comforters & Duvets,bedding,colour,required,17,0.647
+C020104,Comforters & Duvets,bedding,size,required,17,0.529
+C020104,Comforters & Duvets,bedding,material,optional,17,0.412
+C020104,Comforters & Duvets,bedding,pattern,optional,17,0.235
+C020105,Pillows & Mattress Protectors,bedding,colour,required,7,0.857
+C020105,Pillows & Mattress Protectors,bedding,size,required,7,0.714
+C020105,Pillows & Mattress Protectors,bedding,material,optional,7,0.857
+C020105,Pillows & Mattress Protectors,bedding,pattern,optional,7,0.571
+C020106,Blankets & Throws,textile,colour,required,3,0.333
+C020106,Blankets & Throws,textile,material,required,3,0.0
+C020106,Blankets & Throws,textile,length_cm,optional,3,0.0
+C020106,Blankets & Throws,textile,width_cm,optional,3,0.0
+C020106,Blankets & Throws,textile,pattern,optional,3,0.0
+C020201,Towels & Bath Mats,textile,colour,required,17,0.471
+C020201,Towels & Bath Mats,textile,material,required,17,0.471
+C020201,Towels & Bath Mats,textile,length_cm,optional,17,0.294
+C020201,Towels & Bath Mats,textile,width_cm,optional,17,0.294
+C020201,Towels & Bath Mats,textile,pattern,optional,17,0.059
+C020202,Bathroom Accessories,generic,colour,optional,65,0.508
+C020202,Bathroom Accessories,generic,material,optional,65,0.369
+C020301,Curtains & Drapes,textile,colour,required,20,0.75
+C020301,Curtains & Drapes,textile,material,required,20,0.75
+C020301,Curtains & Drapes,textile,length_cm,optional,20,0.25
+C020301,Curtains & Drapes,textile,width_cm,optional,20,0.25
+C020301,Curtains & Drapes,textile,pattern,optional,20,0.3
+C020302,"Blinds, Shades & Curtain Hardware",generic,colour,optional,23,0.652
+C020302,"Blinds, Shades & Curtain Hardware",generic,material,optional,23,0.87
+C030101,Frying Pans & Skillets,cookware,material,required,63,0.667
+C030101,Frying Pans & Skillets,cookware,colour,optional,63,0.714
+C030101,Frying Pans & Skillets,cookware,length_cm,optional,63,0.683
+C030101,Frying Pans & Skillets,cookware,weight_g,optional,63,0.81
+C030102,"Pots, Saucepans & Cookware Sets",cookware,material,required,55,0.636
+C030102,"Pots, Saucepans & Cookware Sets",cookware,colour,optional,55,0.836
+C030102,"Pots, Saucepans & Cookware Sets",cookware,length_cm,optional,55,0.636
+C030102,"Pots, Saucepans & Cookware Sets",cookware,weight_g,optional,55,0.691
+C030201,"Plates, Bowls & Dinnerware Sets",tableware,material,required,78,0.321
+C030201,"Plates, Bowls & Dinnerware Sets",tableware,colour,optional,78,0.731
+C030201,"Plates, Bowls & Dinnerware Sets",tableware,capacity_ml,optional,78,0.051
+C030201,"Plates, Bowls & Dinnerware Sets",tableware,pack_count,optional,78,0.295
+C030202,"Cups, Mugs & Glasses",tableware,material,required,151,0.285
+C030202,"Cups, Mugs & Glasses",tableware,colour,optional,151,0.589
+C030202,"Cups, Mugs & Glasses",tableware,capacity_ml,optional,151,0.185
+C030202,"Cups, Mugs & Glasses",tableware,pack_count,optional,151,0.576
+C030203,Knives & Cutlery,tableware,material,required,55,0.636
+C030203,Knives & Cutlery,tableware,colour,optional,55,0.491
+C030203,Knives & Cutlery,tableware,capacity_ml,optional,55,0.0
+C030203,Knives & Cutlery,tableware,pack_count,optional,55,0.218
+C030204,Water Bottles & Flasks,tableware,material,required,36,0.639
+C030204,Water Bottles & Flasks,tableware,colour,optional,36,0.889
+C030204,Water Bottles & Flasks,tableware,capacity_ml,optional,36,0.722
+C030204,Water Bottles & Flasks,tableware,pack_count,optional,36,0.278
+C030205,Table Linen & Disposables,textile,colour,required,143,0.601
+C030205,Table Linen & Disposables,textile,material,required,143,0.154
+C030205,Table Linen & Disposables,textile,length_cm,optional,143,0.86
+C030205,Table Linen & Disposables,textile,width_cm,optional,143,0.86
+C030205,Table Linen & Disposables,textile,pattern,optional,143,0.028
+C030301,Kitchen Gadgets & Utensils,generic,colour,optional,47,0.511
+C030301,Kitchen Gadgets & Utensils,generic,material,optional,47,0.553
+C030302,Food Storage,generic,colour,optional,66,0.758
+C030302,Food Storage,generic,material,optional,66,0.742
+C030401,Coffee Makers,appliance,colour,required,10,0.5
+C030401,Coffee Makers,appliance,capacity_ml,optional,10,0.1
+C030401,Coffee Makers,appliance,weight_g,optional,10,0.5
+C030401,Coffee Makers,appliance,material,optional,10,0.5
+C030402,Blenders & Other Small Appliances,appliance,colour,required,28,0.571
+C030402,Blenders & Other Small Appliances,appliance,capacity_ml,optional,28,0.286
+C030402,Blenders & Other Small Appliances,appliance,weight_g,optional,28,0.857
+C030402,Blenders & Other Small Appliances,appliance,material,optional,28,0.429
+C040101,Sneakers & Trainers,shoes,size,required,88,0.341
+C040101,Sneakers & Trainers,shoes,colour,required,88,0.841
+C040101,Sneakers & Trainers,shoes,gender,required,88,0.886
+C040101,Sneakers & Trainers,shoes,material,optional,88,0.409
+C040102,Running & Sports Shoes,shoes,size,required,40,0.8
+C040102,Running & Sports Shoes,shoes,colour,required,40,0.85
+C040102,Running & Sports Shoes,shoes,gender,required,40,0.95
+C040102,Running & Sports Shoes,shoes,material,optional,40,0.5
+C040103,Formal & Dress Shoes,shoes,size,required,45,0.178
+C040103,Formal & Dress Shoes,shoes,colour,required,45,0.911
+C040103,Formal & Dress Shoes,shoes,gender,required,45,0.889
+C040103,Formal & Dress Shoes,shoes,material,optional,45,0.511
+C040104,Loafers & Moccasins,shoes,size,required,22,0.227
+C040104,Loafers & Moccasins,shoes,colour,required,22,0.864
+C040104,Loafers & Moccasins,shoes,gender,required,22,0.818
+C040104,Loafers & Moccasins,shoes,material,optional,22,0.045
+C040105,Boots,shoes,size,required,182,0.093
+C040105,Boots,shoes,colour,required,182,0.681
+C040105,Boots,shoes,gender,required,182,0.544
+C040105,Boots,shoes,material,optional,182,0.066
+C040106,Sandals & Slippers,shoes,size,required,195,0.303
+C040106,Sandals & Slippers,shoes,colour,required,195,0.764
+C040106,Sandals & Slippers,shoes,gender,required,195,0.723
+C040106,Sandals & Slippers,shoes,material,optional,195,0.118
+C040107,Flats & Heels,shoes,size,required,56,0.321
+C040107,Flats & Heels,shoes,colour,required,56,0.786
+C040107,Flats & Heels,shoes,gender,required,56,0.75
+C040107,Flats & Heels,shoes,material,optional,56,0.054
+C040201,Tops & T-Shirts,apparel,size,required,6,0.167
+C040201,Tops & T-Shirts,apparel,colour,required,6,0.5
+C040201,Tops & T-Shirts,apparel,material,optional,6,0.5
+C040201,Tops & T-Shirts,apparel,gender,optional,6,0.333
+C040202,Dresses,apparel,size,required,0,
+C040202,Dresses,apparel,colour,required,0,
+C040202,Dresses,apparel,material,optional,0,
+C040202,Dresses,apparel,gender,optional,0,
+C040203,Outerwear & Knitwear,apparel,size,required,5,0.0
+C040203,Outerwear & Knitwear,apparel,colour,required,5,0.2
+C040203,Outerwear & Knitwear,apparel,material,optional,5,0.2
+C040203,Outerwear & Knitwear,apparel,gender,optional,5,0.0
+C040204,"Trousers, Jeans & Shorts",apparel,size,required,0,
+C040204,"Trousers, Jeans & Shorts",apparel,colour,required,0,
+C040204,"Trousers, Jeans & Shorts",apparel,material,optional,0,
+C040204,"Trousers, Jeans & Shorts",apparel,gender,optional,0,
+C040205,"Activewear, Socks & Underwear",apparel,size,required,24,0.125
+C040205,"Activewear, Socks & Underwear",apparel,colour,required,24,0.625
+C040205,"Activewear, Socks & Underwear",apparel,material,optional,24,0.25
+C040205,"Activewear, Socks & Underwear",apparel,gender,optional,24,0.917
+C040301,Hats & Caps,accessory,colour,required,200,0.635
+C040301,Hats & Caps,accessory,material,optional,200,0.04
+C040301,Hats & Caps,accessory,gender,optional,200,0.76
+C040302,"Scarves, Gloves & Gaiters",accessory,colour,required,34,0.735
+C040302,"Scarves, Gloves & Gaiters",accessory,material,optional,34,0.059
+C040302,"Scarves, Gloves & Gaiters",accessory,gender,optional,34,0.676
+C040303,Belts & Ties,accessory,colour,required,28,0.821
+C040303,Belts & Ties,accessory,material,optional,28,0.071
+C040303,Belts & Ties,accessory,gender,optional,28,0.893
+C040304,Wallets,accessory,colour,required,55,0.873
+C040304,Wallets,accessory,material,optional,55,0.673
+C040304,Wallets,accessory,gender,optional,55,0.673
+C040305,Handbags,accessory,colour,required,99,0.848
+C040305,Handbags,accessory,material,optional,99,0.626
+C040305,Handbags,accessory,gender,optional,99,0.747
+C040306,Backpacks,bag,colour,required,96,0.854
+C040306,Backpacks,bag,material,optional,96,0.417
+C040306,Backpacks,bag,length_cm,optional,96,0.854
+C040306,Backpacks,bag,capacity_ml,optional,96,0.208
+C040307,Tote & Carry Bags,bag,colour,required,49,0.673
+C040307,Tote & Carry Bags,bag,material,optional,49,0.388
+C040307,Tote & Carry Bags,bag,length_cm,optional,49,0.714
+C040307,Tote & Carry Bags,bag,capacity_ml,optional,49,0.061
+C040308,Sunglasses & Eyewear,accessory,colour,required,19,0.684
+C040308,Sunglasses & Eyewear,accessory,material,optional,19,0.053
+C040308,Sunglasses & Eyewear,accessory,gender,optional,19,0.842
+C040309,Watches,jewelry,material,required,7,0.0
+C040309,Watches,jewelry,colour,optional,7,0.714
+C040309,Watches,jewelry,gender,optional,7,0.857
+C040310,Umbrellas,accessory,colour,required,40,0.775
+C040310,Umbrellas,accessory,material,optional,40,0.225
+C040310,Umbrellas,accessory,gender,optional,40,0.15
+C040401,Necklaces & Pendants,jewelry,material,required,237,0.43
+C040401,Necklaces & Pendants,jewelry,colour,optional,237,0.544
+C040401,Necklaces & Pendants,jewelry,gender,optional,237,0.414
+C040402,Bracelets & Anklets,jewelry,material,required,63,0.365
+C040402,Bracelets & Anklets,jewelry,colour,optional,63,0.556
+C040402,Bracelets & Anklets,jewelry,gender,optional,63,0.413
+C040403,Rings,jewelry,material,required,235,0.234
+C040403,Rings,jewelry,colour,optional,235,0.294
+C040403,Rings,jewelry,gender,optional,235,0.221
+C040404,Earrings,jewelry,material,required,308,0.409
+C040404,Earrings,jewelry,colour,optional,308,0.523
+C040404,Earrings,jewelry,gender,optional,308,0.377
+C040405,Jewelry Sets & Storage,jewelry,material,required,48,0.75
+C040405,Jewelry Sets & Storage,jewelry,colour,optional,48,0.417
+C040405,Jewelry Sets & Storage,jewelry,gender,optional,48,0.542
+C040501,Suitcases & Luggage,bag,colour,required,219,0.79
+C040501,Suitcases & Luggage,bag,material,optional,219,0.365
+C040501,Suitcases & Luggage,bag,length_cm,optional,219,0.781
+C040501,Suitcases & Luggage,bag,capacity_ml,optional,219,0.032
+C050101,Phone & Tablet Cases,phone_case,compatible_device,required,634,0.692
+C050101,Phone & Tablet Cases,phone_case,colour,optional,634,0.522
+C050101,Phone & Tablet Cases,phone_case,material,optional,634,0.385
+C050102,Screen Protectors & Mounts,phone_case,compatible_device,required,71,0.38
+C050102,Screen Protectors & Mounts,phone_case,colour,optional,71,0.662
+C050102,Screen Protectors & Mounts,phone_case,material,optional,71,0.507
+C050103,Chargers & Cables,electronics,colour,optional,217,0.714
+C050103,Chargers & Cables,electronics,weight_g,optional,217,0.71
+C050201,Mice & Keyboards,electronics,colour,optional,55,0.745
+C050201,Mice & Keyboards,electronics,weight_g,optional,55,0.618
+C050202,Computer Components & Add-ons,electronics,colour,optional,216,0.634
+C050202,Computer Components & Add-ons,electronics,weight_g,optional,216,0.593
+C050203,Storage Drives & Memory Cards,electronics,colour,optional,27,0.259
+C050203,Storage Drives & Memory Cards,electronics,weight_g,optional,27,0.407
+C050301,Headphones & Speakers,electronics,colour,optional,104,0.644
+C050301,Headphones & Speakers,electronics,weight_g,optional,104,0.769
+C050302,"Video, Camera & Gaming Accessories",electronics,colour,optional,182,0.484
+C050302,"Video, Camera & Gaming Accessories",electronics,weight_g,optional,182,0.714
+C050401,Batteries & Power,electronics,colour,optional,121,0.322
+C050401,Batteries & Power,electronics,weight_g,optional,121,0.653
+C050402,Office & Security Electronics,electronics,colour,optional,64,0.219
+C050402,Office & Security Electronics,electronics,weight_g,optional,64,0.422
+C060101,Breakfast Cereals & Granola,food,net_qty,required,309,0.531
+C060101,Breakfast Cereals & Granola,food,labels,optional,309,0.246
+C060101,Breakfast Cereals & Granola,food,nutriscore,optional,309,0.935
+C060101,Breakfast Cereals & Granola,food,allergens,optional,309,0.935
+C060101,Breakfast Cereals & Granola,food,pack_count,optional,309,0.01
+C060102,Jams & Preserves,food,net_qty,required,272,0.482
+C060102,Jams & Preserves,food,labels,optional,272,0.199
+C060102,Jams & Preserves,food,nutriscore,optional,272,1.0
+C060102,Jams & Preserves,food,allergens,optional,272,1.0
+C060102,Jams & Preserves,food,pack_count,optional,272,0.0
+C060103,"Honey, Syrups & Nut Butters",food,net_qty,required,309,0.142
+C060103,"Honey, Syrups & Nut Butters",food,labels,optional,309,0.133
+C060103,"Honey, Syrups & Nut Butters",food,nutriscore,optional,309,0.945
+C060103,"Honey, Syrups & Nut Butters",food,allergens,optional,309,0.945
+C060103,"Honey, Syrups & Nut Butters",food,pack_count,optional,309,0.01
+C060201,"Crisps, Crackers & Pretzels",food,net_qty,required,328,0.256
+C060201,"Crisps, Crackers & Pretzels",food,labels,optional,328,0.119
+C060201,"Crisps, Crackers & Pretzels",food,nutriscore,optional,328,0.86
+C060201,"Crisps, Crackers & Pretzels",food,allergens,optional,328,0.86
+C060201,"Crisps, Crackers & Pretzels",food,pack_count,optional,328,0.012
+C060202,"Nuts, Seeds & Trail Mix",food,net_qty,required,318,0.377
+C060202,"Nuts, Seeds & Trail Mix",food,labels,optional,318,0.066
+C060202,"Nuts, Seeds & Trail Mix",food,nutriscore,optional,318,0.855
+C060202,"Nuts, Seeds & Trail Mix",food,allergens,optional,318,0.855
+C060202,"Nuts, Seeds & Trail Mix",food,pack_count,optional,318,0.013
+C060301,Biscuits & Cookies,food,net_qty,required,325,0.234
+C060301,Biscuits & Cookies,food,labels,optional,325,0.034
+C060301,Biscuits & Cookies,food,nutriscore,optional,325,0.908
+C060301,Biscuits & Cookies,food,allergens,optional,325,0.908
+C060301,Biscuits & Cookies,food,pack_count,optional,325,0.037
+C060302,Chocolate & Sweets,food,net_qty,required,294,0.49
+C060302,Chocolate & Sweets,food,labels,optional,294,0.279
+C060302,Chocolate & Sweets,food,nutriscore,optional,294,0.98
+C060302,Chocolate & Sweets,food,allergens,optional,294,0.98
+C060302,Chocolate & Sweets,food,pack_count,optional,294,0.007
+C060303,Dried Fruit & Fruit Snacks,food,net_qty,required,289,0.484
+C060303,Dried Fruit & Fruit Snacks,food,labels,optional,289,0.211
+C060303,Dried Fruit & Fruit Snacks,food,nutriscore,optional,289,0.955
+C060303,Dried Fruit & Fruit Snacks,food,allergens,optional,289,0.955
+C060303,Dried Fruit & Fruit Snacks,food,pack_count,optional,289,0.007
+C060304,Snack & Cereal Bars,food,net_qty,required,11,0.364
+C060304,Snack & Cereal Bars,food,labels,optional,11,0.0
+C060304,Snack & Cereal Bars,food,nutriscore,optional,11,0.0
+C060304,Snack & Cereal Bars,food,allergens,optional,11,0.0
+C060304,Snack & Cereal Bars,food,pack_count,optional,11,0.455
+C060401,"Bread, Cakes & Pastries",food,net_qty,required,398,0.302
+C060401,"Bread, Cakes & Pastries",food,labels,optional,398,0.121
+C060401,"Bread, Cakes & Pastries",food,nutriscore,optional,398,0.721
+C060401,"Bread, Cakes & Pastries",food,allergens,optional,398,0.721
+C060401,"Bread, Cakes & Pastries",food,pack_count,optional,398,0.095
+C060402,Sandwiches & Ready Meals,food,net_qty,required,302,0.129
+C060402,Sandwiches & Ready Meals,food,labels,optional,302,0.093
+C060402,Sandwiches & Ready Meals,food,nutriscore,optional,302,0.947
+C060402,Sandwiches & Ready Meals,food,allergens,optional,302,0.947
+C060402,Sandwiches & Ready Meals,food,pack_count,optional,302,0.003
+C060403,Fresh Fruit & Vegetables,food,net_qty,required,326,0.632
+C060403,Fresh Fruit & Vegetables,food,labels,optional,326,0.055
+C060403,Fresh Fruit & Vegetables,food,nutriscore,optional,326,0.736
+C060403,Fresh Fruit & Vegetables,food,allergens,optional,326,0.736
+C060403,Fresh Fruit & Vegetables,food,pack_count,optional,326,0.015
+C060404,"Meat, Poultry & Eggs",food,net_qty,required,39,0.59
+C060404,"Meat, Poultry & Eggs",food,labels,optional,39,0.0
+C060404,"Meat, Poultry & Eggs",food,nutriscore,optional,39,0.0
+C060404,"Meat, Poultry & Eggs",food,allergens,optional,39,0.0
+C060404,"Meat, Poultry & Eggs",food,pack_count,optional,39,0.179
+C060501,Cheese,food,net_qty,required,347,0.21
+C060501,Cheese,food,labels,optional,347,0.035
+C060501,Cheese,food,nutriscore,optional,347,0.879
+C060501,Cheese,food,allergens,optional,347,0.879
+C060501,Cheese,food,pack_count,optional,347,0.0
+C060502,Yogurt,food,net_qty,required,298,0.087
+C060502,Yogurt,food,labels,optional,298,0.104
+C060502,Yogurt,food,nutriscore,optional,298,0.997
+C060502,Yogurt,food,allergens,optional,298,0.997
+C060502,Yogurt,food,pack_count,optional,298,0.0
+C060503,"Milk, Cream & Dairy Drinks",food,net_qty,required,57,0.772
+C060503,"Milk, Cream & Dairy Drinks",food,labels,optional,57,0.0
+C060503,"Milk, Cream & Dairy Drinks",food,nutriscore,optional,57,0.0
+C060503,"Milk, Cream & Dairy Drinks",food,allergens,optional,57,0.0
+C060503,"Milk, Cream & Dairy Drinks",food,pack_count,optional,57,0.018
+C060601,Coffee,food,net_qty,required,402,0.428
+C060601,Coffee,food,labels,optional,402,0.1
+C060601,Coffee,food,nutriscore,optional,402,0.692
+C060601,Coffee,food,allergens,optional,402,0.692
+C060601,Coffee,food,pack_count,optional,402,0.057
+C060602,Tea,food,net_qty,required,346,0.072
+C060602,Tea,food,labels,optional,346,0.104
+C060602,Tea,food,nutriscore,optional,346,0.858
+C060602,Tea,food,allergens,optional,346,0.858
+C060602,Tea,food,pack_count,optional,346,0.078
+C060603,Fruit Juices,food,net_qty,required,303,0.366
+C060603,Fruit Juices,food,labels,optional,303,0.201
+C060603,Fruit Juices,food,nutriscore,optional,303,0.95
+C060603,Fruit Juices,food,allergens,optional,303,0.95
+C060603,Fruit Juices,food,pack_count,optional,303,0.003
+C060604,Soft Drinks,food,net_qty,required,293,0.338
+C060604,Soft Drinks,food,labels,optional,293,0.089
+C060604,Soft Drinks,food,nutriscore,optional,293,0.932
+C060604,Soft Drinks,food,allergens,optional,293,0.932
+C060604,Soft Drinks,food,pack_count,optional,293,0.02
+C060605,Water,food,net_qty,required,289,0.266
+C060605,Water,food,labels,optional,289,0.031
+C060605,Water,food,nutriscore,optional,289,0.92
+C060605,Water,food,allergens,optional,289,0.92
+C060605,Water,food,pack_count,optional,289,0.007
+C060606,Wine,food,net_qty,required,20,0.95
+C060606,Wine,food,labels,optional,20,0.0
+C060606,Wine,food,nutriscore,optional,20,0.0
+C060606,Wine,food,allergens,optional,20,0.0
+C060606,Wine,food,pack_count,optional,20,0.0
+C060701,Pasta & Noodles,food,net_qty,required,327,0.413
+C060701,Pasta & Noodles,food,labels,optional,327,0.162
+C060701,Pasta & Noodles,food,nutriscore,optional,327,0.881
+C060701,Pasta & Noodles,food,allergens,optional,327,0.881
+C060701,Pasta & Noodles,food,pack_count,optional,327,0.006
+C060702,"Rice, Grains & Legumes",food,net_qty,required,349,0.264
+C060702,"Rice, Grains & Legumes",food,labels,optional,349,0.054
+C060702,"Rice, Grains & Legumes",food,nutriscore,optional,349,0.834
+C060702,"Rice, Grains & Legumes",food,allergens,optional,349,0.834
+C060702,"Rice, Grains & Legumes",food,pack_count,optional,349,0.0
+C060703,"Sauces, Soups & Condiments",food,net_qty,required,333,0.393
+C060703,"Sauces, Soups & Condiments",food,labels,optional,333,0.144
+C060703,"Sauces, Soups & Condiments",food,nutriscore,optional,333,0.787
+C060703,"Sauces, Soups & Condiments",food,allergens,optional,333,0.787
+C060703,"Sauces, Soups & Condiments",food,pack_count,optional,333,0.0
+C060704,Cooking Oils & Vinegar,food,net_qty,required,327,0.251
+C060704,Cooking Oils & Vinegar,food,labels,optional,327,0.122
+C060704,Cooking Oils & Vinegar,food,nutriscore,optional,327,0.813
+C060704,Cooking Oils & Vinegar,food,allergens,optional,327,0.813
+C060704,Cooking Oils & Vinegar,food,pack_count,optional,327,0.003
+C060705,"Herbs, Spices & Baking",food,net_qty,required,151,0.815
+C060705,"Herbs, Spices & Baking",food,labels,optional,151,0.0
+C060705,"Herbs, Spices & Baking",food,nutriscore,optional,151,0.0
+C060705,"Herbs, Spices & Baking",food,allergens,optional,151,0.0
+C060705,"Herbs, Spices & Baking",food,pack_count,optional,151,0.04
+C070101,Vitamins & Supplements,health,net_qty,required,273,0.414
+C070101,Vitamins & Supplements,health,labels,optional,273,0.0
+C070101,Vitamins & Supplements,health,pack_count,optional,273,0.476
+C070102,Protein & Sports Nutrition,health,net_qty,required,34,0.618
+C070102,Protein & Sports Nutrition,health,labels,optional,34,0.0
+C070102,Protein & Sports Nutrition,health,pack_count,optional,34,0.0
+C070201,Shampoo & Conditioner,health,net_qty,required,47,0.66
+C070201,Shampoo & Conditioner,health,labels,optional,47,0.0
+C070201,Shampoo & Conditioner,health,pack_count,optional,47,0.106
+C070202,"Body Wash, Soap & Deodorant",health,net_qty,required,159,0.396
+C070202,"Body Wash, Soap & Deodorant",health,labels,optional,159,0.0
+C070202,"Body Wash, Soap & Deodorant",health,pack_count,optional,159,0.396
+C070203,Skin Care & Sunscreen,health,net_qty,required,178,0.438
+C070203,Skin Care & Sunscreen,health,labels,optional,178,0.0
+C070203,Skin Care & Sunscreen,health,pack_count,optional,178,0.163
+C070204,Oral Care,health,net_qty,required,35,0.571
+C070204,Oral Care,health,labels,optional,35,0.0
+C070204,Oral Care,health,pack_count,optional,35,0.514
+C070205,Beauty Tools & Appliances,health,net_qty,required,22,0.0
+C070205,Beauty Tools & Appliances,health,labels,optional,22,0.0
+C070205,Beauty Tools & Appliances,health,pack_count,optional,22,0.136
+C070301,"Medicines, First Aid & Supports",health,net_qty,required,183,0.262
+C070301,"Medicines, First Aid & Supports",health,labels,optional,183,0.0
+C070301,"Medicines, First Aid & Supports",health,pack_count,optional,183,0.257
+C070302,Baby & Feminine Care,health,net_qty,required,103,0.01
+C070302,Baby & Feminine Care,health,labels,optional,103,0.0
+C070302,Baby & Feminine Care,health,pack_count,optional,103,0.282
+C080101,Cleaning Products & Tools,household,net_qty,optional,266,0.132
+C080101,Cleaning Products & Tools,household,pack_count,optional,266,0.38
+C080102,Laundry & Dishwasher Detergents,household,net_qty,optional,46,0.348
+C080102,Laundry & Dishwasher Detergents,household,pack_count,optional,46,0.348
+C080103,Trash Bags & Bins,household,net_qty,optional,87,0.184
+C080103,Trash Bags & Bins,household,pack_count,optional,87,0.598
+C080104,Paper Towels & Tissues,household,net_qty,optional,47,0.0
+C080104,Paper Towels & Tissues,household,pack_count,optional,47,0.638
+C080201,"Storage Boxes, Bins & Baskets",generic,colour,optional,126,0.675
+C080201,"Storage Boxes, Bins & Baskets",generic,material,optional,126,0.444
+C080202,Hooks & Hangers,generic,colour,optional,120,0.775
+C080202,Hooks & Hangers,generic,material,optional,120,0.258
+C080203,Laundry Hampers & Drying Racks,generic,colour,optional,65,0.754
+C080203,Laundry Hampers & Drying Racks,generic,material,optional,65,0.508
+C090101,Binders & Folders,office,colour,optional,153,0.784
+C090101,Binders & Folders,office,pack_count,optional,153,0.51
+C090102,"Paper, Notebooks & Envelopes",office,colour,optional,111,0.559
+C090102,"Paper, Notebooks & Envelopes",office,pack_count,optional,111,0.36
+C090103,Pens & Writing Instruments,office,colour,optional,65,0.462
+C090103,Pens & Writing Instruments,office,pack_count,optional,65,0.477
+C090104,Desk Accessories & Whiteboards,office,colour,optional,83,0.47
+C090104,Desk Accessories & Whiteboards,office,pack_count,optional,83,0.265
+C090105,Ink & Toner,office,colour,optional,22,0.591
+C090105,Ink & Toner,office,pack_count,optional,22,0.136
+C100101,Dumbbells & Weights,sports,colour,optional,23,0.565
+C100101,Dumbbells & Weights,sports,weight_g,optional,23,0.609
+C100101,Dumbbells & Weights,sports,material,optional,23,0.435
+C100102,"Yoga Mats, Bands & Recovery",sports,colour,optional,108,0.667
+C100102,"Yoga Mats, Bands & Recovery",sports,weight_g,optional,108,0.639
+C100102,"Yoga Mats, Bands & Recovery",sports,material,optional,108,0.157
+C100103,Sports Balls,sports,colour,optional,75,0.413
+C100103,Sports Balls,sports,weight_g,optional,75,0.64
+C100103,Sports Balls,sports,material,optional,75,0.28
+C100201,Tents & Camping,sports,colour,optional,58,0.414
+C100201,Tents & Camping,sports,weight_g,optional,58,0.397
+C100201,Tents & Camping,sports,material,optional,58,0.362
+C100301,Patio Furniture & Shade,furniture,colour,required,65,0.385
+C100301,Patio Furniture & Shade,furniture,material,required,65,0.369
+C100301,Patio Furniture & Shade,furniture,length_cm,required,65,0.462
+C100301,Patio Furniture & Shade,furniture,width_cm,optional,65,0.462
+C100301,Patio Furniture & Shade,furniture,height_cm,optional,65,0.462
+C100301,Patio Furniture & Shade,furniture,weight_g,optional,65,0.446
+C100301,Patio Furniture & Shade,furniture,style,optional,65,0.2
+C100302,Grills & BBQ Accessories,generic,colour,optional,20,0.45
+C100302,Grills & BBQ Accessories,generic,material,optional,20,0.4
+C100303,Planters & Garden Watering,generic,colour,optional,190,0.6
+C100303,Planters & Garden Watering,generic,material,optional,190,0.426
+C110101,Tools & Tool Accessories,tools,material,optional,140,0.114
+C110101,Tools & Tool Accessories,tools,colour,optional,140,0.171
+C110201,Door & Cabinet Hardware,tools,material,optional,145,0.221
+C110201,Door & Cabinet Hardware,tools,colour,optional,145,0.703
+C110202,Locks & Safes,tools,material,optional,44,0.205
+C110202,Locks & Safes,tools,colour,optional,44,0.636
+C110203,Faucets & Plumbing,tools,material,optional,109,0.275
+C110203,Faucets & Plumbing,tools,colour,optional,109,0.56
+C110204,Fasteners & Mechanical Parts,tools,material,optional,173,0.075
+C110204,Fasteners & Mechanical Parts,tools,colour,optional,173,0.607
+C110205,Safety Equipment,tools,material,optional,146,0.089
+C110205,Safety Equipment,tools,colour,optional,146,0.705
+C120101,"Pet Beds, Cat Trees & Furniture",pet,colour,optional,37,0.649
+C120101,"Pet Beds, Cat Trees & Furniture",pet,size,optional,37,0.0
+C120101,"Pet Beds, Cat Trees & Furniture",pet,material,optional,37,0.162
+C120102,"Pet Harnesses, Carriers & Apparel",pet,colour,optional,32,0.281
+C120102,"Pet Harnesses, Carriers & Apparel",pet,size,optional,32,0.0
+C120102,"Pet Harnesses, Carriers & Apparel",pet,material,optional,32,0.062
+C120103,Pet Feeding & Food,pet,colour,optional,22,0.227
+C120103,Pet Feeding & Food,pet,size,optional,22,0.0
+C120103,Pet Feeding & Food,pet,material,optional,22,0.045
+C120201,"Toys, Games & Costumes",generic,colour,optional,25,0.96
+C120201,"Toys, Games & Costumes",generic,material,optional,25,0.08
+C130101,Major Appliances,appliance,colour,required,40,0.275
+C130101,Major Appliances,appliance,capacity_ml,optional,40,0.1
+C130101,Major Appliances,appliance,weight_g,optional,40,0.325
+C130101,Major Appliances,appliance,material,optional,40,0.25
+C130102,Vacuum Cleaners,appliance,colour,required,9,0.333
+C130102,Vacuum Cleaners,appliance,capacity_ml,optional,9,0.778
+C130102,Vacuum Cleaners,appliance,weight_g,optional,9,0.667
+C130102,Vacuum Cleaners,appliance,material,optional,9,0.333
+C130103,"Fans, Heaters & Water Purifiers",appliance,colour,required,66,0.712
+C130103,"Fans, Heaters & Water Purifiers",appliance,capacity_ml,optional,66,0.03
+C130103,"Fans, Heaters & Water Purifiers",appliance,weight_g,optional,66,0.818
+C130103,"Fans, Heaters & Water Purifiers",appliance,material,optional,66,0.167
+C130201,Car Accessories & Parts,generic,colour,optional,144,0.424
+C130201,Car Accessories & Parts,generic,material,optional,144,0.104
+C140101,Other Products,generic,colour,optional,774,0.469
+C140101,Other Products,generic,material,optional,774,0.171

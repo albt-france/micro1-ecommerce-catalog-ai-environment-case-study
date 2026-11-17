@@ -1,0 +1,48 @@
+{
+ "id": "S060",
+ "type": "comparison",
+ "difficulty": 3,
+ "persona": {
+  "id": "P6",
+  "label": "Gift shopper in the end-of-year season",
+  "price_focus": "low",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Home & Furniture"
+  ]
+ },
+ "month": 7,
+ "intent": "compare ceiling light options and buy the best one",
+ "request": "Buy the lightest ceiling light you have.",
+ "constraints": {
+  "category_id": "C010702",
+  "max_weight_g": 4.5
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "ceiling light",
+    "skus": [
+     "MKB-100965"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item has the lowest weight in the category (2 % tolerance)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "out-of-stock or held items can look cheaper in search results",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

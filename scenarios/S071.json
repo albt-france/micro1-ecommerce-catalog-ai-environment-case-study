@@ -1,0 +1,50 @@
+{
+ "id": "S071",
+ "type": "comparison",
+ "difficulty": 3,
+ "persona": {
+  "id": "P2",
+  "label": "First-time home owner furnishing a flat",
+  "price_focus": "medium",
+  "departments": [
+   "Home & Furniture",
+   "Bed & Bath",
+   "Kitchen & Dining"
+  ]
+ },
+ "month": 9,
+ "intent": "compare armchair options and buy the best one",
+ "request": "Buy the cheapest armchair available.",
+ "constraints": {
+  "category_id": "C010102",
+  "max_price": 21.99
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "armchair",
+    "skus": [
+     "ABO-B06XXWZ4HH",
+     "ABO-B06XXWZ4HH-V"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item has the lowest price among matching in-stock items"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "the same product is listed twice across sources",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

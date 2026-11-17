@@ -1,0 +1,50 @@
+{
+ "id": "S007",
+ "type": "simple_search",
+ "difficulty": 1,
+ "persona": {
+  "id": "P1",
+  "label": "Budget-conscious student",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Office & School Supplies",
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 2,
+ "intent": "buy some olive oil of a known brand",
+ "request": "I'm looking for some olive oil by Monini S.P.A..",
+ "constraints": {
+  "category_id": "C060704",
+  "brand": "Monini S.P.A."
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "olive oil",
+    "skus": [
+     "OFF-0080441000616"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "brand and category respected"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": null,
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

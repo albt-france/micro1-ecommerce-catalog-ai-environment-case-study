@@ -1,0 +1,74 @@
+{
+ "id": "S095",
+ "type": "substitution",
+ "difficulty": 3,
+ "persona": {
+  "id": "P7",
+  "label": "Phone owner needing accessories",
+  "price_focus": "high",
+  "departments": [
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 9,
+ "intent": "replace a sold-out product",
+ "request": "I wanted to buy SKU ABO-B01I095OO4 (AmazonBasics Padded USB Headset with Noise-canceling Mic) but it is out of stock. Find me the closest in-stock alternative from the same category in the same colour (black), under $90.",
+ "constraints": {
+  "category_id": "C050301",
+  "max_price": 90,
+  "colour": "black"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "headphones",
+    "skus": [
+     "ABO-B00GUTY132",
+     "ABO-B00KQFO12W",
+     "ABO-B011W7HTSK",
+     "ABO-B014WIOMP4",
+     "ABO-B01HTRCRU2",
+     "ABO-B01JIM11X0",
+     "ABO-B075QJFH8F",
+     "ABO-B075QLZYD6",
+     "ABO-B078H4FH5K",
+     "ABO-B07BLDWLS2",
+     "ABO-B07D94Z3JH",
+     "ABO-B07DDK3W5D",
+     "ABO-B07F84FDPZ",
+     "ABO-B07HH1QSLB",
+     "ABO-B07PP882QW",
+     "ABO-B07Q1D4GQL",
+     "ABO-B07Q1D83Y9",
+     "ABO-B07Q437K3X",
+     "ABO-B07QH5MDTS",
+     "ABO-B07QH5MQRP",
+     "ABO-B07RKKM3TR",
+     "ABO-B07ZTKJ48L",
+     "ABO-B081HD7Q9W",
+     "ABO-B08H8G6KRL"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in stock, same category",
+   "colour/size kept",
+   "within budget"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 4
+ },
+ "trap": "the requested SKU is out of stock: add_to_cart fails on it",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ],
+ "sold_out_sku": "ABO-B01I095OO4"
+}

@@ -1,0 +1,52 @@
+{
+ "id": "S026",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P4",
+  "label": "Regular runner replacing kit",
+  "price_focus": "medium",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Sports & Outdoors"
+  ]
+ },
+ "month": 1,
+ "intent": "buy a pair of sandals matching several constraints",
+ "request": "Find me a pair of sandals, size 39 in grey for less than $53.",
+ "constraints": {
+  "category_id": "C040106",
+  "colour": "grey",
+  "size": "39",
+  "max_price": 53
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "sandals",
+    "skus": [
+     "ABO-B076RPBGCW",
+     "ABO-B07712655Y"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Dove Suede' in a source listing",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

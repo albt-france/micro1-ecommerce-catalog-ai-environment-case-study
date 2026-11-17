@@ -1,0 +1,51 @@
+{
+ "id": "S043",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P6",
+  "label": "Gift shopper in the end-of-year season",
+  "price_focus": "low",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Home & Furniture"
+  ]
+ },
+ "month": 11,
+ "intent": "buy a pair of formal shoes matching several constraints",
+ "request": "I need a pair of formal shoes by find. in brown, under $124.",
+ "constraints": {
+  "category_id": "C040103",
+  "colour": "brown",
+  "brand": "find.",
+  "max_price": 124
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "formal shoes",
+    "skus": [
+     "ABO-B07Z6X8NPZ"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Brawn Classic Tan Leather' in a source listing",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

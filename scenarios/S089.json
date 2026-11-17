@@ -1,0 +1,80 @@
+{
+ "id": "S089",
+ "type": "substitution",
+ "difficulty": 3,
+ "persona": {
+  "id": "P4",
+  "label": "Regular runner replacing kit",
+  "price_focus": "medium",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Sports & Outdoors"
+  ]
+ },
+ "month": 10,
+ "intent": "replace a sold-out product",
+ "request": "I wanted to buy SKU ABO-B07R6718H1 (Amazon Brand - find. Mid Height Faux Fur Lace Up Ankle Boots, Black, U) but it is out of stock. Find me the closest in-stock alternative from the same category in the same colour (black), under $104.",
+ "constraints": {
+  "category_id": "C040105",
+  "max_price": 104,
+  "colour": "black"
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "boots",
+    "skus": [
+     "ABO-B01N5XY9K8",
+     "ABO-B06WD6K2NZ",
+     "ABO-B06XCH1FFY",
+     "ABO-B06XGFCS8W",
+     "ABO-B06XGRH3BV",
+     "ABO-B071KPWG3R",
+     "ABO-B071WYMB1B",
+     "ABO-B072K7YL6V",
+     "ABO-B072MTS9KW",
+     "ABO-B073QS3GYC",
+     "ABO-B075Z2ZV1W",
+     "ABO-B076THJHS9",
+     "ABO-B07D45BWCN",
+     "ABO-B07DWFGG51",
+     "ABO-B07N2848HL",
+     "ABO-B07R47ZMYH",
+     "ABO-B07R624HFK",
+     "ABO-B07R79V72Z",
+     "ABO-B07R84YBSD",
+     "ABO-B07RBLHHN2",
+     "ABO-B07RCY52BC",
+     "ABO-B07RFWT7N6",
+     "ABO-B07RW4LLGT",
+     "ABO-B07TFDLM96",
+     "ABO-B07TJ1DMHY",
+     "ABO-B07XQ91RYD",
+     "ABO-B08C3RGS7F",
+     "MKB-101982",
+     "MKB-102150"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in stock, same category",
+   "colour/size kept",
+   "within budget"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 4
+ },
+ "trap": "the requested SKU is out of stock: add_to_cart fails on it",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ],
+ "sold_out_sku": "ABO-B07R6718H1"
+}

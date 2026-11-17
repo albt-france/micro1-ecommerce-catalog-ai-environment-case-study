@@ -1,0 +1,52 @@
+{
+ "id": "S036",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P5",
+  "label": "Small-office manager restocking supplies",
+  "price_focus": "medium",
+  "departments": [
+   "Office & School Supplies",
+   "Household Supplies"
+  ]
+ },
+ "month": 1,
+ "intent": "buy a storage box matching several constraints",
+ "request": "Looking for a storage box in beige by Stone & Beam. Budget $17 max.",
+ "constraints": {
+  "category_id": "C080201",
+  "colour": "beige",
+  "brand": "Stone & Beam",
+  "max_price": 17
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "storage box",
+    "skus": [
+     "ABO-B07B4ZFC5H",
+     "MKB-102304"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'Natural Rattan' in a source listing; brand also spelled 'STONE & BEAM'",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

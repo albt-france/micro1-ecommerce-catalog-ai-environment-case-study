@@ -1,0 +1,27 @@
+id,dimension,severity,description,applicable_before,failed_before,pass_rate_before,applicable_after,failed_after,pass_rate_after
+C01,completeness,error,Title is present,22007,0,1.0,19789,0,1.0
+C02,completeness,error,Brand is present,22007,1793,0.9185,19789,1783,0.9099
+C03,completeness,error,Product is classified in a leaf category,22007,5028,0.7715,19789,0,1.0
+C04,completeness,error,Price is present,22007,0,1.0,19789,0,1.0
+C05,completeness,warning,All attributes required by the category are filled,16979,8037,0.5267,19789,8711,0.5598
+C06,completeness,info,Description or bullet points are present,22007,12600,0.4275,19789,11604,0.4136
+C07,completeness,warning,Food products state a net quantity (g or ml),7385,4952,0.3295,7362,4858,0.3401
+V01,validity,error,Price is strictly positive,22007,13,0.9994,19789,13,0.9993
+V02,validity,warning,Colour is in the controlled list,9601,9441,0.0167,8169,0,1.0
+V03,validity,warning,"Size is on the agreed scale (XXS-3XL, EU shoe size, bed size, or one size)",0,0,,222,0,1.0
+V04,validity,error,GTIN/EAN check digit is valid when a barcode is given,6442,218,0.9662,6190,203,0.9672
+V05,validity,warning,Title length is between 10 and 200 characters,22007,579,0.9737,19789,533,0.9731
+V06,validity,info,Title is not written in capitals,20967,345,0.9835,18831,0,1.0
+V07,validity,warning,Title language is English (other languages are kept and tagged),22007,4901,0.7773,19789,4383,0.7785
+V08,validity,error,Currency is USD,22007,0,1.0,19789,0,1.0
+K01,consistency,warning,Price is within 3.5 robust z-scores of its category (log scale),16958,541,0.9681,19741,676,0.9658
+K02,consistency,warning,Size and weight are plausible for the category (log scale robust z),8010,708,0.9116,9848,824,0.9163
+K03,consistency,warning,A colour named in the title agrees with the colour field,4141,4068,0.0176,3925,516,0.8685
+K04,consistency,warning,Brand matches the brand reference table exactly (not a near-miss spelling),20216,6135,0.6965,18007,2149,0.8807
+K05,consistency,warning,The text classifier does not confidently place the product in another category,22007,1112,0.9495,19789,167,0.9916
+K06,consistency,error,in_stock agrees with stock quantity,22007,0,1.0,19789,0,1.0
+K07,consistency,warning,Variants of one parent share brand and category,0,0,,19789,0,1.0
+K08,consistency,warning,The source colour maps to the controlled list (no unknown colour words),9601,1740,0.8188,8378,1489,0.8223
+U01,uniqueness,error,SKU is unique,22007,0,1.0,19789,0,1.0
+U02,uniqueness,warning,No other SKU is the same product (cross-source duplicate cluster),22007,4144,0.8117,19789,0,1.0
+U03,uniqueness,warning,"Colour/size variants are grouped under one parent, not listed as separate products",22007,1475,0.933,19789,0,1.0

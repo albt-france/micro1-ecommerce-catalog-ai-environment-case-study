@@ -1,0 +1,42 @@
+{
+ "id": "S149",
+ "type": "no_answer",
+ "difficulty": 5,
+ "persona": {
+  "id": "P4",
+  "label": "Regular runner replacing kit",
+  "price_focus": "medium",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Sports & Outdoors"
+  ]
+ },
+ "month": 11,
+ "intent": "ask for something the shop cannot provide",
+ "request": "I need a brown hat under $10.",
+ "constraints": {
+  "category_id": "C040301",
+  "colour": "brown",
+  "max_price": 10
+ },
+ "expected_action": "no_match",
+ "acceptable_answers": {
+  "roles": [],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "reports that nothing matches",
+   "buys nothing"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 2
+ },
+ "trap": "similar products exist, but none meets every constraint",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

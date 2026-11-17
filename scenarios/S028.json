@@ -1,0 +1,59 @@
+{
+ "id": "S028",
+ "type": "multi_constraint",
+ "difficulty": 2,
+ "persona": {
+  "id": "P1",
+  "label": "Budget-conscious student",
+  "price_focus": "high",
+  "departments": [
+   "Grocery & Gourmet Food",
+   "Office & School Supplies",
+   "Electronics & Accessories"
+  ]
+ },
+ "month": 3,
+ "intent": "buy some pens matching several constraints",
+ "request": "Looking for some pens in black by AmazonBasics. Budget $42 max.",
+ "constraints": {
+  "category_id": "C090103",
+  "colour": "black",
+  "brand": "AmazonBasics",
+  "max_price": 42
+ },
+ "expected_action": "purchase",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "pens",
+    "skus": [
+     "ABO-B0188A3QRM",
+     "ABO-B07CWDT5N3",
+     "ABO-B07FYKDLTS",
+     "ABO-B07SM9CSWT",
+     "ABO-B07SNFK6TP",
+     "ABO-B07VVB7DSK",
+     "ABO-B07VX9RBXC",
+     "ABO-B07VYKTLD6"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": null,
+ "grading": {
+  "criteria": [
+   "purchased item is in the acceptable set",
+   "every constraint respected (clean values)"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 3
+ },
+ "trap": "colour written as 'black.value' in a source listing; the same product is listed twice across sources",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

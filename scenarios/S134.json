@@ -1,0 +1,54 @@
+{
+ "id": "S134",
+ "type": "ambiguous",
+ "difficulty": 4,
+ "persona": {
+  "id": "P4",
+  "label": "Regular runner replacing kit",
+  "price_focus": "medium",
+  "departments": [
+   "Clothing, Shoes & Accessories",
+   "Sports & Outdoors"
+  ]
+ },
+ "month": 3,
+ "intent": "buy a pair of running shoes but a key detail is missing",
+ "request": "I need a pair of running shoes by Flavia.",
+ "constraints": {
+  "category_id": "C040102",
+  "brand": "Flavia",
+  "size": "42"
+ },
+ "expected_action": "ask",
+ "acceptable_answers": {
+  "roles": [
+   {
+    "role": "running shoes",
+    "skus": [
+     "ABO-B0845C7MJN"
+    ],
+    "quantity": 1
+   }
+  ],
+  "total_budget": null
+ },
+ "clarification": {
+  "slot": "size",
+  "answer_text": "Size 42.",
+  "why": "size is a required attribute of the category"
+ },
+ "grading": {
+  "criteria": [
+   "asks about the size before adding anything to the cart",
+   "then buys an item that fits the answer"
+  ],
+  "max_steps": 25,
+  "optimal_steps": 5
+ },
+ "trap": "many running shoes items match; only the size disambiguates",
+ "data_tags": [
+  "SIMULATED persona and intent",
+  "PUBLIC DATA products (ABO, Open Food Facts)",
+  "SIMULATED prices and stock"
+ ]
+}

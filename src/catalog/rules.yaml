@@ -1,0 +1,33 @@
+# Catalogue quality rules. Each rule is evaluated per SKU by src/catalog/quality.py (check = the function used).
+# severity weight in the product quality score: error 3, warning 2, info 1.  score = 1 - failed weight / applicable weight
+rules:
+  # ------------------------------------------------------------ completeness
+  - {id: C01, dimension: completeness, severity: error,   check: not_null, field: title, description: "Title is present"}
+  - {id: C02, dimension: completeness, severity: error,   check: not_null, field: brand, description: "Brand is present"}
+  - {id: C03, dimension: completeness, severity: error,   check: not_null, field: category_id, description: "Product is classified in a leaf category"}
+  - {id: C04, dimension: completeness, severity: error,   check: not_null, field: price, description: "Price is present"}
+  - {id: C05, dimension: completeness, severity: warning, check: required_attributes, description: "All attributes required by the category are filled"}
+  - {id: C06, dimension: completeness, severity: info,    check: not_null, field: description, description: "Description or bullet points are present"}
+  - {id: C07, dimension: completeness, severity: warning, check: food_net_quantity, description: "Food products state a net quantity (g or ml)"}
+  # ------------------------------------------------------------ validity
+  - {id: V01, dimension: validity, severity: error,   check: positive, field: price, description: "Price is strictly positive"}
+  - {id: V02, dimension: validity, severity: warning, check: in_list, field: colour, values: colours, description: "Colour is in the controlled list"}
+  - {id: V03, dimension: validity, severity: warning, check: in_list, field: size, values: sizes, description: "Size is on the agreed scale (XXS-3XL, EU shoe size, bed size, or one size)"}
+  - {id: V04, dimension: validity, severity: error,   check: gtin, field: gtin, description: "GTIN/EAN check digit is valid when a barcode is given"}
+  - {id: V05, dimension: validity, severity: warning, check: title_length, min: 10, max: 200, description: "Title length is between 10 and 200 characters"}
+  - {id: V06, dimension: validity, severity: info,    check: not_shouting, field: title, description: "Title is not written in capitals"}
+  - {id: V07, dimension: validity, severity: warning, check: english_title, description: "Title language is English (other languages are kept and tagged)"}
+  - {id: V08, dimension: validity, severity: error,   check: in_list, field: currency, values: [USD], description: "Currency is USD"}
+  # ------------------------------------------------------------ consistency
+  - {id: K01, dimension: consistency, severity: warning, check: price_outlier, z: 3.5, description: "Price is within 3.5 robust z-scores of its category (log scale)"}
+  - {id: K02, dimension: consistency, severity: warning, check: dimension_outlier, z: 3.5, description: "Size and weight are plausible for the category (log scale robust z)"}
+  - {id: K03, dimension: consistency, severity: warning, check: title_colour, description: "A colour named in the title agrees with the colour field"}
+  - {id: K04, dimension: consistency, severity: warning, check: brand_known, description: "Brand matches the brand reference table exactly (not a near-miss spelling)"}
+  - {id: K05, dimension: consistency, severity: warning, check: category_model, min_proba: 0.8, description: "The text classifier does not confidently place the product in another category"}
+  - {id: K06, dimension: consistency, severity: error,   check: stock_flag, description: "in_stock agrees with stock quantity"}
+  - {id: K07, dimension: consistency, severity: warning, check: variant_family, description: "Variants of one parent share brand and category"}
+  - {id: K08, dimension: consistency, severity: warning, check: raw_colour_mapped, description: "The source colour maps to the controlled list (no unknown colour words)"}
+  # ------------------------------------------------------------ uniqueness
+  - {id: U01, dimension: uniqueness, severity: error,   check: unique, field: sku, description: "SKU is unique"}
+  - {id: U02, dimension: uniqueness, severity: warning, check: no_duplicate, description: "No other SKU is the same product (cross-source duplicate cluster)"}
+  - {id: U03, dimension: uniqueness, severity: warning, check: no_split_variant, description: "Colour/size variants are grouped under one parent, not listed as separate products"}

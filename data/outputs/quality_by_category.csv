@@ -1,0 +1,150 @@
+department,category_path,skus,quality,held
+Appliances & Automotive,Appliances & Automotive > Automotive > Car Accessories & Parts,144,0.9759,1
+Appliances & Automotive,"Appliances & Automotive > Home Appliances > Fans, Heaters & Water Purifiers",66,0.9636,9
+Appliances & Automotive,Appliances & Automotive > Home Appliances > Major Appliances,40,0.9526,0
+Appliances & Automotive,Appliances & Automotive > Home Appliances > Vacuum Cleaners,9,0.9305,1
+Bed & Bath,Bed & Bath > Bath > Bathroom Accessories,65,0.9532,4
+Bed & Bath,Bed & Bath > Bath > Towels & Bath Mats,17,0.9404,0
+Bed & Bath,Bed & Bath > Bedding > Blankets & Throws,3,0.9464,0
+Bed & Bath,Bed & Bath > Bedding > Comforters & Duvets,17,0.9556,0
+Bed & Bath,Bed & Bath > Bedding > Duvet Covers & Sets,22,0.9382,0
+Bed & Bath,Bed & Bath > Bedding > Pillowcases,14,0.8944,3
+Bed & Bath,Bed & Bath > Bedding > Pillows & Mattress Protectors,7,0.987,0
+Bed & Bath,Bed & Bath > Bedding > Sheets & Sheet Sets,194,0.8988,15
+Bed & Bath,"Bed & Bath > Window Treatments > Blinds, Shades & Curtain Hardware",23,0.9412,3
+Bed & Bath,Bed & Bath > Window Treatments > Curtains & Drapes,20,0.954,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Accessories > Backpacks",96,0.9659,1
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Accessories > Belts & Ties",28,0.9674,1
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Accessories > Handbags",99,0.9722,2
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Accessories > Hats & Caps",200,0.937,1
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Accessories > Scarves, Gloves & Gaiters",34,0.9497,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Accessories > Sunglasses & Eyewear",19,0.9518,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Accessories > Tote & Carry Bags",49,0.9443,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Accessories > Umbrellas",40,0.9466,2
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Accessories > Wallets",55,0.948,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Accessories > Watches",7,0.9149,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Clothing > Activewear, Socks & Underwear",24,0.9289,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Clothing > Outerwear & Knitwear",5,0.8839,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Clothing > Tops & T-Shirts",6,0.9081,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Jewelry > Bracelets & Anklets",63,0.9455,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Jewelry > Earrings",308,0.9268,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Jewelry > Jewelry Sets & Storage",48,0.9376,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Jewelry > Necklaces & Pendants",237,0.941,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Jewelry > Rings",235,0.9361,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Luggage > Suitcases & Luggage",219,0.9509,2
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Shoes > Boots",182,0.9211,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Shoes > Flats & Heels",56,0.951,2
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Shoes > Formal & Dress Shoes",45,0.9522,1
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Shoes > Loafers & Moccasins",22,0.9349,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Shoes > Running & Sports Shoes",40,0.973,0
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Shoes > Sandals & Slippers",195,0.9364,2
+"Clothing, Shoes & Accessories","Clothing, Shoes & Accessories > Shoes > Sneakers & Trainers",88,0.9549,0
+Electronics & Accessories,Electronics & Accessories > Audio & Video > Headphones & Speakers,104,0.9658,0
+Electronics & Accessories,"Electronics & Accessories > Audio & Video > Video, Camera & Gaming Accessories",182,0.9673,2
+Electronics & Accessories,Electronics & Accessories > Computer Accessories > Computer Components & Add-ons,216,0.9593,3
+Electronics & Accessories,Electronics & Accessories > Computer Accessories > Mice & Keyboards,55,0.9588,1
+Electronics & Accessories,Electronics & Accessories > Computer Accessories > Storage Drives & Memory Cards,27,0.9704,0
+Electronics & Accessories,Electronics & Accessories > Phone & Tablet Accessories > Chargers & Cables,217,0.9664,0
+Electronics & Accessories,Electronics & Accessories > Phone & Tablet Accessories > Phone & Tablet Cases,634,0.9523,111
+Electronics & Accessories,Electronics & Accessories > Phone & Tablet Accessories > Screen Protectors & Mounts,71,0.9368,0
+Electronics & Accessories,Electronics & Accessories > Power > Batteries & Power,121,0.969,1
+Electronics & Accessories,Electronics & Accessories > Power > Office & Security Electronics,64,0.9739,0
+Grocery & Gourmet Food,"Grocery & Gourmet Food > Bakery & Fresh > Bread, Cakes & Pastries",398,0.8978,14
+Grocery & Gourmet Food,Grocery & Gourmet Food > Bakery & Fresh > Fresh Fruit & Vegetables,326,0.903,52
+Grocery & Gourmet Food,"Grocery & Gourmet Food > Bakery & Fresh > Meat, Poultry & Eggs",39,0.9612,0
+Grocery & Gourmet Food,Grocery & Gourmet Food > Bakery & Fresh > Sandwiches & Ready Meals,302,0.8708,2
+Grocery & Gourmet Food,Grocery & Gourmet Food > Beverages > Coffee,402,0.9057,4
+Grocery & Gourmet Food,Grocery & Gourmet Food > Beverages > Fruit Juices,303,0.9047,16
+Grocery & Gourmet Food,Grocery & Gourmet Food > Beverages > Soft Drinks,293,0.8878,18
+Grocery & Gourmet Food,Grocery & Gourmet Food > Beverages > Tea,346,0.8708,4
+Grocery & Gourmet Food,Grocery & Gourmet Food > Beverages > Water,289,0.8753,21
+Grocery & Gourmet Food,Grocery & Gourmet Food > Beverages > Wine,20,0.9209,1
+Grocery & Gourmet Food,Grocery & Gourmet Food > Breakfast & Spreads > Breakfast Cereals & Granola,309,0.9133,17
+Grocery & Gourmet Food,"Grocery & Gourmet Food > Breakfast & Spreads > Honey, Syrups & Nut Butters",309,0.859,4
+Grocery & Gourmet Food,Grocery & Gourmet Food > Breakfast & Spreads > Jams & Preserves,272,0.8992,2
+Grocery & Gourmet Food,Grocery & Gourmet Food > Dairy & Chilled > Cheese,347,0.8751,10
+Grocery & Gourmet Food,"Grocery & Gourmet Food > Dairy & Chilled > Milk, Cream & Dairy Drinks",57,0.9758,2
+Grocery & Gourmet Food,Grocery & Gourmet Food > Dairy & Chilled > Yogurt,298,0.8447,3
+Grocery & Gourmet Food,Grocery & Gourmet Food > Pantry > Cooking Oils & Vinegar,327,0.8828,39
+Grocery & Gourmet Food,"Grocery & Gourmet Food > Pantry > Herbs, Spices & Baking",151,0.9727,2
+Grocery & Gourmet Food,Grocery & Gourmet Food > Pantry > Pasta & Noodles,327,0.897,26
+Grocery & Gourmet Food,"Grocery & Gourmet Food > Pantry > Rice, Grains & Legumes",349,0.8828,42
+Grocery & Gourmet Food,"Grocery & Gourmet Food > Pantry > Sauces, Soups & Condiments",333,0.9037,23
+Grocery & Gourmet Food,"Grocery & Gourmet Food > Snacks & Sweets > Savoury Snacks > Crisps, Crackers & Pretzels",328,0.8971,32
+Grocery & Gourmet Food,"Grocery & Gourmet Food > Snacks & Sweets > Savoury Snacks > Nuts, Seeds & Trail Mix",318,0.9022,18
+Grocery & Gourmet Food,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks > Biscuits & Cookies,325,0.8652,25
+Grocery & Gourmet Food,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks > Chocolate & Sweets,294,0.9096,6
+Grocery & Gourmet Food,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks > Dried Fruit & Fruit Snacks,289,0.9044,9
+Grocery & Gourmet Food,Grocery & Gourmet Food > Snacks & Sweets > Sweet Snacks > Snack & Cereal Bars,11,0.9268,0
+Health & Personal Care,Health & Personal Care > Health Care > Baby & Feminine Care,103,0.9083,4
+Health & Personal Care,"Health & Personal Care > Health Care > Medicines, First Aid & Supports",183,0.9373,1
+Health & Personal Care,Health & Personal Care > Personal Care > Beauty Tools & Appliances,22,0.9357,0
+Health & Personal Care,"Health & Personal Care > Personal Care > Body Wash, Soap & Deodorant",159,0.9604,1
+Health & Personal Care,Health & Personal Care > Personal Care > Oral Care,35,0.9711,0
+Health & Personal Care,Health & Personal Care > Personal Care > Shampoo & Conditioner,47,0.9741,1
+Health & Personal Care,Health & Personal Care > Personal Care > Skin Care & Sunscreen,178,0.9527,1
+Health & Personal Care,Health & Personal Care > Vitamins & Supplements > Protein & Sports Nutrition,34,0.969,1
+Health & Personal Care,Health & Personal Care > Vitamins & Supplements > Vitamins & Supplements,273,0.9478,5
+Home & Furniture,"Home & Furniture > Bedroom Furniture > Beds, Frames & Headboards",197,0.9623,1
+Home & Furniture,Home & Furniture > Bedroom Furniture > Dressers & Chests,33,0.958,2
+Home & Furniture,Home & Furniture > Dining Furniture > Dining Chairs,19,0.9595,0
+Home & Furniture,Home & Furniture > Dining Furniture > Dining Tables,19,0.976,0
+Home & Furniture,Home & Furniture > Dining Furniture > Stools & Benches,158,0.9481,1
+Home & Furniture,Home & Furniture > Home Decor > Area Rugs,171,0.9772,2
+Home & Furniture,Home & Furniture > Home Decor > Decorative Pillows & Cushion Covers,91,0.9576,2
+Home & Furniture,Home & Furniture > Home Decor > Mirrors & Clocks,96,0.9576,1
+Home & Furniture,Home & Furniture > Home Decor > Picture Frames,7,1.0,0
+Home & Furniture,"Home & Furniture > Home Decor > Vases, Candles & Home Fragrance",76,0.9574,2
+Home & Furniture,"Home & Furniture > Home Decor > Wall Art, Posters & Decals",188,0.9885,5
+Home & Furniture,Home & Furniture > Home Office Furniture > Desks,66,0.9411,2
+Home & Furniture,Home & Furniture > Home Office Furniture > Office Chairs,11,0.9831,0
+Home & Furniture,Home & Furniture > Lighting > Ceiling & Wall Lights,195,0.9716,0
+Home & Furniture,Home & Furniture > Lighting > Light Bulbs & String Lights,185,0.9344,0
+Home & Furniture,Home & Furniture > Lighting > Table & Floor Lamps,144,0.9717,1
+Home & Furniture,Home & Furniture > Living Room Furniture > Armchairs & Accent Chairs,96,0.9515,4
+Home & Furniture,"Home & Furniture > Living Room Furniture > Coffee Tables, Side Tables & TV Stands",91,0.9598,5
+Home & Furniture,Home & Furniture > Living Room Furniture > Ottomans & Poufs,136,0.9462,0
+Home & Furniture,Home & Furniture > Living Room Furniture > Sofas & Couches,198,0.9526,14
+Home & Furniture,Home & Furniture > Storage Furniture > Furniture Covers & Slipcovers,104,0.9529,1
+Home & Furniture,"Home & Furniture > Storage Furniture > Shelves, Cabinets & Bookcases",271,0.9535,3
+Household Supplies,Household Supplies > Cleaning > Cleaning Products & Tools,266,0.9728,3
+Household Supplies,Household Supplies > Cleaning > Laundry & Dishwasher Detergents,46,0.9701,0
+Household Supplies,Household Supplies > Cleaning > Paper Towels & Tissues,47,0.9732,0
+Household Supplies,Household Supplies > Cleaning > Trash Bags & Bins,87,0.9739,0
+Household Supplies,Household Supplies > Storage & Organisation > Hooks & Hangers,120,0.9622,1
+Household Supplies,Household Supplies > Storage & Organisation > Laundry Hampers & Drying Racks,65,0.9673,0
+Household Supplies,"Household Supplies > Storage & Organisation > Storage Boxes, Bins & Baskets",126,0.9668,1
+Kitchen & Dining,Kitchen & Dining > Cookware > Frying Pans & Skillets,63,0.9578,0
+Kitchen & Dining,"Kitchen & Dining > Cookware > Pots, Saucepans & Cookware Sets",55,0.956,0
+Kitchen & Dining,"Kitchen & Dining > Dinnerware & Drinkware > Cups, Mugs & Glasses",151,0.9251,5
+Kitchen & Dining,Kitchen & Dining > Dinnerware & Drinkware > Knives & Cutlery,55,0.9531,0
+Kitchen & Dining,"Kitchen & Dining > Dinnerware & Drinkware > Plates, Bowls & Dinnerware Sets",78,0.9379,0
+Kitchen & Dining,Kitchen & Dining > Dinnerware & Drinkware > Table Linen & Disposables,143,0.9322,2
+Kitchen & Dining,Kitchen & Dining > Dinnerware & Drinkware > Water Bottles & Flasks,36,0.948,0
+Kitchen & Dining,Kitchen & Dining > Kitchen Tools & Storage > Food Storage,66,0.9932,0
+Kitchen & Dining,Kitchen & Dining > Kitchen Tools & Storage > Kitchen Gadgets & Utensils,47,0.9681,0
+Kitchen & Dining,Kitchen & Dining > Small Kitchen Appliances > Blenders & Other Small Appliances,28,0.9589,0
+Kitchen & Dining,Kitchen & Dining > Small Kitchen Appliances > Coffee Makers,10,0.9293,0
+Office & School Supplies,Office & School Supplies > Office Supplies > Binders & Folders,153,0.9641,0
+Office & School Supplies,Office & School Supplies > Office Supplies > Desk Accessories & Whiteboards,83,0.9647,0
+Office & School Supplies,Office & School Supplies > Office Supplies > Ink & Toner,22,0.974,0
+Office & School Supplies,"Office & School Supplies > Office Supplies > Paper, Notebooks & Envelopes",111,0.9627,1
+Office & School Supplies,Office & School Supplies > Office Supplies > Pens & Writing Instruments,65,0.9626,1
+Other,Other > Other > Other Products,774,0.9464,41
+"Pets, Baby & Toys","Pets, Baby & Toys > Pet Supplies > Pet Beds, Cat Trees & Furniture",37,0.981,0
+"Pets, Baby & Toys","Pets, Baby & Toys > Pet Supplies > Pet Feeding & Food",22,0.989,0
+"Pets, Baby & Toys","Pets, Baby & Toys > Pet Supplies > Pet Harnesses, Carriers & Apparel",32,0.9625,0
+"Pets, Baby & Toys","Pets, Baby & Toys > Toys & Kids > Toys, Games & Costumes",25,0.9676,0
+Sports & Outdoors,Sports & Outdoors > Fitness > Dumbbells & Weights,23,0.9646,2
+Sports & Outdoors,Sports & Outdoors > Fitness > Sports Balls,75,0.96,1
+Sports & Outdoors,"Sports & Outdoors > Fitness > Yoga Mats, Bands & Recovery",108,0.959,2
+Sports & Outdoors,Sports & Outdoors > Outdoor Recreation > Tents & Camping,58,0.9708,1
+Sports & Outdoors,Sports & Outdoors > Patio & Garden > Grills & BBQ Accessories,20,0.969,0
+Sports & Outdoors,Sports & Outdoors > Patio & Garden > Patio Furniture & Shade,65,0.9372,2
+Sports & Outdoors,Sports & Outdoors > Patio & Garden > Planters & Garden Watering,190,0.9731,0
+Tools & Home Improvement,Tools & Home Improvement > Hardware > Door & Cabinet Hardware,145,0.9548,4
+Tools & Home Improvement,Tools & Home Improvement > Hardware > Fasteners & Mechanical Parts,173,0.9567,0
+Tools & Home Improvement,Tools & Home Improvement > Hardware > Faucets & Plumbing,109,0.9583,0
+Tools & Home Improvement,Tools & Home Improvement > Hardware > Locks & Safes,44,0.9564,0
+Tools & Home Improvement,Tools & Home Improvement > Hardware > Safety Equipment,146,0.9575,0
+Tools & Home Improvement,Tools & Home Improvement > Tools > Tools & Tool Accessories,140,0.965,2
